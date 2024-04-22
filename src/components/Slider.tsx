@@ -1,13 +1,13 @@
 import "./Slider.css";
 import { PanInfo, motion } from "framer-motion";
 import { useState, useRef, useEffect } from "react";
-import imgDev1 from "../../public/Images/imgDev1.jpg";
-import imgDev2 from "../../public/Images/imgDev2.jpg";
-import imgDev3 from "../../public/Images/imgDev3.jpg";
 
-const images = [imgDev1, imgDev2, imgDev3];
+interface iSliderProps {
+  children: React.ReactNode;
+  data: string[];
+}
 
-export default function Slider() {
+export default function Slider({ children, data }: iSliderProps) {
   const [currentX, setCurrentX] = useState(0);
   const [activeIndex, setActiveIndex] = useState(0);
   const carousel = useRef<HTMLDivElement | null>(null);
@@ -29,7 +29,7 @@ export default function Slider() {
     const direction = offset > 0 ? -1 : 1;
     const threshold = 50;
     const newIndex = activeIndex + (Math.abs(offset) > threshold ? direction : 0);
-    if (newIndex >= 0 && newIndex < images.length) {
+    if (newIndex >= 0 && newIndex < data.length) {
       setActiveIndex(newIndex);
       setCurrentX(-newIndex * itemWidth);
     }
@@ -41,17 +41,13 @@ export default function Slider() {
         <motion.div
           className="inner"
           drag="x"
-          dragConstraints={{ left: -itemWidth * (images.length - 1), right: 0 }}
+          dragConstraints={{ left: -itemWidth * (data.length - 1), right: 0 }}
           onDragEnd={handleDragEnd}
           style={{ x: currentX }}
           animate={{ x: currentX }}
           transition={{ type: "spring", stiffness: 300, damping: 30 }}
         >
-          {images.map((image, index) => (
-            <motion.div className="item" key={index} style={{ minWidth: itemWidth }}>
-              <img src={image} alt={`Imagem ${index}`} />
-            </motion.div>
-          ))}
+          {children}
         </motion.div>
       </motion.div>
     </motion.div>
