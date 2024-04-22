@@ -1,6 +1,6 @@
 import "./App.css";
 import { motion } from "framer-motion";
-import Slider from "./components/Slider";
+import Slider from "./components/Slider/Slider";
 import images from "../public/data/data.json";
 
 function App() {

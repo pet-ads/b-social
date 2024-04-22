@@ -1,7 +1,7 @@
 import "./Slider.css";
 import { motion } from "framer-motion";
-import useSlider from "../hooks/useSlider";
-import { useDragConstraints } from "../hooks/useDragConstraints";
+import useSlider from "../../hooks/useSlider";
+import { useDragConstraints } from "../../hooks/useDragConstraints";
 
 interface iSliderProps {
   children: React.ReactNode;
