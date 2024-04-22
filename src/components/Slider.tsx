@@ -1,6 +1,6 @@
 import "./Slider.css";
 import { motion } from "framer-motion";
-import useSlider from "../hooks/useSlider"; // Ensure the path is correct
+import useSlider from "../hooks/useSlider";
 
 interface iSliderProps {
   children: React.ReactNode;
@@ -10,13 +10,12 @@ interface iSliderProps {
 export default function Slider({ children, data }: iSliderProps) {
   const { currentX, carousel, handleDragEnd } = useSlider({ itemCount: data.length });
 
-  // Calculate drag constraints dynamically and safely
   const getDragConstraints = () => {
     if (carousel.current) {
       const maxOffset = -(carousel.current.offsetWidth * (data.length - 1));
       return { left: maxOffset, right: 0 };
     }
-    return { left: 0, right: 0 }; // Default constraints if ref is not attached
+    return { left: 0, right: 0 };
   };
 
   return (
