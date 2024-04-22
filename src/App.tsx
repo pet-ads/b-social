@@ -6,7 +6,8 @@ import { motion } from "framer-motion";
 function App() {
   return (
     <>
-      <div className=".App">
+      <div className="App">
+        <h1>B-Social</h1>
         <Slider data={images}>
           {images.map((image, index) => (
             <motion.div className="item" key={index}>
