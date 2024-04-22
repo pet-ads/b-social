@@ -1,6 +1,7 @@
 import "./Slider.css";
 import { motion } from "framer-motion";
 import useSlider from "../hooks/useSlider";
+import { useDragConstraints } from "../hooks/useDragConstraints";
 
 interface iSliderProps {
   children: React.ReactNode;
@@ -9,14 +10,7 @@ interface iSliderProps {
 
 export default function Slider({ children, data }: iSliderProps) {
   const { currentX, carousel, handleDragEnd } = useSlider({ itemCount: data.length });
-
-  const getDragConstraints = () => {
-    if (carousel.current) {
-      const maxOffset = -(carousel.current.offsetWidth * (data.length - 1));
-      return { left: maxOffset, right: 0 };
-    }
-    return { left: 0, right: 0 };
-  };
+  const getDragConstraints = useDragConstraints({ carousel, itemCount: data.length });
 
   return (
     <motion.div className="slider">

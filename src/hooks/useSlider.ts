@@ -1,5 +1,5 @@
-import { useState, useRef, useEffect } from "react";
 import { PanInfo } from "framer-motion";
+import { useState, useRef, useEffect } from "react";
 
 interface UseSliderProps {
   itemCount: number;

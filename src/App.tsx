@@ -1,7 +1,7 @@
 import "./App.css";
+import { motion } from "framer-motion";
 import Slider from "./components/Slider";
 import images from "../public/data/data.json";
-import { motion } from "framer-motion";
 
 function App() {
   return (
