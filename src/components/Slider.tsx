@@ -1,9 +1,9 @@
 import "./Slider.css";
 import { PanInfo, motion } from "framer-motion";
+import { useState, useRef, useEffect } from "react";
 import imgDev1 from "../../public/Images/imgDev1.jpg";
 import imgDev2 from "../../public/Images/imgDev2.jpg";
 import imgDev3 from "../../public/Images/imgDev3.jpg";
-import { useState, useRef, useEffect } from "react";
 
 const images = [imgDev1, imgDev2, imgDev3];
 
