@@ -1,4 +1,6 @@
 export interface TagType {
     text: string,
-    color: string 
+    textColor: string,
+    backgroundColor: string,
+    number: string
 }
