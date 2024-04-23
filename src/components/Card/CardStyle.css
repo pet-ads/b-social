@@ -1,6 +1,40 @@
 .cardContainer {
-    height: 500px;
-    width: 500px;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: blueviolet;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5); 
+}
+
+.cardImage {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.cardContent {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+}
+
+.cardMainContent {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cardTitle {
+    display: flex;
+    justify-content: center;
+}
+
+.cardText {
+    font-size: 10px;
+}
+
+.indicatedTopicTitle {
+    font-size: 10px;
+    margin-bottom: 10px;
 }
