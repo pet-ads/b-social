@@ -2,10 +2,18 @@ import "./Slider.css";
 import { motion } from "framer-motion";
 import useSlider from "../../hooks/useSlider";
 import { useDragConstraints } from "../../hooks/useDragConstraints";
+import { TagType } from "../Card/subComponent/TagTypeInterface";
+
+interface Data {
+  text: string;
+  image: string;
+  title: string;
+  tag: TagType;
+}
 
 interface iSliderProps {
   children: React.ReactNode;
-  data: string[];
+  data: Data[];
 }
 
 export default function Slider({ children, data }: iSliderProps) {
