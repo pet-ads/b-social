@@ -9,8 +9,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <Header text="B-Social"/>
-
+        <Header text="B-Social" />
         <Slider data={Data}>
           {Data.map((data, index) => (
             <motion.div className="item" key={index}>

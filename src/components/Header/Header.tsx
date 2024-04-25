@@ -1,11 +1,9 @@
-import "./HeaderStyle.css"
+import "./HeaderStyle.css";
 
 interface HeaderType {
-    text: string
+  text: string;
 }
 
-export default function Header({text}: HeaderType) {
-    return (
-        <h1>{text}</h1>
-    );
+export default function Header({ text }: HeaderType) {
+  return <h1 className="header">{text}</h1>;
 }
