@@ -35,11 +35,11 @@
 
 @media screen and (max-width: 395px) {
     .item {
-        min-width: 395px;
+        min-width: 100vw;
     }
 }
 
-
+/*
 
 @media screen and (max-width: 390px) {
     .item {
@@ -68,4 +68,4 @@
         min-width: 100vw;
     }
 
-}
+}*/
