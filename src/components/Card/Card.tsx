@@ -1,6 +1,6 @@
+import "./CardStyle.css";
 import Tag from "./subComponent/Tag";
 import { TagType } from "./subComponent/TagTypeInterface";
-import "./CardStyle.css";
 
 interface CardType {
   image: string;
