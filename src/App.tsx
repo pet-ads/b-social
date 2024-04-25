@@ -1,17 +1,18 @@
 import "./App.css";
 import { motion } from "framer-motion";
-import Slider from "./components/Slider";
-import images from "../public/data/data.json";
+import Card from "./components/Card/Card";
+import Data from "../public/data/data.json";
+import Slider from "./components/Slider/Slider";
 
 function App() {
   return (
     <>
       <div className="App">
         <h1>B-Social</h1>
-        <Slider data={images}>
-          {images.map((image, index) => (
+        <Slider data={Data}>
+          {Data.map((data, index) => (
             <motion.div className="item" key={index}>
-              <img src={image} alt={`Imagem ${index}`} />
+              <Card image={data.image} title={data.title} text={data.text} tag={data.tag} />
             </motion.div>
           ))}
         </Slider>
