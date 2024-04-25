@@ -16,7 +16,7 @@
 .cardContent {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 36px;
     padding: 30px;
 }
 
@@ -27,15 +27,16 @@
 }
 
 .cardTitle {
+    font-size: 20px;
     display: flex;
     justify-content: center;
 }
 
 .cardText {
-    font-size: 10px;
+    font-size: 16px;
 }
 
 .indicatedTopicTitle {
-    font-size: 10px;
+    font-size: 16px;
     margin-bottom: 10px;
 }
