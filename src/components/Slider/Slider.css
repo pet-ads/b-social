@@ -38,34 +38,3 @@
         min-width: 100vw;
     }
 }
-
-/*
-
-@media screen and (max-width: 390px) {
-    .item {
-        min-width: 390px;
-    }
-
-}
-
-
-@media screen and (max-width: 375px) {
-    .item {
-        min-width: 375px;
-    }
-
-}
-
-@media screen and (max-width: 360px) {
-    .item {
-        min-width: 360px;
-    }
-
-}
-
-@media screen and (max-width: 345px) {
-    .item {
-        min-width: 100vw;
-    }
-
-}*/
