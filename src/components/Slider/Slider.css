@@ -12,6 +12,9 @@
 }
 
 .item {
+    display: flex;
+    justify-content: center;
+
     min-height: 200px;
     min-width: 400px;
     padding: 14px;
@@ -28,4 +31,34 @@
     cursor: grab;
     overflow: hidden;
     width: 400px;
+}
+
+
+@media screen and (max-width: 390px) {
+    .item {
+        min-width: 390px;
+    }
+
+}
+
+
+@media screen and (max-width: 375px) {
+    .item {
+        min-width: 375px;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+    .item {
+        min-width: 360px;
+    }
+
+}
+
+@media screen and (max-width: 344px) {
+    .item {
+        min-width: 344px;
+    }
+
 }

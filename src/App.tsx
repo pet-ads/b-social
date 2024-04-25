@@ -1,14 +1,10 @@
 import "./App.css";
 import { motion } from "framer-motion";
-import Slider from "./components/Slider/Slider";
-import Data from "../public/data/data.json";
 import Card from "./components/Card/Card";
+import Data from "../public/data/data.json";
+import Slider from "./components/Slider/Slider";
 
 function App() {
-  {
-    /*const tag: TagType = { text: "etaa", backgroundColor: "blue", textColor: "white", number: "59" };*/
-  }
-
   return (
     <>
       <div className="App">
