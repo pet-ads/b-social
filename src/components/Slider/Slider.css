@@ -63,9 +63,9 @@
 
 }
 
-@media screen and (max-width: 344px) {
+@media screen and (max-width: 345px) {
     .item {
-        min-width: 344px;
+        min-width: 100vw;
     }
 
 }
