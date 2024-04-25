@@ -5,5 +5,9 @@ interface HeaderType {
 }
 
 export default function Header({ text }: HeaderType) {
-  return <h1 className="header">{text}</h1>;
+  return (
+    <div className="conteiner">
+      <h1 className="header">{text}</h1>
+    </div>
+  );
 }
