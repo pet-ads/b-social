@@ -10,12 +10,10 @@ interface CardType {
 }
 
 export default function Card({ image, title, text, tag }: CardType) {
-  const imagePath: string = "./../../../public/Images/" + image;
-
   return (
     <div className="cardContainer">
       <div className="cardImage">
-        <img className="cardImage" src={imagePath} />
+        <img className="cardImage" src={image} />
       </div>
       <div className="cardContent" style={{ color: "#603A17" }}>
         <div className="cardMainContent">

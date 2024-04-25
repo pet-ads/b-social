@@ -1,6 +1,6 @@
 [
     {
-        "image": "arteFake1.png",
+        "image": "../Images/arteFake1.png",
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus faucibus efficitur velit, a pharetra ligula venenatis at. Vestibulum luctus ante et purus iaculis, nec consequat nibh faucibus.",
         "title": "Titulo1",
         "tag": {
@@ -11,7 +11,7 @@
         }
     },
     {
-        "image": "arteFake2.png",
+        "image": "../Images/arteFake2.png",
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus faucibus efficitur velit, a pharetra ligula venenatis at. Vestibulum luctus ante et purus iaculis, nec consequat nibh faucibus.",
         "title": "Titulo1",
         "tag": {
@@ -22,7 +22,7 @@
         }
     },
     {
-        "image": "arteFake3.png",
+        "image": "../Images/arteFake3.png",
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus faucibus efficitur velit, a pharetra ligula venenatis at. Vestibulum luctus ante et purus iaculis, nec consequat nibh faucibus.",
         "title": "Titulo1",
         "tag": {
@@ -33,7 +33,7 @@
         }
     },
     {
-        "image": "arteFake4.png",
+        "image": "../Images/arteFake4.png",
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus faucibus efficitur velit, a pharetra ligula venenatis at. Vestibulum luctus ante et purus iaculis, nec consequat nibh faucibus.",
         "title": "Titulo1",
         "tag": {
@@ -44,7 +44,7 @@
         }
     },
     {
-        "image": "arteFake5.png",
+        "image": "../Images/arteFake5.png",
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus faucibus efficitur velit, a pharetra ligula venenatis at. Vestibulum luctus ante et purus iaculis, nec consequat nibh faucibus.",
         "title": "Titulo1",
         "tag": {
@@ -55,7 +55,7 @@
         }
     },
     {
-        "image": "arteFake6.png",
+        "image": "../Images/arteFake6.png",
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus faucibus efficitur velit, a pharetra ligula venenatis at. Vestibulum luctus ante et purus iaculis, nec consequat nibh faucibus.",
         "title": "Titulo1",
         "tag": {
