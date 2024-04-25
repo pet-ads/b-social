@@ -1,6 +1,6 @@
 [
     {
-        "image": "exImage_1.png",
+        "image": "arteFake1.png",
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus faucibus efficitur velit, a pharetra ligula venenatis at. Vestibulum luctus ante et purus iaculis, nec consequat nibh faucibus.",
         "title": "Titulo1",
         "tag": {
@@ -11,7 +11,7 @@
         }
     },
     {
-        "image": "exImage_1.png",
+        "image": "arteFake2.png",
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus faucibus efficitur velit, a pharetra ligula venenatis at. Vestibulum luctus ante et purus iaculis, nec consequat nibh faucibus.",
         "title": "Titulo1",
         "tag": {
@@ -22,7 +22,7 @@
         }
     },
     {
-        "image": "exImage_1.png",
+        "image": "arteFake3.png",
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus faucibus efficitur velit, a pharetra ligula venenatis at. Vestibulum luctus ante et purus iaculis, nec consequat nibh faucibus.",
         "title": "Titulo1",
         "tag": {
@@ -33,7 +33,7 @@
         }
     },
     {
-        "image": "exImage_1.png",
+        "image": "arteFake4.png",
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus faucibus efficitur velit, a pharetra ligula venenatis at. Vestibulum luctus ante et purus iaculis, nec consequat nibh faucibus.",
         "title": "Titulo1",
         "tag": {
@@ -44,7 +44,7 @@
         }
     },
     {
-        "image": "exImage_1.png",
+        "image": "arteFake5.png",
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus faucibus efficitur velit, a pharetra ligula venenatis at. Vestibulum luctus ante et purus iaculis, nec consequat nibh faucibus.",
         "title": "Titulo1",
         "tag": {
@@ -55,7 +55,7 @@
         }
     },
     {
-        "image": "exImage_1.png",
+        "image": "arteFake6.png",
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus faucibus efficitur velit, a pharetra ligula venenatis at. Vestibulum luctus ante et purus iaculis, nec consequat nibh faucibus.",
         "title": "Titulo1",
         "tag": {
