@@ -24,7 +24,7 @@
 
 @media screen and (max-width: 1280px) {
     .conteiner {
-        margin-bottom: 15vh;
+        margin-bottom: 10vh;
     }
 
 }
@@ -39,7 +39,7 @@
 
 @media screen and (max-width: 540px) {
     .conteiner {
-        margin-bottom: 9vh;
+        margin-bottom: 5vh;
     }
 
 }
