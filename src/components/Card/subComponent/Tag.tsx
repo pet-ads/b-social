@@ -1,15 +1,17 @@
-import { TagType } from "./TagTypeInterface";
 import "./TagStyle.css";
 import { useState } from "react";
+import { TagType } from "./TagTypeInterface";
 import Data from "../../../../public/data/data.json";
+import { useSliderContext } from "../../Slider/SliderContext";
 
-export default function Tag({ text, textColor, backgroundColor, number, onIndexChange }: TagType) {
+export default function Tag({ text, textColor, backgroundColor, number }: TagType) {
   const [reference, setReference] = useState("");
+  const { goToSlide } = useSliderContext();
 
   const handleClick = () => {
     setReference(text);
     const index = Data.findIndex((element) => element.title === text);
-    if (onIndexChange) onIndexChange(index); // Chama o callback com o índice encontrado
+    if (index >= 0) goToSlide(index);
     reference;
   };
 
