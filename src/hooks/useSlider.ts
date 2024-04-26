@@ -24,6 +24,13 @@ function useSlider({ itemCount }: UseSliderProps) {
     return () => window.removeEventListener("resize", updateSize);
   }, []);
 
+  const goToSlide = (index: number) => {
+    if (index >= 0 && index < itemCount && carousel.current) {
+      setActiveIndex(index);
+      setCurrentX(-index * itemWidth);
+    }
+  };
+
   const handleDragEnd = (_: MouseEvent | TouchEvent | PointerEvent, info: PanInfo) => {
     if (!carousel.current) return;
 
@@ -37,7 +44,7 @@ function useSlider({ itemCount }: UseSliderProps) {
     }
   };
 
-  return { currentX, activeIndex, carousel, handleDragEnd };
+  return { currentX, activeIndex, carousel, handleDragEnd, goToSlide };
 }
 
 export default useSlider;
