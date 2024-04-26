@@ -53,7 +53,7 @@
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus faucibus efficitur velit, a pharetra ligula venenatis at. Vestibulum luctus ante et purus iaculis, nec consequat nibh faucibus.",
         "title": "Titulo5",
         "tag": {
-            "text": "Titulo2",
+            "text": "Titulo3",
             "backgroundColor": "blue",
             "textColor": "white",
             "number": "59"
@@ -65,7 +65,7 @@
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus faucibus efficitur velit, a pharetra ligula venenatis at. Vestibulum luctus ante et purus iaculis, nec consequat nibh faucibus.",
         "title": "Titulo6",
         "tag": {
-            "text": "Titulo1",
+            "text": "Titulo2",
             "backgroundColor": "blue",
             "textColor": "white",
             "number": "59"
