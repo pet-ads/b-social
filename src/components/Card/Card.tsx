@@ -7,9 +7,10 @@ interface CardType {
   title: string;
   text: string;
   tag: TagType;
+  onTagClick: (index: number) => void;
 }
 
-export default function Card({ image, title, text, tag }: CardType) {
+export default function Card({ image, title, text, tag, onTagClick }: CardType) {
   return (
     <div className="cardContainer">
       <div className="cardImage">
@@ -22,7 +23,13 @@ export default function Card({ image, title, text, tag }: CardType) {
         </div>
         <div className="indicatedTopicContainer">
           <p className="indicatedTopicTitle">Veja também</p>
-          <Tag text={tag.text} textColor={tag.textColor} backgroundColor={tag.backgroundColor} number={tag.number} />
+          <Tag
+            text={tag.text}
+            textColor={tag.textColor}
+            backgroundColor={tag.backgroundColor}
+            number={tag.number}
+            onIndexChange={onTagClick} // Passa o callback para Tag
+          />
         </div>
       </div>
     </div>
