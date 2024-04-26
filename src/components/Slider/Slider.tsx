@@ -1,9 +1,9 @@
 import "./Slider.css";
 import { motion } from "framer-motion";
+import SliderContext from "./SliderContext";
 import useSlider from "../../hooks/useSlider";
 import { TagType } from "../Card/subComponent/TagTypeInterface";
 import { useDragConstraints } from "../../hooks/useDragConstraints";
-import SliderContext from "./SliderContext";
 
 interface Data {
   text: string;
