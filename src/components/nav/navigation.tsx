@@ -1,3 +1,5 @@
+import "./nav.css";
+
 export default function Navigation() {
   return (
     <div className="NavConteiner">
