@@ -7,16 +7,16 @@ export default function Navigation() {
         <div className="textConteiner">Beaba</div>
         <div className="navigationButtons">
           <div className="link">
-            <p>Quem Somos</p>
+            <p>Guia</p>
           </div>{" "}
           <div className="link">
             <p>Quem Somos</p>
           </div>
           <div className="link">
-            <p>Quem Somos</p>
+            <p>Contato</p>
           </div>
           <div className="link">
-            <p>Quem Somos</p>
+            <p>Como ajudar</p>
           </div>
         </div>
         <div className="divider"></div>
