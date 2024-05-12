@@ -1,4 +1,5 @@
 import "./App.css";
+import CardArea from "./components/Cards/CardArea";
 import Header from "./components/Header/Header";
 import Navigation from "./components/nav/navigation";
 import Search from "./components/search/Search";
@@ -10,6 +11,7 @@ function App() {
         <Navigation />
         <Header />
         <Search />
+        <CardArea />
       </div>
     </div>
   );
