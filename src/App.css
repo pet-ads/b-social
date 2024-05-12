@@ -5,6 +5,7 @@
 }
 
 .contentConteiner {
+  box-sizing: border-box;
   min-height: 100vh;
   width: auto;
   align-items: center;
@@ -18,121 +19,5 @@
   overflow: hidden;
   padding: 0;
   position: relative;
-  width: 1200px;
-  margin: auto;
-}
-
-.headerTextConteiner {
-  align-items: flex-start;
-  display: flex;
-  flex: none;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  gap: 10px;
-  height: 117%;
-  justify-content: center;
-  overflow: hidden;
-  padding: 45px;
-  position: relative;
-  width: 100%;
-}
-
-
-
-.header {
-  align-items: center;
-  background-color: #25d1e8;
-  display: flex;
-  flex: none;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  gap: 20px;
-  height: 580px;
-  justify-content: center;
-  overflow: hidden;
-  padding: 40px;
-  position: relative;
-  width: 1200px;
-}
-
-.bearConteiner {
-  border-radius: 20px;
-  flex: none;
-  height: 111%;
-  left: calc(75.6666666666667% - 37.291666666666664% / 2);
-  overflow: hidden;
-  position: absolute;
-  top: calc(71.3793103448276% - 110.60344827586206% / 2);
-  width: 37%;
-  will-change: var(transform);
-  z-index: 1;
-}
-
-.headerImgConteiner {
-  position: absolute;
-  border-radius: inherit;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-.headerImage {
-  display: block;
-  width: 100%;
-  height: 100%;
-  border-radius: inherit;
-  object-position: center;
-  object-fit: contain;
-  image-rendering: auto;
-}
-
-.title {
-  flex: none;
-  height: auto;
-  max-width: 100%;
-  position: relative;
-  white-space: pre-wrap;
-  width: 370px;
-  word-break: break-word;
-  word-wrap: break-word;
-  outline: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  transform: none;
-}
-
-.h1 {
-  font-family: "Inter", "Inter Placeholder", sans-serif;
-  font-size: 50px;
-  font-weight: 700;
-  letter-spacing: -2.6px;
-  text-align: left;
-  color: rgb(255, 255, 255);
-}
-
-.subtitleConteiner {
-  --framer-paragraph-spacing: 0px;
-  flex: none;
-  height: auto;
-  max-width: 100%;
-  overflow: visible;
-  position: relative;
-  white-space: pre-wrap;
-  width: 547px;
-  word-break: break-word;
-  word-wrap: break-word;
-
-}
-
-.subtitle {
-  font-family: "Inter", "Inter Placeholder", sans-serif;
-  font-size: 24px;
-  font-weight: 500;
-  letter-spacing: -0.5px;
-  line-height: 1.5em;
-  text-align: left;
-  color: rgb(255, 255, 255);
+  max-width: 1920px;
 }
