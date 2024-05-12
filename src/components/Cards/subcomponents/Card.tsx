@@ -1,5 +1,5 @@
 import "./card.css";
-import walkingBear from "../../../../public/Images/walkingBear.gif";
+import walkingBear from "/Images/walkingBear.gif";
 
 export default function Card() {
   return (

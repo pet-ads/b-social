@@ -1,6 +1,6 @@
 import "./HeaderStyle.css";
 
-import headerImage from "../../../public/Images/HeaderBear.webp";
+import headerImage from "/Images/HeaderBear.webp";
 
 export default function Header() {
   return (
