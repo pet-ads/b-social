@@ -1,6 +1,7 @@
 import "./App.css";
 import CardArea from "./components/Cards/CardArea";
 import Header from "./components/Header/Header";
+import HelpArea from "./components/HelpArea/HelpArea";
 import Navigation from "./components/nav/navigation";
 import Search from "./components/search/Search";
 
@@ -12,6 +13,7 @@ function App() {
         <Header />
         <Search />
         <CardArea />
+        <HelpArea />
       </div>
     </div>
   );
