@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react";
 import "./cardArea.css";
 import Card from "./subcomponents/Card";
+import { useState, useEffect } from "react";
 
 interface CardContentI {
   id: string;

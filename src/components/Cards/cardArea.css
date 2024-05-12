@@ -31,3 +31,9 @@
     position: relative;
     width: 1000px;
 }
+
+@media (max-width: 809px) {
+    .cardArea {
+        padding: 60px 20px;
+    }
+}

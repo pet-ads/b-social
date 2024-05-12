@@ -124,3 +124,27 @@
     color: rgb(96, 58, 23);
 
 }
+
+@media (max-width: 809px) {
+
+    .Card {
+        width: 100%;
+
+    }
+
+    .imgArea {
+        bottom: 0;
+        height: 263px;
+        left: unset;
+        right: -1px;
+        top: unset;
+        transform: unset;
+        width: 351px;
+    }
+
+    .anchor {
+        height: 263px;
+    }
+
+
+}
