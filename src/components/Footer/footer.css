@@ -1,0 +1,64 @@
+.footer {
+    align-items: center;
+    background-color: #603a17;
+    display: flex;
+    flex: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: min-content;
+    justify-content: space-between;
+    max-width: 100%;
+    overflow: visible;
+    padding: 50px;
+    position: relative;
+    width: 100%;
+}
+
+.copy {
+    flex: none;
+    height: auto;
+    position: relative;
+    white-space: pre;
+    width: auto;
+}
+
+.copyText {
+    font-family: "Inter", "Inter Placeholder", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5em;
+    text-align: left;
+    color: rgb(230, 230, 230);
+}
+
+.socialMediaConteiner {
+    align-items: flex-start;
+    display: flex;
+    flex: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 15px;
+    height: min-content;
+    justify-content: flex-start;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    width: min-content;
+}
+
+.instaConteiner .mailConteiner {
+    flex: none;
+    height: auto;
+    position: relative;
+    white-space: pre;
+    width: auto;
+}
+
+.socialText {
+    font-family: Inter, Inter Placeholder, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5em;
+    text-align: left;
+    color: rgb(255, 255, 255);
+}
