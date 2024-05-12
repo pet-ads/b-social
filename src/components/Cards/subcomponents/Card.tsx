@@ -1,3 +1,4 @@
+import "./card.css";
 import walkingBear from "../../../../public/Images/walkingBear.gif";
 
 export default function Card() {
