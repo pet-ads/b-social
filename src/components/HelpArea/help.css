@@ -3,7 +3,6 @@
     background-color: #f8f8f8;
     display: flex;
     flex: none;
-
     flex-wrap: nowrap;
     gap: 0px;
     height: min-content;
@@ -83,6 +82,7 @@
     padding: 15px;
     position: relative;
     width: min-content;
+    cursor: pointer;
 }
 
 .btnTextConteiner {
