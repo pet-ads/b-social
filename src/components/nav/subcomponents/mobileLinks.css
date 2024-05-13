@@ -1,0 +1,26 @@
+.mobileLinks {
+    place-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0px;
+    padding: 20px;
+    width: 100%;
+}
+
+.mobileLink {
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    transform: none;
+    transform-origin: 50% 50% 0px;
+}
+
+.mobileLink p {
+    font-family: Inter Tight, Inter Tight Placeholder, sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.5em;
+    text-align: left;
+}
