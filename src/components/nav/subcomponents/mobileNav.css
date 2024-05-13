@@ -1,0 +1,12 @@
+.MenuIcon {
+    flex: 0 0 auto;
+    height: 42px;
+    position: relative;
+    width: 42px;
+}
+
+.notClicked,
+.clicked {
+    width: 100%;
+    height: 100%;
+}

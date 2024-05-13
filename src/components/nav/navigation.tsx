@@ -1,6 +1,7 @@
 import "./nav.css";
 import DefaultLinks from "./subcomponents/defaultLinks";
 import { useEffect, useState } from "react";
+import MobileNav from "./subcomponents/mobileNav";
 
 export default function Navigation() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -21,7 +22,7 @@ export default function Navigation() {
     <div className="NavConteiner">
       <nav className="navigation">
         <div className="textConteiner">Beaba</div>
-        <div className="navigationButtons">{windowWidth <= 809 ? "fazendo ainda" : <DefaultLinks />}</div>
+        <div className="navigationButtons">{windowWidth <= 809 ? <MobileNav /> : <DefaultLinks />}</div>
         <div className="divider"></div>
       </nav>
     </div>
