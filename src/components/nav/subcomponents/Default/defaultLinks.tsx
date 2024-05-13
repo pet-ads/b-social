@@ -1,4 +1,4 @@
-import "../nav.css";
+import "./defaultLinks.css";
 export default function DefaultLinks() {
   return (
     <>

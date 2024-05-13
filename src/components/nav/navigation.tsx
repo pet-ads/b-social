@@ -1,8 +1,8 @@
 import "./nav.css";
-import DefaultLinks from "./subcomponents/defaultLinks";
+import DefaultLinks from "./subcomponents/Default/defaultLinks";
 import { useEffect, useState } from "react";
-import MobileNav from "./subcomponents/mobileNav";
-import MobileLinks from "./subcomponents/mobileLinks";
+import MobileNav from "./subcomponents/Mobile/mobileNav";
+import MobileLinks from "./subcomponents/Mobile/mobileLinks";
 
 export default function Navigation() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
