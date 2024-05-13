@@ -20,7 +20,10 @@ export default function Navigation() {
 
   return (
     <div className="NavConteiner">
-      <nav className="navigation">
+      <nav
+        className="navigation"
+        style={windowWidth <= 809 ? { justifyContent: "space-between" } : { justifyContent: "flex-start" }}
+      >
         <div className="textConteiner">Beaba</div>
         <div className="navigationButtons">{windowWidth <= 809 ? <MobileNav /> : <DefaultLinks />}</div>
         <div className="divider"></div>
