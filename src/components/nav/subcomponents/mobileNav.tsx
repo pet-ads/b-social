@@ -1,10 +1,13 @@
-import { useState } from "react";
 import "./mobileNav.css";
 import { BiMenu } from "react-icons/bi";
 import { BiMenuAltRight } from "react-icons/bi";
 
-export default function MobileNav() {
-  const [clicked, setClicked] = useState(false);
+interface mobileNav {
+  clicked: boolean;
+  setClicked: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+export default function MobileNav({ clicked, setClicked }: mobileNav) {
   return (
     <div className="MenuIcon">
       {!clicked ? (
