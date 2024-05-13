@@ -1,8 +1,24 @@
-.App {
-  max-width: 100%;
-  margin: 0 auto;
-  min-height: 80vh;
-  justify-content: center;
-  background-color: rgba(0, 0, 0, 0);
-  ;
+.main {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-height: 100vh;
+}
+
+.contentConteiner {
+  box-sizing: border-box;
+  min-height: 100vh;
+  width: auto;
+  align-items: center;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 0px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  max-width: 1920px;
 }

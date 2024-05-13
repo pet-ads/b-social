@@ -1,74 +1,65 @@
 [
     {
         "id": "1",
-        "image": "../Images/arteFake1.png",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus faucibus efficitur velit, a pharetra ligula venenatis at. Vestibulum luctus ante et purus iaculis, nec consequat nibh faucibus.",
-        "title": "Titulo1",
-        "tag": {
-            "text": "Titulo4",
-            "backgroundColor": "blue",
-            "textColor": "white",
-            "number": "59"
-        }
+        "CardImg": "/Images/walkingBear.gif",
+        "CardTitle": "Amor",
+        "CardText": "Learn about hosting built for scale and reliability.",
+        "bgColor": "#a1f6ff"
     },
     {
         "id": "2",
-        "image": "../Images/arteFake2.png",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus faucibus efficitur velit, a pharetra ligula venenatis at. Vestibulum luctus ante et purus iaculis, nec consequat nibh faucibus.",
-        "title": "Titulo2",
-        "tag": {
-            "text": "Titulo5",
-            "backgroundColor": "blue",
-            "textColor": "white",
-            "number": "59"
-        }
+        "CardImg": "/Images/feverBear.svg",
+        "CardTitle": "Febre",
+        "CardText": "Learn about hosting built for scale and reliability.",
+        "bgColor": "#3ac0c4"
     },
     {
         "id": "3",
-        "image": "../Images/arteFake3.png",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus faucibus efficitur velit, a pharetra ligula venenatis at. Vestibulum luctus ante et purus iaculis, nec consequat nibh faucibus.",
-        "title": "Titulo3",
-        "tag": {
-            "text": "Titulo1",
-            "backgroundColor": "blue",
-            "textColor": "white",
-            "number": "59"
-        }
+        "CardImg": "/Images/televisionBear.svg",
+        "CardTitle": "Screen time",
+        "CardText": "Learn about hosting built for scale and reliability.",
+        "bgColor": "#f3aebb"
     },
     {
         "id": "4",
-        "image": "../Images/arteFake4.png",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus faucibus efficitur velit, a pharetra ligula venenatis at. Vestibulum luctus ante et purus iaculis, nec consequat nibh faucibus.",
-        "title": "Titulo4",
-        "tag": {
-            "text": "Titulo6",
-            "backgroundColor": "blue",
-            "textColor": "white",
-            "number": "59"
-        }
+        "CardImg": "/Images/walkingBear.gif",
+        "CardTitle": "Amor",
+        "CardText": "Learn about hosting built for scale and reliability.",
+        "bgColor": "#ffcc01"
     },
     {
         "id": "5",
-        "image": "../Images/arteFake5.png",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus faucibus efficitur velit, a pharetra ligula venenatis at. Vestibulum luctus ante et purus iaculis, nec consequat nibh faucibus.",
-        "title": "Titulo5",
-        "tag": {
-            "text": "Titulo3",
-            "backgroundColor": "blue",
-            "textColor": "white",
-            "number": "59"
-        }
+        "CardImg": "/Images/feverBear.svg",
+        "CardTitle": "Febre",
+        "CardText": "Learn about hosting built for scale and reliability.",
+        "bgColor": "#a1f6ff"
     },
     {
         "id": "6",
-        "image": "../Images/arteFake6.png",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus faucibus efficitur velit, a pharetra ligula venenatis at. Vestibulum luctus ante et purus iaculis, nec consequat nibh faucibus.",
-        "title": "Titulo6",
-        "tag": {
-            "text": "Titulo2",
-            "backgroundColor": "blue",
-            "textColor": "white",
-            "number": "59"
-        }
+        "CardImg": "/Images/feverBear.svg",
+        "CardTitle": "Anemia",
+        "CardText": "Learn about hosting built for scale and reliability.",
+        "bgColor": "#e94447"
+    },
+    {
+        "id": "7",
+        "CardImg": "/Images/walkingBear.gif",
+        "CardTitle": "Amor",
+        "CardText": "Learn about hosting built for scale and reliability.",
+        "bgColor": "#a1f6ff"
+    },
+    {
+        "id": "8",
+        "CardImg": "/Images/feverBear.svg",
+        "CardTitle": "Febre",
+        "CardText": "Learn about hosting built for scale and reliability.",
+        "bgColor": "#3ac0c4"
+    },
+    {
+        "id": "9",
+        "CardImg": "/Images/televisionBear.svg",
+        "CardTitle": "Screen time",
+        "CardText": "Learn about hosting built for scale and reliability.",
+        "bgColor": "#f3aebb"
     }
 ]

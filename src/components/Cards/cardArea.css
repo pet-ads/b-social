@@ -1,0 +1,39 @@
+.cardArea {
+    align-content: center;
+    align-items: center;
+    background-color: #fff;
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 60px;
+    height: min-content;
+    justify-content: center;
+    overflow: hidden;
+    padding: 60px 40px 100px;
+    position: relative;
+    width: 100%;
+}
+
+.CardRow {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    height: min-content;
+    justify-content: center;
+    max-width: 100%;
+    overflow: visible;
+    padding: 0;
+    position: relative;
+    width: 1000px;
+}
+
+@media (max-width: 809px) {
+    .cardArea {
+        padding: 60px 20px;
+    }
+}
