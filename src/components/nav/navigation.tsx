@@ -1,24 +1,13 @@
 import "./nav.css";
-import DefaultLinks from "./subcomponents/Default/defaultLinks";
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import useWindowWidth from "../../hooks/useWindowWidth";
 import MobileNav from "./subcomponents/Mobile/mobileNav";
 import MobileLinks from "./subcomponents/Mobile/mobileLinks";
+import DefaultLinks from "./subcomponents/Default/defaultLinks";
 
 export default function Navigation() {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const windowWidth = useWindowWidth();
   const [clicked, setClicked] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
 
   return (
     <div className="NavConteiner">

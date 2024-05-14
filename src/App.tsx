@@ -1,13 +1,13 @@
 import "./App.css";
-import CardArea from "./components/Cards/CardArea";
-import Footer from "./components/Footer/footer";
-import Header from "./components/Header/Header";
-import HelpArea from "./components/HelpArea/HelpArea";
-import Navigation from "./components/nav/navigation";
-import Search from "./components/search/Search";
-import LangSettings from "./components/Language/language";
 import { useState } from "react";
 import useFetchData from "./hooks/useFetchData";
+import Footer from "./components/Footer/footer";
+import Header from "./components/Header/Header";
+import Search from "./components/search/Search";
+import CardArea from "./components/Cards/CardArea";
+import HelpArea from "./components/HelpArea/HelpArea";
+import Navigation from "./components/nav/navigation";
+import LangSettings from "./components/Language/language";
 
 function App() {
   const URL_DATA_PTBR = "/data/dataPTBR.json";

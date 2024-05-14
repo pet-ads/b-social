@@ -9,8 +9,6 @@ export default function useWindowWidth() {
     };
 
     window.addEventListener("resize", handleResize);
-
-    // Atualiza o tamanho da janela após a montagem do componente
     setWindowWidth(window.innerWidth);
 
     return () => {

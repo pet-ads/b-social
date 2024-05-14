@@ -1,5 +1,6 @@
 import "./cardArea.css";
 import Card from "./subcomponents/Card";
+
 interface CardContentI {
   id: string;
   CardImg: string;
