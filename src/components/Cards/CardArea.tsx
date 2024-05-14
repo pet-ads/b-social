@@ -1,6 +1,5 @@
 import "./cardArea.css";
 import Card from "./subcomponents/Card";
-import { useState, useEffect } from "react";
 
 interface CardContentI {
   id: string;
@@ -10,25 +9,11 @@ interface CardContentI {
   bgColor: string;
 }
 
-export default function CardArea() {
-  const [data, setData] = useState<CardContentI[]>([]);
+interface iData {
+  data: CardContentI[];
+}
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch("/data/data.json");
-        if (!response.ok) {
-          throw new Error("Failed to fetch data");
-        }
-        const jsonData = await response.json();
-        setData(jsonData);
-      } catch (error) {
-        console.error("Não foi possível encotrar os dados");
-      }
-    };
-    fetchData();
-  }, []);
-
+export default function CardArea({ data }: iData) {
   return (
     <div className="cardArea">
       <div className="CardRow">

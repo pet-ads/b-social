@@ -1,21 +1,9 @@
-import { useEffect, useState } from "react";
 import "./HeaderStyle.css";
 import headerImage from "/Images/HeaderBear.webp";
+import useWindowWidth from "../../hooks/useWindowWidth";
 
 export default function Header() {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+  const windowWidth = useWindowWidth();
 
   return (
     <header className="header">
