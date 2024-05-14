@@ -1,5 +1,6 @@
 import "./langSetting.css";
 import Brlogo from "/Images/Brlogo.png";
+import EUALogo from "/Images/EUALogo.png";
 
 interface ILangSettings {
   selectedPath: string;
@@ -14,7 +15,7 @@ export default function LangSettings({ setSelectedPath, selectedPath }: ILangSet
           <img className="logopic" src={Brlogo} alt="logo bandeira do Brasil" />
         </div>
         <div className={`logo ${selectedPath === "en" ? "selected" : ""}`} onClick={() => setSelectedPath("en")}>
-          IconUSA
+          <img className="logopic" src={EUALogo} alt="logo bandeira do Brasil" />
         </div>
       </div>
     </div>
