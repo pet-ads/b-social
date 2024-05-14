@@ -14,7 +14,6 @@ function App() {
   const URL_DATA_EN = "/data/dataEn.json";
   const [selectPath, setSelectedPath] = useState("pt-br");
   const pathToData = selectPath === "pt-br" ? URL_DATA_PTBR : URL_DATA_EN;
-
   const data = useFetchData(pathToData, selectPath);
 
   return (
@@ -22,7 +21,7 @@ function App() {
       <div className="contentConteiner">
         <Navigation />
         <Header />
-        <LangSettings setSelectedPath={setSelectedPath} />
+        <LangSettings setSelectedPath={setSelectedPath} selectedPath={selectPath} />
         <Search />
         <CardArea data={data} />
         <HelpArea />

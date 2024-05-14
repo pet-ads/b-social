@@ -1,26 +1,19 @@
-import { useState } from "react";
 import "./langSetting.css";
 import Brlogo from "/Images/Brlogo.png";
 
 interface ILangSettings {
+  selectedPath: string;
   setSelectedPath: React.Dispatch<React.SetStateAction<string>>;
 }
 
-export default function LangSettings({ setSelectedPath }: ILangSettings) {
-  const [selectedLang, setSelectedLang] = useState<string>("pt-br");
-
-  const handleClick = (lang: string) => {
-    setSelectedLang(lang);
-    setSelectedPath(lang);
-  };
-
+export default function LangSettings({ setSelectedPath, selectedPath }: ILangSettings) {
   return (
     <div className="conteiner">
       <div className="logoBtnConteiner">
-        <div className={`logo ${selectedLang === "pt-br" ? "selected" : ""}`} onClick={() => handleClick("pt-br")}>
+        <div className={`logo ${selectedPath === "pt-br" ? "selected" : ""}`} onClick={() => setSelectedPath("pt-br")}>
           <img className="logopic" src={Brlogo} alt="logo bandeira do Brasil" />
         </div>
-        <div className={`logo ${selectedLang === "en" ? "selected" : ""}`} onClick={() => handleClick("en")}>
+        <div className={`logo ${selectedPath === "en" ? "selected" : ""}`} onClick={() => setSelectedPath("en")}>
           IconUSA
         </div>
       </div>
