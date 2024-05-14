@@ -1,0 +1,19 @@
+.conteiner {
+    width: 88%;
+    margin-top: 20px;
+    display: flex;
+    justify-items: center;
+}
+
+.logoBtnConteiner {
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.logo {
+    cursor: pointer;
+}
