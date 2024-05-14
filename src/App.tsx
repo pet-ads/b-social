@@ -5,6 +5,7 @@ import Header from "./components/Header/Header";
 import HelpArea from "./components/HelpArea/HelpArea";
 import Navigation from "./components/nav/navigation";
 import Search from "./components/search/Search";
+import LangSettings from "./components/Language/language";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <div className="contentConteiner">
         <Navigation />
         <Header />
+        <LangSettings />
         <Search />
         <CardArea />
         <HelpArea />
