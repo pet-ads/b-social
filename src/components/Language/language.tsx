@@ -9,7 +9,7 @@ interface ILangSettings {
 
 export default function LangSettings({ setSelectedPath, selectedPath }: ILangSettings) {
   return (
-    <div className="conteiner">
+    <div className="conteiner-lang">
       <div className="logoBtnConteiner">
         <div className={`logo ${selectedPath === "pt-br" ? "selected" : ""}`} onClick={() => setSelectedPath("pt-br")}>
           <img className="logopic" src={Brlogo} alt="logo bandeira do Brasil" />
