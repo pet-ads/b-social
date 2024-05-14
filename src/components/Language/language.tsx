@@ -1,4 +1,7 @@
-export default function LangSettings() {
+interface ILangSettings {
+  setSelectedPath: React.Dispatch<React.SetStateAction<string>>;
+}
+export default function LangSettings({ setSelectedPath }: ILangSettings) {
   return (
     <div
       style={{
@@ -17,8 +20,8 @@ export default function LangSettings() {
           gap: "10px",
         }}
       >
-        <div>IconBr</div>
-        <div>IconUSA</div>
+        <div onClick={() => setSelectedPath("pt-br")}>IconBr</div>
+        <div onClick={() => setSelectedPath("en")}>IconUSA</div>
       </div>
     </div>
   );
