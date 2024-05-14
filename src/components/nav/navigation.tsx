@@ -1,11 +1,15 @@
 import "./nav.css";
-import { useState } from "react";
+import React, { useState } from "react";
 import useWindowWidth from "../../hooks/useWindowWidth";
 import MobileNav from "./subcomponents/Mobile/mobileNav";
 import MobileLinks from "./subcomponents/Mobile/mobileLinks";
 import DefaultLinks from "./subcomponents/Default/defaultLinks";
-
-export default function Navigation() {
+import LangSettings from "../Language/language";
+interface SelectPath {
+  setSelectedPath: React.Dispatch<React.SetStateAction<string>>;
+  selectedPath: string;
+}
+export default function Navigation({ setSelectedPath, selectedPath }: SelectPath) {
   const windowWidth = useWindowWidth();
   const [clicked, setClicked] = useState(false);
 
@@ -19,6 +23,8 @@ export default function Navigation() {
         <div className="navigationButtons">
           {windowWidth <= 809 ? <MobileNav clicked={clicked} setClicked={setClicked} /> : <DefaultLinks />}
         </div>
+        <LangSettings setSelectedPath={setSelectedPath} selectedPath={selectedPath} />
+
         <div className="divider"></div>
       </nav>
       {windowWidth <= 809 && clicked ? <MobileLinks /> : " "}

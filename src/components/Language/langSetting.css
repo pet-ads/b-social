@@ -1,6 +1,5 @@
-.conteiner {
-    width: 88%;
-    margin-top: 20px;
+.conteiner-lang {
+    width: 60%;
     display: flex;
     justify-content: flex-end;
 }
@@ -23,5 +22,5 @@
 }
 
 .logopic {
-    width: 40px;
+    width: 25px;
 }
