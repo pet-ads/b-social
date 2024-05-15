@@ -13,11 +13,11 @@ export default function LangSettings({ setSelectedPath, selectedPath }: ILangSet
       <div className="logoBtnContainer">
         {selectedPath === "en" ? (
           <div className="logo selected" onClick={() => setSelectedPath("pt-br")}>
-            <img className="logopic" src={EUALogo} alt="logo bandeira dos EUA" />
+            <img className="logopic-eua" src={EUALogo} alt="logo bandeira dos EUA" />
           </div>
         ) : (
           <div className="logo" onClick={() => setSelectedPath("en")}>
-            <img className="logopic" src={Brlogo} alt="logo bandeira do Brasil" />
+            <img className="logopic-br" src={Brlogo} alt="logo bandeira do Brasil" />
           </div>
         )}
       </div>
