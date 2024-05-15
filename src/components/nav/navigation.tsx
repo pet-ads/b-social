@@ -20,11 +20,19 @@ export default function Navigation({ setSelectedPath, selectedPath }: SelectPath
         style={windowWidth <= 809 ? { justifyContent: "space-between" } : { justifyContent: "flex-start" }}
       >
         <div className="textConteiner">Beaba</div>
-        <div className="navigationButtons">
-          {windowWidth <= 809 ? <MobileNav clicked={clicked} setClicked={setClicked} /> : <DefaultLinks />}
-        </div>
-        <LangSettings setSelectedPath={setSelectedPath} selectedPath={selectedPath} />
-
+        {windowWidth <= 809 ? (
+          <div className="navigationButtons">
+            <LangSettings setSelectedPath={setSelectedPath} selectedPath={selectedPath} />{" "}
+            <MobileNav clicked={clicked} setClicked={setClicked} />{" "}
+          </div>
+        ) : (
+          <>
+            <div className="navigationButtons">
+              <DefaultLinks />
+            </div>
+            <LangSettings setSelectedPath={setSelectedPath} selectedPath={selectedPath} />
+          </>
+        )}
         <div className="divider"></div>
       </nav>
       {windowWidth <= 809 && clicked ? <MobileLinks /> : " "}
