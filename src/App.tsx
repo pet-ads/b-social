@@ -22,7 +22,7 @@ function App() {
         <Navigation />
         <Header />
         <LangSettings setSelectedPath={setSelectedPath} selectedPath={selectPath} />
-        <Search />
+        <Search data={data} />
         <CardArea data={data} />
         <HelpArea />
         <Footer />
