@@ -1,7 +1,8 @@
 .conteiner-lang {
-    width: 57%;
+    width: 55.1vw;
     display: flex;
     justify-content: flex-end;
+
 }
 
 .logoBtnConteiner {
@@ -9,11 +10,12 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-items: flex-end;
     gap: 12px;
 }
 
 .logo {
+
     cursor: pointer;
 }
 
@@ -29,4 +31,29 @@
 .logopic-br {
     margin-top: 5px;
     width: 30px;
+}
+
+@media screen and (max-width: 1400px) {
+
+    .conteiner-lang {
+        width: 57vw;
+
+    }
+}
+
+@media screen and (min-width: 810px) and (max-width: 1300px) {
+
+    .conteiner-lang {
+        width: 58vw;
+
+    }
+}
+
+@media screen and (max-width: 809px) {
+
+    .conteiner-lang {
+        width: 60%;
+
+
+    }
 }

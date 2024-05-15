@@ -17,7 +17,11 @@ export default function Navigation({ setSelectedPath, selectedPath }: SelectPath
     <div className="NavConteiner">
       <nav
         className="navigation"
-        style={windowWidth <= 809 ? { justifyContent: "space-between" } : { justifyContent: "flex-start" }}
+        style={
+          windowWidth <= 809
+            ? { justifyContent: "space-between" }
+            : { justifyContent: "flex-start", alignContent: "center" }
+        }
       >
         <div className="textConteiner">Beaba</div>
         {windowWidth <= 809 ? (
