@@ -1,5 +1,5 @@
 .conteiner-lang {
-    width: 55.1vw;
+    width: 54vw;
     display: flex;
     justify-content: flex-end;
 
@@ -32,6 +32,15 @@
     margin-top: 5px;
     width: 30px;
 }
+
+@media screen and (max-width: 1920px) {
+
+    .conteiner-lang {
+        width: 55.1vw;
+
+    }
+}
+
 
 @media screen and (max-width: 1400px) {
 

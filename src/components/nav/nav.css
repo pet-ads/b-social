@@ -2,7 +2,7 @@
     flex: none;
     height: auto;
     position: relative;
-    width: 100%;
+    width: 100vw;
 }
 
 .navigation {
