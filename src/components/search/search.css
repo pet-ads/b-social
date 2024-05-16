@@ -78,7 +78,7 @@
 #modalBackground {
     position: fixed;
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.593);
@@ -98,6 +98,7 @@
     box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 40px 0px;
     max-height: min(496px, -30px + 100vh);
     padding: 0px;
+    margin-top: 150px;
 }
 
 .searchBar {
@@ -163,6 +164,7 @@
         display: flex;
         flex-direction: column;
         box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 40px 0px;
+        margin-top: 0px;
     }
     
     .searchBar {
