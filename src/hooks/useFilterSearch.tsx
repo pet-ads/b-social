@@ -1,5 +1,3 @@
-import { useEffect } from "react";
-
 interface CardContentI {
     id: string;
     CardImg: string;

@@ -1,4 +1,4 @@
-import React, { ReactNode, useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./search.css";
 import { IoSearch } from "react-icons/io5";
 import useFilterSearch from "../../hooks/useFilterSearch";
