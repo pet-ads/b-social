@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import React, { ReactNode, useEffect, useRef, useState } from "react";
 import "./search.css";
 import { IoSearch } from "react-icons/io5";
 import useFilterSearch from "../../hooks/useFilterSearch";
@@ -19,7 +19,7 @@ interface iData {
 export default function Search({data}: iData) {
   const [isModalOpen, setModalOpen] = useState(false);
   const [inputValue, setInputValue] = useState("");
-  const inputRef = useRef(null);
+  const inputRef = useRef<HTMLInputElement>(null);
   const searchResult = useFilterSearch({data, inputValue});
 
   useEffect( () => {
@@ -32,12 +32,12 @@ export default function Search({data}: iData) {
       setModalOpen(true);
   }
 
-  function closeModal(event) {
-    if (event.target.id === 'modalBackground') 
+  function closeModal(event: React.MouseEvent<HTMLDivElement, MouseEvent>) {
+    if ((event.target as HTMLDivElement).id === 'modalBackground') 
       setModalOpen(false);
   }
 
-  function handleInputChange(event) {
+  function handleInputChange(event: React.ChangeEvent<HTMLInputElement>) {
     setInputValue(event.target.value);
   }
 
