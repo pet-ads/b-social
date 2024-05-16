@@ -9,6 +9,11 @@ interface CardContentI {
   CardTitle: string;
   CardText: string;
   bgColor: string;
+  CardExpandedText: string;
+  recommendation: string;
+  bgColorRecommendation: string;
+  theme: string;
+  bgColorTheme: string;
 }
 
 interface iData {
@@ -40,8 +45,12 @@ export default function CardArea({ data }: iData) {
         <Modal
           CardImg={selectedCard.CardImg}
           CardTitle={selectedCard.CardTitle}
-          CardText={selectedCard.CardText}
+          CardText={selectedCard.CardExpandedText}
           bgColor={selectedCard.bgColor}
+          recommendation={selectedCard.recommendation}
+          bgColorRecommendation={selectedCard.bgColorRecommendation}
+          theme={selectedCard.theme}
+          bgColorTheme={selectedCard.bgColorTheme}
           closeModal={() => setIsModalOpen(false)}
         />
       )}

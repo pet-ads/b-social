@@ -7,10 +7,15 @@ interface ModalCardProps {
   CardTitle: string;
   CardText: string;
   bgColor: string;
+  recommendation: string;
+  bgColorRecommendation: string;
+  theme: string;
+  bgColorTheme: string;
   closeModal: () => void;
 }
 
-export default function Modal({ CardImg, CardTitle, CardText, bgColor, closeModal }: ModalCardProps){
+export default function Modal({ CardImg, CardTitle, CardText, bgColor, 
+     recommendation, bgColorRecommendation,theme, bgColorTheme,closeModal }: ModalCardProps){
     useEffect(() => {
         document.body.style.overflow = 'hidden';
         return () => {
@@ -27,6 +32,10 @@ export default function Modal({ CardImg, CardTitle, CardText, bgColor, closeModa
                 CardTitle={CardTitle}
                 CardText={CardText}
                 bgColor={bgColor}
+                recommendation={recommendation}
+                bgColorRecommendation={bgColorRecommendation}
+                theme={theme}
+                bgColorTheme={bgColorTheme}
             />
           </div>
         </div>
