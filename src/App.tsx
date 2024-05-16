@@ -7,6 +7,7 @@ import Search from "./components/search/Search";
 import CardArea from "./components/Cards/CardArea";
 import HelpArea from "./components/HelpArea/HelpArea";
 import Navigation from "./components/nav/navigation";
+import LangSettings from "./components/Language/language";
 
 function App() {
   const URL_DATA_PTBR = "/data/dataPTBR.json";
@@ -20,7 +21,8 @@ function App() {
       <div className="contentConteiner">
         <Navigation setSelectedPath={setSelectedPath} selectedPath={selectPath} />
         <Header />
-        <Search />
+        <LangSettings setSelectedPath={setSelectedPath} selectedPath={selectPath} />
+        <Search data={data} />
         <CardArea data={data} />
         <HelpArea />
         <Footer />
