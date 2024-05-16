@@ -13,6 +13,19 @@
     width: 100%;
 }
 
+.PETSignature {
+    font-family: "Inter", "Inter Placeholder", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5em;
+    text-align: left;
+    color: rgb(230, 230, 230);
+}
+
+a {
+    color: white;
+}
+
 .copy {
     flex: none;
     height: auto;

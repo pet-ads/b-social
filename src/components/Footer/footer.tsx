@@ -6,6 +6,10 @@ export default function Footer() {
       <div className="copy">
         <p className="copyText">© Beaba org. 2023 </p>
       </div>
+      <p className="PETSignature">Desenvolvido com ♥ por 
+        <a href='http://petads.paginas.scl.ifsp.edu.br/'> PET/ADS</a> @
+        <a href='https://scl.ifsp.edu.br' rel='noreferrer' target='_blank'>IFSP São Carlos.</a>
+      </p>
       <div className="socialMediaConteiner">
         <div className="instaConteiner">
           <p className="socialText"> Instagram</p>
@@ -14,6 +18,7 @@ export default function Footer() {
           <p className="socialText"> Email</p>
         </div>
       </div>
+      
     </div>
   );
 }
