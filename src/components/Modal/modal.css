@@ -22,11 +22,14 @@
     font-weight: bold;
     font-size: xx-large;
     cursor: pointer;
-
-
+}
+.close-modal{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 10px;
+    z-index: 10;
 }
 .modal-content{
-    display: flex;
-    justify-content: center;
-    gap: 8px;
+    box-sizing: border-box;
 }
+

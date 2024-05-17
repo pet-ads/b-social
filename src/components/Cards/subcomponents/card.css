@@ -124,7 +124,20 @@
     color: rgb(96, 58, 23);
 
 }
+.recommendation-theme-container{
+    outline: none;
+    display: flex;
+    gap: 15px;
+}
 
+.recommendation, .theme{
+    border-radius: 10px;
+    font-size: 16px;
+    margin: 20px 0px;
+    padding: 5px;
+    border: none;
+       
+}
 @media (max-width: 809px) {
 
     .Card {

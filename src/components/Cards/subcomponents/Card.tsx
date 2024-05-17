@@ -31,7 +31,7 @@ export default function Card({ CardImg, CardTitle, CardText, bgColor, recommenda
         </div>
         {recommendation && theme && (
           <div className="recommendation-theme-container">
-            <button className="recommendation" style={{ backgroundColor: bgColorRecommendation, cursor: 'pointer' }}>
+            <button className="recommendation" style={{ backgroundColor: bgColorRecommendation}}>
               {recommendation}
             </button>
             <button className="theme" style={{ backgroundColor: bgColorTheme, cursor: 'pointer' }}>
