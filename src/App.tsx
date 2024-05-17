@@ -20,7 +20,7 @@ function App() {
       <div className="contentConteiner">
         <Navigation setSelectedPath={setSelectedPath} selectedPath={selectPath} />
         <Header />
-        <Search />
+        <Search data={data} />
         <CardArea data={data} />
         <HelpArea />
         <Footer />
