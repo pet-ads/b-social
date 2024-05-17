@@ -27,6 +27,18 @@ export default function CardArea({ data }: iData) {
     setSelectedCard(card);
     setIsModalOpen(true);
   };
+
+  const openModalByTitle = (title: string) => {
+    setIsModalOpen(false);
+    const card = data.find(card => card.CardTitle === title);
+    if (card) {
+      setTimeout(() => {
+        setSelectedCard(card);
+        setIsModalOpen(true);
+      }, 2);
+    }
+  };
+
   return (
     <div className="cardArea">
       <div className="CardRow">
@@ -52,6 +64,7 @@ export default function CardArea({ data }: iData) {
           theme={selectedCard.theme}
           bgColorTheme={selectedCard.bgColorTheme}
           closeModal={() => setIsModalOpen(false)}
+          onRecommendationClick={openModalByTitle}
         />
       )}
     </div>

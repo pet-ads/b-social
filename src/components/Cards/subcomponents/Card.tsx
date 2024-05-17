@@ -10,8 +10,9 @@ interface CardContentI {
   theme?: string;
   bgColorTheme?: string;
   onClick?: () => void;
+  onRecommendationClick?: (title:string) => void
 }
-export default function Card({ CardImg, CardTitle, CardText, bgColor, recommendation, bgColorRecommendation, theme, bgColorTheme, onClick}: CardContentI) {
+export default function Card({ CardImg, CardTitle, CardText, bgColor, recommendation, bgColorRecommendation, theme, bgColorTheme, onClick, onRecommendationClick}: CardContentI) {
 
   return (
     <div className="Card">
@@ -31,11 +32,11 @@ export default function Card({ CardImg, CardTitle, CardText, bgColor, recommenda
         </div>
         {recommendation && theme && (
           <div className="recommendation-theme-container">
-            <button className="recommendation" style={{ backgroundColor: bgColorRecommendation}}>
-              {recommendation}
-            </button>
-            <button className="theme" style={{ backgroundColor: bgColorTheme, cursor: 'pointer' }}>
+             <button className="theme" style={{ backgroundColor: bgColorTheme }}>
               {theme}
+            </button>
+            <button className="recommendation" style={{ backgroundColor: bgColorRecommendation, cursor: 'pointer'}} onClick={() => onRecommendationClick && onRecommendationClick(recommendation)}>
+              {recommendation}
             </button>
           </div>
         )}
