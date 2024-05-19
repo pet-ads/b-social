@@ -1,33 +1,51 @@
 nav {
-    background-color: #333;
+    background-color: lightgray;
+    border-radius: 8px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
 }
 
 nav li {
     display: inline-block;
 }
 
-nav li a {
+nav li p {
     display: inline-block;
     color: white;
     text-decoration: none;
     padding: 15px;
 }
 
-nav li a:hover {
-    background-color: red;
+nav li div img {
+    text-decoration: none;
+    padding: 15px;
 }
+
 
 .dropdown-menu {
     position: absolute;
+    background-color: #fff;
     box-shadow: 0 0 2px black;
     display: none;
 }
 
-.dropdown-menu a {
-    display: block;
-    color: black;
+.flag-conteier {
+    display: flex;
+    flex-direction: column;
+    gap: .5px;
+    margin-bottom: 2px;
+    justify-self: center;
+
 }
 
-.dropdown:hover .dropdown-menu {
+.dropdown-menu img {
     display: block;
+}
+
+.flag {
+    padding: 10px;
+    width: 50px;
 }
