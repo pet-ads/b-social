@@ -1,10 +1,10 @@
 nav {
-    background-color: lightgray;
-    border-radius: 8px;
-    width: 80px;
     display: flex;
     justify-content: center;
     align-content: center;
+    box-shadow: 0 0 1px black;
+    border-radius: 2px;
+    height: 100%;
 
 }
 
@@ -28,8 +28,10 @@ nav li div img {
 .dropdown-menu {
     position: absolute;
     background-color: #fff;
-    box-shadow: 0 0 2px black;
+    box-shadow: 0 0 1px black;
+    border-radius: 2px;
     display: none;
+    z-index: 1;
 }
 
 .flag-conteier {

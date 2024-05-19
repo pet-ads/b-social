@@ -8,7 +8,7 @@ interface CardContentI {
   bgColor: string;
 }
 
-export default function useFetchData(pathToData: string, selectPath: string): CardContentI[] {
+export default function useFetchData(pathToData: string): CardContentI[] {
   const [data, setData] = useState<CardContentI[]>([]);
 
   useEffect(() => {
@@ -25,7 +25,7 @@ export default function useFetchData(pathToData: string, selectPath: string): Ca
       }
     };
     fetchData();
-  }, [pathToData, selectPath]);
+  }, [pathToData]);
 
   return data;
 }

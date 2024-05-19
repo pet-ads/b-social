@@ -6,16 +6,20 @@ interface Language {
   pathToLogo: string;
   pathToData: string;
 }
+interface DropDown {
+  selectedPath: React.Dispatch<React.SetStateAction<string>>;
+}
 
 const languages: Language[] = languagesJson.languages;
 
-export default function Dropdown() {
+export default function Dropdown({ selectedPath }: DropDown) {
   const [isOpen, setIsOpen] = useState(false);
-  const [selectedLanguage, setSelectedLanguage] = useState<Language | null>(null);
+  const [selectedLanguage, setSelectedLanguage] = useState<Language | null>(languages[0] || null);
 
   const handleLanguageClick = (lang: Language) => {
     setSelectedLanguage(lang);
-    setIsOpen(false); // Fechar o dropdown ao selecionar uma bandeira
+    setIsOpen(false);
+    selectedPath(lang.pathToData);
   };
 
   return (
@@ -27,11 +31,7 @@ export default function Dropdown() {
             setIsOpen(!isOpen);
           }}
         >
-          {selectedLanguage ? (
-            <img className={"flag"} src={selectedLanguage.pathToLogo} alt="Selected flag" />
-          ) : (
-            "Selecionar idioma"
-          )}
+          <img className="flag" src={selectedLanguage ? selectedLanguage.pathToLogo : ""} alt="Selected flag" />
 
           <div className="dropdown-menu" style={{ display: isOpen ? "block" : "none" }}>
             <div className="flag-container">
