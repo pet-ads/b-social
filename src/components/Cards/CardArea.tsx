@@ -1,36 +1,36 @@
 import "./cardArea.css";
 import Card from "./subcomponents/Card";
-import { useState } from 'react';
+import { useState } from "react";
 import Modal from "../Modal/Modal";
 
-interface CardContentI {
+interface CardProps {
   id: string;
   CardImg: string;
   CardTitle: string;
   CardText: string;
   bgColor: string;
-  CardExpandedText: string;
-  recommendation: string;
-  bgColorRecommendation: string;
-  theme: string;
-  bgColorTheme: string;
+  CardExpandedText?: string;
+  recommendation?: string;
+  bgColorRecommendation?: string;
+  theme?: string;
+  bgColorTheme?: string;
 }
 
 interface iData {
-  data: CardContentI[];
+  data: CardProps[];
 }
 
 export default function CardArea({ data }: iData) {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedCard, setSelectedCard] = useState<CardContentI | null>(null);
-  const openModal = (card: CardContentI) => {
+  const [selectedCard, setSelectedCard] = useState<CardProps | null>(null);
+  const openModal = (card: CardProps) => {
     setSelectedCard(card);
     setIsModalOpen(true);
   };
 
   const openModalByTitle = (title: string) => {
     setIsModalOpen(false);
-    const card = data.find(card => card.CardTitle === title);
+    const card = data.find((card) => card.CardTitle === title);
     if (card) {
       setTimeout(() => {
         setSelectedCard(card);
