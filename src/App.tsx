@@ -9,16 +9,13 @@ import HelpArea from "./components/HelpArea/HelpArea";
 import Navigation from "./components/nav/navigation";
 
 function App() {
-  const URL_DATA_PTBR = "/data/dataPTBR.json";
-  const URL_DATA_EN = "/data/dataEn.json";
-  const [selectPath, setSelectedPath] = useState("pt-br");
-  const pathToData = selectPath === "pt-br" ? URL_DATA_PTBR : URL_DATA_EN;
-  const data = useFetchData(pathToData, selectPath);
+  const [pathToData, setPathToData] = useState("/data/dataPTBR.json");
+  const data = useFetchData(pathToData);
 
   return (
     <div className="main">
       <div className="contentConteiner">
-        <Navigation setSelectedPath={setSelectedPath} selectedPath={selectPath} />
+        <Navigation setSelectedPath={setPathToData} />
         <Header />
         <Search data={data} />
         <CardArea data={data} />
