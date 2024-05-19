@@ -16,9 +16,10 @@
 .general-conteiner {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     gap: 15px;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .PETSignature {
