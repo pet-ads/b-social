@@ -24,14 +24,14 @@ export default function Dropdown({ selectedPath }: DropDown) {
 
   return (
     <div className="dropdown-conteiner">
-      <ul>
-        <li
+      <div>
+        <div
           className="dropdown"
           onClick={() => {
             setIsOpen(!isOpen);
           }}
         >
-          <img className="flag marked" src={selectedLanguage ? selectedLanguage.pathToLogo : ""} alt="Selected flag" />
+          <img className="marked" src={selectedLanguage ? selectedLanguage.pathToLogo : ""} alt="Selected flag" />
 
           <div className="dropdown-menu" style={{ display: isOpen ? "block" : "none" }}>
             <div className="flag-container">
@@ -46,8 +46,8 @@ export default function Dropdown({ selectedPath }: DropDown) {
               ))}
             </div>
           </div>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
   );
 }
