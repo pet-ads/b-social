@@ -1,6 +1,6 @@
 import "./search.css"
 
-interface CardContentI {
+interface CardContent{
     id: string;
     CardImg: string;
     CardTitle: string;
@@ -8,13 +8,13 @@ interface CardContentI {
     bgColor: string;
   }
 
-  interface iData {
-    data: CardContentI[];
+  interface Data {
+    data: CardContent[];
   }
 
-export default function SearchResult({data}: iData) {
+export default function SearchResult({data}: Data) {
     return (
-        <div className="resultContainer">
+        <div className="result-container">
             <ul>
             {data.map((card) => (
                 <li key={card.id} className="result">

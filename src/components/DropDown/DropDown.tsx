@@ -1,5 +1,5 @@
-import { useState } from "react";
 import "./dropdown.css";
+import { useState } from "react";
 import languagesJson from "../../../public/data/languages.json";
 
 interface Language {

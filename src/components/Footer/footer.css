@@ -22,7 +22,7 @@
     flex-wrap: wrap;
 }
 
-.PETSignature {
+.pet-signature {
     font-family: Inter, Inter Placeholder, sans-serif;
     font-size: 14px;
     font-weight: 500;
@@ -47,7 +47,7 @@ a {
     width: auto;
 }
 
-.copyText {
+.copy-text {
     font-family: "Inter", "Inter Placeholder", sans-serif;
     font-size: 14px;
     font-weight: 500;
@@ -56,7 +56,7 @@ a {
     color: rgb(230, 230, 230);
 }
 
-.socialMediaConteiner {
+.social-media-conteiner {
     align-items: flex-start;
     display: flex;
     flex: none;
@@ -71,7 +71,7 @@ a {
     width: min-content;
 }
 
-.instaConteiner .mailConteiner {
+.insta-conteiner .mail-conteiner {
     flex: none;
     height: auto;
     position: relative;
@@ -79,7 +79,7 @@ a {
     width: auto;
 }
 
-.socialText {
+.social-text {
     font-family: Inter, Inter Placeholder, sans-serif;
     font-size: 14px;
     font-weight: 500;

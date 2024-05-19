@@ -1,4 +1,4 @@
-.cardArea {
+.card-area {
     align-content: center;
     align-items: center;
     background-color: #fff;
@@ -14,7 +14,7 @@
     width: 100%;
 }
 
-.CardRow {
+.card-row {
     align-content: center;
     align-items: center;
     display: flex;
@@ -32,7 +32,7 @@
 }
 
 @media (max-width: 809px) {
-    .cardArea {
+    .card-area {
         padding: 60px 20px;
     }
 }

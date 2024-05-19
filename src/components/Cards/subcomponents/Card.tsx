@@ -1,5 +1,5 @@
 import "./card.css";
-interface CardContentI {
+interface CardContent {
   id?: string;
   CardImg: string;
   CardTitle: string;
@@ -24,21 +24,21 @@ export default function Card({
   bgColorTheme,
   onClick,
   onRecommendationClick,
-}: CardContentI) {
+}: CardContent) {
   return (
-    <div className="Card">
+    <div className="card">
       <a className="anchor" style={{ backgroundColor: `${bgColor}`, cursor: "pointer" }} onClick={onClick}>
-        <div className="imgArea">
-          <div className="imgConteiner">
-            <img className="CardImg" decoding="async" src={CardImg} />
+        <div className="img-area">
+          <div className="img-conteiner">
+            <img className="card-img" decoding="async" src={CardImg} />
           </div>
         </div>
       </a>
-      <div className="textArea">
-        <div className="cardTitle">
+      <div className="text-area">
+        <div className="card-title">
           <h3 className="h3">{CardTitle}</h3>
         </div>
-        <div className="cardText">
+        <div className="card-text">
           <p className="info">{CardText}</p>
         </div>
         {recommendation && theme && (

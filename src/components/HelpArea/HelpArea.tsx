@@ -1,15 +1,15 @@
 import "./help.css";
 export default function HelpArea() {
   return (
-    <div className="wantToHelp">
+    <div className="want-to-help">
       <div className="conteiner">
-        <div className="HelpText">
-          <h2 className="helpH2">Quero Ajudar!</h2>
+        <div className="help-text">
+          <h2 className="help-h2">Quero Ajudar!</h2>
         </div>
-        <div className="btnHelpConteiner">
+        <div className="btn-help-conteiner">
           <button className="btn">
-            <div className="btnTextConteiner">
-              <p className="btnText">Comece aqui</p>
+            <div className="btn-text-conteiner">
+              <p className="btn-text">Comece aqui</p>
             </div>
           </button>
         </div>

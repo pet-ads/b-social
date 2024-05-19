@@ -1,10 +1,10 @@
-import React, { useEffect, useRef, useState } from "react";
 import "./search.css";
+import SearchResult from "./SearchResult";
 import { IoSearch } from "react-icons/io5";
 import useFilterSearch from "../../hooks/useFilterSearch";
-import SearchResult from "./SearchResult";
+import React, { useEffect, useRef, useState } from "react";
 
-interface CardContentI {
+interface CardContent{
   id: string;
   CardImg: string;
   CardTitle: string;
@@ -12,11 +12,11 @@ interface CardContentI {
   bgColor: string;
 }
 
-interface iData {
-  data: CardContentI[];
+interface Data {
+  data: CardContent[];
 }
 
-export default function Search({ data }: iData) {
+export default function Search({ data }: Data) {
   const [isModalOpen, setModalOpen] = useState(false);
   const [inputValue, setInputValue] = useState("");
   const inputRef = useRef<HTMLInputElement>(null);
@@ -33,7 +33,7 @@ export default function Search({ data }: iData) {
   }
 
   function closeModal(event: React.MouseEvent<HTMLDivElement, MouseEvent>) {
-    if ((event.target as HTMLDivElement).id === "modalBackground") setModalOpen(false);
+    if ((event.target as HTMLDivElement).id === "modal-background") setModalOpen(false);
   }
 
   function handleInputChange(event: React.ChangeEvent<HTMLInputElement>) {
@@ -42,12 +42,12 @@ export default function Search({ data }: iData) {
 
   return (
     <>
-      <div className="searchArea">
-        <div className="searchConteiner" onClick={OpenModal}>
+      <div className="search-area">
+        <div className="search-conteiner" onClick={OpenModal}>
           <div className="conteiner">
-            <div className="buttonConteiner">
-              <button className="searchBtn" aria-label="Search Icon">
-                <IoSearch className="searchIcon" />
+            <div className="button-conteiner">
+              <button className="search-btn" aria-label="Search Icon">
+                <IoSearch className="search-icon" />
               </button>
             </div>
           </div>
@@ -56,10 +56,10 @@ export default function Search({ data }: iData) {
 
       {isModalOpen && (
         <>
-          <div id="modalBackground" onClick={closeModal}>
+          <div id="modal-background" onClick={closeModal}>
             <div className="modal">
-              <div className="searchBar">
-                <IoSearch className="searchIconModal" />
+              <div className="search-bar">
+                <IoSearch className="search-icon-modal" />
                 <input
                   type="text"
                   id="searchInput"

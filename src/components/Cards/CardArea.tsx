@@ -1,7 +1,7 @@
 import "./cardArea.css";
-import Card from "./subcomponents/Card";
 import { useState } from "react";
 import Modal from "../Modal/Modal";
+import Card from "./subcomponents/Card";
 
 interface CardProps {
   id: string;
@@ -16,11 +16,11 @@ interface CardProps {
   bgColorTheme?: string;
 }
 
-interface iData {
+interface Data {
   data: CardProps[];
 }
 
-export default function CardArea({ data }: iData) {
+export default function CardArea({ data }: Data) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedCard, setSelectedCard] = useState<CardProps | null>(null);
   const openModal = (card: CardProps) => {
@@ -40,8 +40,8 @@ export default function CardArea({ data }: iData) {
   };
 
   return (
-    <div className="cardArea">
-      <div className="CardRow">
+    <div className="card-area">
+      <div className="card-row">
         {data.map((item) => (
           <Card
             key={item.id}

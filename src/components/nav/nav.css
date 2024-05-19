@@ -1,4 +1,4 @@
-.NavConteiner {
+.nav-conteiner {
     flex: none;
     height: auto;
     position: relative;
@@ -23,7 +23,7 @@
     z-index: 1;
 }
 
-.textConteiner {
+.text-conteiner {
     align-items: center;
     display: flex;
     flex: none;
@@ -38,7 +38,7 @@
     width: min-content;
 }
 
-.navigationButtons {
+.navigation-buttons {
     align-content: center;
     align-items: center;
     display: flex;

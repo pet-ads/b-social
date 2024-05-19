@@ -5,11 +5,11 @@ export default function Footer() {
     <div className="footer">
       <div className="general-conteiner">
         <div className="copy">
-          <p className="copyText">© Beaba org. 2023 </p>
+          <p className="copy-text">© Beaba org. 2023 </p>
         </div>
 
         <div>
-          <p className="PETSignature">
+          <p className="pet-signature">
             Desenvolvido com ♥ por
             <a href="http://petads.paginas.scl.ifsp.edu.br/"> PET/ADS</a> @
             <a href="https://scl.ifsp.edu.br" rel="noreferrer" target="_blank">
@@ -18,12 +18,12 @@ export default function Footer() {
           </p>
         </div>
 
-        <div className="socialMediaConteiner">
-          <div className="instaConteiner">
-            <p className="socialText"> Instagram</p>
+        <div className="social-media-conteiner">
+          <div className="insta-conteiner">
+            <p className="social-text"> Instagram</p>
           </div>
-          <div className="mailConteiner">
-            <p className="socialText"> Email</p>
+          <div className="mail-conteiner">
+            <p className="social-text"> Email</p>
           </div>
         </div>
       </div>

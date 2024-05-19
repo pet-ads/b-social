@@ -1,4 +1,4 @@
-.wantToHelp {
+.want-to-help {
     align-items: center;
     background-color: #f8f8f8;
     display: flex;
@@ -29,7 +29,7 @@
     width: 1000px;
 }
 
-.HelpText {
+.help-text {
     flex: none;
     height: auto;
     position: relative;
@@ -40,7 +40,7 @@
 
 }
 
-.helpH2 {
+.help-h2 {
     font-family: Inter, Inter Placeholder, sans-serif;
     font-size: 32px;
     font-weight: 700;
@@ -51,7 +51,7 @@
     flex: none;
 }
 
-.btnHelpConteiner {
+.btn-help-conteiner {
     align-items: center;
     display: flex;
     flex: none;
@@ -85,7 +85,7 @@
     cursor: pointer;
 }
 
-.btnTextConteiner {
+.btn-text-conteiner {
     flex: none;
     height: auto;
     overflow: visible;
@@ -94,7 +94,7 @@
     width: auto;
 }
 
-.btnText {
+.btn-text {
 
     font-family: Inter, Inter Placeholder, sans-serif;
     font-size: 14px;

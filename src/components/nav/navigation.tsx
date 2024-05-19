@@ -1,10 +1,10 @@
 import "./nav.css";
 import React, { useState } from "react";
+import DropDown from "../DropDown/DropDown";
 import useWindowWidth from "../../hooks/useWindowWidth";
 import MobileNav from "./subcomponents/Mobile/mobileNav";
 import MobileLinks from "./subcomponents/Mobile/mobileLinks";
 import DefaultLinks from "./subcomponents/Default/defaultLinks";
-import DropDown from "../DropDown/DropDown";
 
 interface SelectPath {
   setSelectedPath: React.Dispatch<React.SetStateAction<string>>;
@@ -14,7 +14,7 @@ export default function Navigation({ setSelectedPath }: SelectPath) {
   const [clicked, setClicked] = useState(false);
 
   return (
-    <div className="NavConteiner">
+    <div className="nav-conteiner">
       <nav
         className="navigation"
         style={
@@ -23,21 +23,18 @@ export default function Navigation({ setSelectedPath }: SelectPath) {
             : { justifyContent: "flex-start", alignContent: "center" }
         }
       >
-        <div className="textConteiner">Beaba</div>
+        <div className="text-conteiner">Beaba</div>
         {windowWidth <= 809 ? (
-          <div className="navigationButtons">
-            {/* <LangSettings setSelectedPath={setSelectedPath} selectedPath={selectedPath} />{" "}
-             */}
+          <div className="navigation-buttons">
             <DropDown selectedPath={setSelectedPath} />
             <MobileNav clicked={clicked} setClicked={setClicked} />{" "}
           </div>
         ) : (
           <>
-            <div className="navigationButtons">
+            <div className="navigation-buttons">
               <DefaultLinks />
             </div>
             <DropDown selectedPath={setSelectedPath} />
-            {/* <LangSettings setSelectedPath={setSelectedPath} selectedPath={selectedPath} />*/}
           </>
         )}
 

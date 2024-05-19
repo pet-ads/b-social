@@ -18,14 +18,15 @@
 }
 
 .link p {
-    font-family: var(--framer-font-family, Inter, Inter Placeholder, sans-serif);
-    font-style: var(--framer-font-style, normal);
-    font-weight: var(--framer-font-weight, 400);
-    color: var(--framer-text-color, #000);
-    font-size: calc(var(--framer-font-size, 16px) * var(--framer-font-size-scale, 1));
-    letter-spacing: var(--framer-letter-spacing, 0);
-    text-transform: var(--framer-text-transform, none);
-    text-decoration: var(--framer-text-decoration, none);
-    line-height: var(--framer-line-height, 1.2em);
-    text-align: var(--framer-text-alignment, start);
+    font-family: Inter, Inter Placeholder, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #000;
+    font-size: 16px;
+    letter-spacing: ng, 0;
+    text-transform: rm, none;
+    text-decoration: ion, none;
+    line-height: 1.2em;
+    text-align: nt, start;
+    cursor: pointer;
 }
