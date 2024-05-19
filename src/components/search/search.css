@@ -2,7 +2,6 @@
     background-color: #fff;
     flex: none;
     height: 92px;
-    overflow: hidden;
     position: relative;
     width: 1202px;
 }
@@ -66,7 +65,8 @@
     padding: 0;
 }
 
-.searchIcon, .searchIconModal {
+.searchIcon,
+.searchIconModal {
     width: 24px;
     height: 24px;
 }
@@ -147,14 +147,14 @@
     #modalBackground {
         position: fixed;
         display: flex;
-        align-items:flex-start ;
+        align-items: flex-start;
         justify-content: center;
         z-index: 1;
         background-color: rgba(0, 0, 0, 0.8);
         width: 100vw;
         height: 100vh;
     }
-    
+
     .modal {
         will-change: transform;
         background-color: rgb(255, 255, 255);
@@ -166,7 +166,7 @@
         box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 40px 0px;
         margin-top: 0px;
     }
-    
+
     .searchBar {
         display: inline-flex;
         align-items: center;

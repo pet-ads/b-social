@@ -16,32 +16,31 @@ interface iData {
   data: CardContentI[];
 }
 
-export default function Search({data}: iData) {
+export default function Search({ data }: iData) {
   const [isModalOpen, setModalOpen] = useState(false);
   const [inputValue, setInputValue] = useState("");
   const inputRef = useRef<HTMLInputElement>(null);
-  const searchResult = useFilterSearch({data, inputValue});
+  const searchResult = useFilterSearch({ data, inputValue });
 
-  useEffect( () => {
+  useEffect(() => {
     if (isModalOpen) {
       inputRef.current?.focus();
     }
-  })
+  });
 
   function OpenModal() {
-      setModalOpen(true);
+    setModalOpen(true);
   }
 
   function closeModal(event: React.MouseEvent<HTMLDivElement, MouseEvent>) {
-    if ((event.target as HTMLDivElement).id === 'modalBackground') 
-      setModalOpen(false);
+    if ((event.target as HTMLDivElement).id === "modalBackground") setModalOpen(false);
   }
 
   function handleInputChange(event: React.ChangeEvent<HTMLInputElement>) {
     setInputValue(event.target.value);
   }
 
-  return ( 
+  return (
     <>
       <div className="searchArea">
         <div className="searchConteiner" onClick={OpenModal}>
@@ -56,28 +55,26 @@ export default function Search({data}: iData) {
       </div>
 
       {isModalOpen && (
-          <>
-            <div id="modalBackground" onClick={closeModal}>
-                <div className="modal">
-                    <div className="searchBar">
-                      <IoSearch className="searchIconModal" />
-                      <input type="text" id="searchInput" className="input"
-                        placeholder="Search..."
-                        value={inputValue}
-                        onChange={handleInputChange}
-                        ref={inputRef}
-                      />
-                    </div>     
-                    {inputValue ? 
-                        <SearchResult data={searchResult}/>
-                        :
-                        <></>
-                    } 
-                       
-                </div>
+        <>
+          <div id="modalBackground" onClick={closeModal}>
+            <div className="modal">
+              <div className="searchBar">
+                <IoSearch className="searchIconModal" />
+                <input
+                  type="text"
+                  id="searchInput"
+                  className="input"
+                  placeholder="Search..."
+                  value={inputValue}
+                  onChange={handleInputChange}
+                  ref={inputRef}
+                />
+              </div>
+              {inputValue ? <SearchResult data={searchResult} /> : <></>}
             </div>
-          </>
-        )}
+          </div>
+        </>
+      )}
     </>
   );
 }
