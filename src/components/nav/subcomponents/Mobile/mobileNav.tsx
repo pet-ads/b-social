@@ -9,20 +9,16 @@ interface mobileNav {
 
 export default function MobileNav({ clicked, setClicked }: mobileNav) {
   return (
-    <div className="MenuIcon">
+    <div className="menu-icon">
       {!clicked ? (
         <BiMenu
-          className="notClicked"
-          onClick={() => {
-            setClicked(true);
-          }}
+          className="not-clicked"
+          onClick={() => { setClicked(true);}}
         />
       ) : (
         <BiMenuAltRight
           className="clicked"
-          onClick={() => {
-            setClicked(false);
-          }}
+          onClick={() => {setClicked(false); }}
         />
       )}
     </div>

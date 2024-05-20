@@ -3,27 +3,40 @@
     background-color: #603a17;
     display: flex;
     flex: none;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
     height: min-content;
-    justify-content: space-between;
     overflow: visible;
     padding: 50px;
     position: relative;
     width: 100%;
+    gap: 15px;
 }
 
-.PETSignature {
-    font-family: "Inter", "Inter Placeholder", sans-serif;
+.general-conteiner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 15px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.pet-signature {
+    font-family: Inter, Inter Placeholder, sans-serif;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.5em;
     text-align: left;
     color: rgb(230, 230, 230);
+    width: 100%;
+    text-align: center;
+
 }
 
 a {
     color: white;
+    text-decoration: none;
 }
 
 .copy {
@@ -34,7 +47,7 @@ a {
     width: auto;
 }
 
-.copyText {
+.copy-text {
     font-family: "Inter", "Inter Placeholder", sans-serif;
     font-size: 14px;
     font-weight: 500;
@@ -43,7 +56,7 @@ a {
     color: rgb(230, 230, 230);
 }
 
-.socialMediaConteiner {
+.social-media-conteiner {
     align-items: flex-start;
     display: flex;
     flex: none;
@@ -51,14 +64,14 @@ a {
     flex-wrap: nowrap;
     gap: 15px;
     height: min-content;
-    justify-content: flex-start;
+    justify-content: space-between;
     overflow: hidden;
     padding: 0;
     position: relative;
     width: min-content;
 }
 
-.instaConteiner .mailConteiner {
+.insta-conteiner .mail-conteiner {
     flex: none;
     height: auto;
     position: relative;
@@ -66,7 +79,7 @@ a {
     width: auto;
 }
 
-.socialText {
+.social-text {
     font-family: Inter, Inter Placeholder, sans-serif;
     font-size: 14px;
     font-weight: 500;

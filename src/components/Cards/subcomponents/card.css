@@ -1,4 +1,4 @@
-.Card {
+.card {
     align-content: center;
     align-items: center;
     background-color: #fff;
@@ -32,7 +32,7 @@
     will-change: transform;
 }
 
-.CardImg {
+.card-img {
     display: block;
     width: 100%;
     height: 100%;
@@ -42,7 +42,7 @@
     image-rendering: auto;
 }
 
-.imgArea {
+.img-area {
     aspect-ratio: 1.3333333333333333 / 1;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -58,13 +58,13 @@
     transform: translate(-50%, -50%);
 }
 
-.imgConteiner {
+.img-conteiner {
     position: absolute;
     border-radius: inherit;
     inset: 0px;
 }
 
-.textArea {
+.text-area {
     align-items: flex-start;
     display: flex;
     flex: none;
@@ -78,7 +78,7 @@
     width: 100%;
 }
 
-.cardTitle {
+.card-title {
     flex: none;
     height: auto;
     overflow: visible;
@@ -99,7 +99,7 @@
     color: rgb(96, 58, 23);
 }
 
-.cardText {
+.card-text {
     outline: none;
     display: flex;
     flex-direction: column;
@@ -125,14 +125,30 @@
 
 }
 
+.recommendation-theme-container {
+    outline: none;
+    display: flex;
+    gap: 15px;
+}
+
+.recommendation,
+.theme {
+    border-radius: 10px;
+    font-size: 16px;
+    margin: 20px 0px;
+    padding: 5px;
+    border: none;
+
+}
+
 @media (max-width: 809px) {
 
-    .Card {
+    .card {
         width: 100%;
 
     }
 
-    .imgArea {
+    .img-area {
         bottom: 0;
         height: 263px;
         left: unset;

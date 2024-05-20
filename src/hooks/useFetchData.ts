@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-interface CardContentI {
+interface CardContent {
   id: string;
   CardImg: string;
   CardTitle: string;
@@ -8,8 +8,8 @@ interface CardContentI {
   bgColor: string;
 }
 
-export default function useFetchData(pathToData: string, selectPath: string): CardContentI[] {
-  const [data, setData] = useState<CardContentI[]>([]);
+export default function useFetchData(pathToData: string): CardContent[] {
+  const [data, setData] = useState<CardContent[]>([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -25,7 +25,7 @@ export default function useFetchData(pathToData: string, selectPath: string): Ca
       }
     };
     fetchData();
-  }, [pathToData, selectPath]);
+  }, [pathToData]);
 
   return data;
 }

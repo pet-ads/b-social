@@ -1,10 +1,10 @@
-import React, { useEffect, useRef, useState } from "react";
 import "./search.css";
+import SearchResult from "./SearchResult";
 import { IoSearch } from "react-icons/io5";
 import useFilterSearch from "../../hooks/useFilterSearch";
-import SearchResult from "./SearchResult";
+import React, { useEffect, useRef, useState } from "react";
 
-interface CardContentI {
+interface CardContent{
   id: string;
   CardImg: string;
   CardTitle: string;
@@ -12,43 +12,42 @@ interface CardContentI {
   bgColor: string;
 }
 
-interface iData {
-  data: CardContentI[];
+interface Data {
+  data: CardContent[];
 }
 
-export default function Search({data}: iData) {
+export default function Search({ data }: Data) {
   const [isModalOpen, setModalOpen] = useState(false);
   const [inputValue, setInputValue] = useState("");
   const inputRef = useRef<HTMLInputElement>(null);
-  const searchResult = useFilterSearch({data, inputValue});
+  const searchResult = useFilterSearch({ data, inputValue });
 
-  useEffect( () => {
+  useEffect(() => {
     if (isModalOpen) {
       inputRef.current?.focus();
     }
-  })
+  });
 
   function OpenModal() {
-      setModalOpen(true);
+    setModalOpen(true);
   }
 
   function closeModal(event: React.MouseEvent<HTMLDivElement, MouseEvent>) {
-    if ((event.target as HTMLDivElement).id === 'modalBackground') 
-      setModalOpen(false);
+    if ((event.target as HTMLDivElement).id === "modal-background") setModalOpen(false);
   }
 
   function handleInputChange(event: React.ChangeEvent<HTMLInputElement>) {
     setInputValue(event.target.value);
   }
 
-  return ( 
+  return (
     <>
-      <div className="searchArea">
-        <div className="searchConteiner" onClick={OpenModal}>
+      <div className="search-area">
+        <div className="search-conteiner" onClick={OpenModal}>
           <div className="conteiner">
-            <div className="buttonConteiner">
-              <button className="searchBtn" aria-label="Search Icon">
-                <IoSearch className="searchIcon" />
+            <div className="button-conteiner">
+              <button className="search-btn" aria-label="Search Icon">
+                <IoSearch className="search-icon" />
               </button>
             </div>
           </div>
@@ -56,28 +55,26 @@ export default function Search({data}: iData) {
       </div>
 
       {isModalOpen && (
-          <>
-            <div id="modalBackground" onClick={closeModal}>
-                <div className="modal">
-                    <div className="searchBar">
-                      <IoSearch className="searchIconModal" />
-                      <input type="text" id="searchInput" className="input"
-                        placeholder="Search..."
-                        value={inputValue}
-                        onChange={handleInputChange}
-                        ref={inputRef}
-                      />
-                    </div>     
-                    {inputValue ? 
-                        <SearchResult data={searchResult}/>
-                        :
-                        <></>
-                    } 
-                       
-                </div>
+        <>
+          <div id="modal-background" onClick={closeModal}>
+            <div className="modal">
+              <div className="search-bar">
+                <IoSearch className="search-icon-modal" />
+                <input
+                  type="text"
+                  id="searchInput"
+                  className="input"
+                  placeholder="Search..."
+                  value={inputValue}
+                  onChange={handleInputChange}
+                  ref={inputRef}
+                />
+              </div>
+              {inputValue ? <SearchResult data={searchResult} /> : <></>}
             </div>
-          </>
-        )}
+          </div>
+        </>
+      )}
     </>
   );
 }
