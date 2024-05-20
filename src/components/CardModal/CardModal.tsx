@@ -1,4 +1,4 @@
-import "./modal.css";
+import "./CardModal.css";
 import Card from "../Cards/subcomponents/Card";
 import { useEffect } from "react";
 
