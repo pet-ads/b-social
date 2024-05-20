@@ -7,18 +7,23 @@ import Search from "./components/search/Search";
 import CardArea from "./components/Cards/CardArea";
 import HelpArea from "./components/HelpArea/HelpArea";
 import Navigation from "./components/nav/navigation";
+import CardProps from "./Interfaces/CardProps";
 
 function App() {
   const [pathToData, setPathToData] = useState("/data/dataPTBR.json");
   const data = useFetchData(pathToData);
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedCard, setSelectedCard] = useState<CardProps | null>(null);
+  
 
   return (
     <div className="main">
       <div className="contentConteiner">
         <Navigation setSelectedPath={setPathToData} />
         <Header />
-        <Search data={data} />
-        <CardArea data={data} />
+        <Search isCardModalOpen={isModalOpen} setIsCardModalOpen={setIsModalOpen} selectedCard={selectedCard} setSelectedCard={setSelectedCard} data={data} />
+        <CardArea isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} selectedCard={selectedCard} setSelectedCard={setSelectedCard} data={data} />
         <HelpArea />
         <Footer />
       </div>

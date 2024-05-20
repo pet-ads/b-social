@@ -1,6 +1,5 @@
 import "./cardArea.css";
-import { useState } from "react";
-import Modal from "../Modal/Modal";
+import CardModal from "../CardModal/CardModal";
 import Card from "./subcomponents/Card";
 
 interface CardProps {
@@ -18,11 +17,13 @@ interface CardProps {
 
 interface Data {
   data: CardProps[];
+  isModalOpen: boolean;
+  setIsModalOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  selectedCard: CardProps | null;
+  setSelectedCard: React.Dispatch<React.SetStateAction<CardProps | null>>
 }
 
-export default function CardArea({ data }: Data) {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedCard, setSelectedCard] = useState<CardProps | null>(null);
+export default function CardArea({ data, isModalOpen, setIsModalOpen, selectedCard, setSelectedCard }: Data) {
   const openModal = (card: CardProps) => {
     setSelectedCard(card);
     setIsModalOpen(true);
@@ -54,7 +55,7 @@ export default function CardArea({ data }: Data) {
         ))}
       </div>
       {isModalOpen && selectedCard && (
-        <Modal
+        <CardModal
           CardImg={selectedCard.CardImg}
           CardTitle={selectedCard.CardTitle}
           CardText={selectedCard.CardExpandedText}

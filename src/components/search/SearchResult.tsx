@@ -1,23 +1,42 @@
+import { Dispatch, SetStateAction } from "react";
 import "./search.css"
 
-interface CardContent{
+  interface CardProps {
     id: string;
     CardImg: string;
     CardTitle: string;
     CardText: string;
     bgColor: string;
+    CardExpandedText?: string;
+    recommendation?: string;
+    bgColorRecommendation?: string;
+    theme?: string;
+    bgColorTheme?: string;
   }
 
-  interface Data {
-    data: CardContent[];
+  interface SearchComponent {
+    data: CardProps[];
+    setModalOpen: Dispatch<SetStateAction<boolean>>;
+    isCardModalOpen: boolean;
+    setIsCardModalOpen: React.Dispatch<React.SetStateAction<boolean>>;
+    selectedCard: CardProps | null;
+    setSelectedCard: React.Dispatch<React.SetStateAction<CardProps | null>>
   }
 
-export default function SearchResult({data}: Data) {
+export default function SearchResult({data, setModalOpen, isCardModalOpen, setIsCardModalOpen, selectedCard, setSelectedCard  }: SearchComponent) {
+  
+    function openModal(card: CardProps) {
+      setSelectedCard(card);
+      setModalOpen(false);
+      setIsCardModalOpen(true);
+
+    }
+
     return (
         <div className="result-container">
             <ul>
             {data.map((card) => (
-                <li key={card.id} className="result">
+                <li key={card.id} className="result" onClick={() => openModal(card)}>
                     <p>{card.CardTitle}</p>
                 </li> 
             ))}
