@@ -3,6 +3,7 @@ import SearchResult from "./SearchResult";
 import { IoSearch } from "react-icons/io5";
 import useFilterSearch from "../../hooks/useFilterSearch";
 import React, { useEffect, useRef, useState } from "react";
+import CardProps from "../../Interfaces/CardProps";
 
 interface CardContent{
   id: string;
@@ -14,9 +15,11 @@ interface CardContent{
 
 interface Data {
   data: CardContent[];
+  setIsCardModalOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  setSelectedCard: React.Dispatch<React.SetStateAction<CardProps | null>>
 }
 
-export default function Search({ data }: Data) {
+export default function Search({ data, setIsCardModalOpen, setSelectedCard  }: Data) {
   const [isModalOpen, setModalOpen] = useState(false);
   const [inputValue, setInputValue] = useState("");
   const inputRef = useRef<HTMLInputElement>(null);
@@ -70,7 +73,8 @@ export default function Search({ data }: Data) {
                   ref={inputRef}
                 />
               </div>
-              {inputValue ? <SearchResult data={searchResult} /> : <></>}
+              {inputValue ? <SearchResult data={searchResult} setModalOpen={setModalOpen} setIsCardModalOpen={setIsCardModalOpen} setSelectedCard={setSelectedCard}/> : <></>}
+              
             </div>
           </div>
         </>

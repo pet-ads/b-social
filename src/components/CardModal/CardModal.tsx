@@ -1,4 +1,4 @@
-import "./modal.css";
+import "./CardModal.css";
 import Card from "../Cards/subcomponents/Card";
 import { useEffect } from "react";
 
@@ -15,7 +15,7 @@ interface ModalCardProps {
   onRecommendationClick?: (recommendationTitle: string) => void;
 }
 
-export default function Modal({
+export default function CardModal({
   CardImg,
   CardTitle,
   CardText,
