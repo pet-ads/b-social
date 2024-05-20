@@ -144,22 +144,40 @@
 @media (max-width: 809px) {
 
     .card {
-        width: 100%;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items:  flex-start;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        border-radius: 0px;
+    }
 
+    .anchor {
+        height: 232px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
     }
 
     .img-area {
         bottom: 0;
-        height: 263px;
+        height: 216px;
         left: unset;
         right: -1px;
         top: unset;
         transform: unset;
         width: 100%;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+    
+    .text-area {
+        height: 407.6px;
+        padding: 50px;
     }
 
-    .anchor {
-        height: 263px;
+    .h3 {
+        font-size: 30px;
     }
 
 
