@@ -15,13 +15,11 @@ interface CardContent{
 
 interface Data {
   data: CardContent[];
-  isCardModalOpen: boolean;
   setIsCardModalOpen: React.Dispatch<React.SetStateAction<boolean>>;
-  selectedCard: CardProps | null;
   setSelectedCard: React.Dispatch<React.SetStateAction<CardProps | null>>
 }
 
-export default function Search({ data, isCardModalOpen, setIsCardModalOpen, selectedCard, setSelectedCard  }: Data) {
+export default function Search({ data, setIsCardModalOpen, setSelectedCard  }: Data) {
   const [isModalOpen, setModalOpen] = useState(false);
   const [inputValue, setInputValue] = useState("");
   const inputRef = useRef<HTMLInputElement>(null);
@@ -75,7 +73,7 @@ export default function Search({ data, isCardModalOpen, setIsCardModalOpen, sele
                   ref={inputRef}
                 />
               </div>
-              {inputValue ? <SearchResult data={searchResult} setModalOpen={setModalOpen} isCardModalOpen={isCardModalOpen} setIsCardModalOpen={setIsCardModalOpen} selectedCard={selectedCard} setSelectedCard={setSelectedCard}/> : <></>}
+              {inputValue ? <SearchResult data={searchResult} setModalOpen={setModalOpen} setIsCardModalOpen={setIsCardModalOpen} setSelectedCard={setSelectedCard}/> : <></>}
               
             </div>
           </div>

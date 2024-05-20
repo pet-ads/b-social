@@ -22,7 +22,7 @@ function App() {
       <div className="contentConteiner">
         <Navigation setSelectedPath={setPathToData} />
         <Header />
-        <Search isCardModalOpen={isModalOpen} setIsCardModalOpen={setIsModalOpen} selectedCard={selectedCard} setSelectedCard={setSelectedCard} data={data} />
+        <Search setIsCardModalOpen={setIsModalOpen} setSelectedCard={setSelectedCard} data={data} />
         <CardArea isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} selectedCard={selectedCard} setSelectedCard={setSelectedCard} data={data} />
         <HelpArea />
         <Footer />

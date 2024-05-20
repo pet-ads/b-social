@@ -17,13 +17,11 @@ import "./search.css"
   interface SearchComponent {
     data: CardProps[];
     setModalOpen: Dispatch<SetStateAction<boolean>>;
-    isCardModalOpen: boolean;
     setIsCardModalOpen: React.Dispatch<React.SetStateAction<boolean>>;
-    selectedCard: CardProps | null;
     setSelectedCard: React.Dispatch<React.SetStateAction<CardProps | null>>
   }
 
-export default function SearchResult({data, setModalOpen, isCardModalOpen, setIsCardModalOpen, selectedCard, setSelectedCard  }: SearchComponent) {
+export default function SearchResult({data, setModalOpen, setIsCardModalOpen, setSelectedCard  }: SearchComponent) {
   
     function openModal(card: CardProps) {
       setSelectedCard(card);
