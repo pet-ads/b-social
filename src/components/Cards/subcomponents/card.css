@@ -151,12 +151,7 @@
     border: none;
 
 }
-.card.open{
-    border-radius: 0px;
-}
-.card.open .anchor {
-    border-radius: 0;
-}
+
 
 @media (max-width: 809px) {
     .card{
@@ -165,6 +160,13 @@
         box-sizing: border-box;
         align-items:  flex-start;
         justify-content: flex-start;
+    }
+
+    .card.open{
+        border-radius: 0px;
+    }
+    .card.open .anchor {
+        border-radius: 0;
     }
    
 
