@@ -142,8 +142,16 @@
 }
 
 @media (max-width: 809px) {
+    .card{
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        align-items:  flex-start;
+        justify-content: flex-start;
+    }
+   
 
-    .card {
+    /* .card {
         width: 100vw;
         height: 100vh;
         display: flex;
@@ -178,7 +186,7 @@
 
     .h3 {
         font-size: 30px;
-    }
+    } */
 
 
 }
