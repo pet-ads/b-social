@@ -133,10 +133,12 @@
 
 .recommendation,
 .theme {
-    border-radius: 10px;
+   color: rgba(0, 0, 0, 0.597); 
+    border-radius: 15px;
     font-size: 16px;
     margin: 20px 0px;
-    padding: 5px;
+    padding-inline: 25px;
+    padding-block: 10px;
     border: none;
 
 }
