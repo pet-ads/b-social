@@ -25,8 +25,9 @@ export default function Card({
   onClick,
   onRecommendationClick,
 }: CardContent) {
+  const isOpen = !!(recommendation && theme);
   return (
-    <div className="card">
+    <div className={`card ${isOpen ? "open" : ""}`}>
       <a className="anchor" style={{ backgroundColor: `${bgColor}`, cursor: "pointer" }} onClick={onClick}>
         <div className="img-area">
           <div className="img-conteiner">
@@ -36,7 +37,12 @@ export default function Card({
       </a>
       <div className="text-area">
         <div className="card-title">
-          <h3 className="h3">{CardTitle}</h3>
+        {isOpen ? (
+            <h1 className="h1">{CardTitle}</h1>
+          ) : (
+            <h3 className="h3">{CardTitle}</h3>
+          )
+        }
         </div>
         <div className="card-text">
           <p className="info">{CardText}</p>
