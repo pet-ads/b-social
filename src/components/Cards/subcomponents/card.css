@@ -19,6 +19,10 @@
     will-change: var(--framer-will-change-override, transform);
 }
 
+.open {
+    width: 430px;
+}
+
 .anchor {
     aspect-ratio: 1.3333333333333333 / 1;
     border-top-left-radius: 20px;
