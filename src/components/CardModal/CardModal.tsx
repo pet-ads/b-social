@@ -11,7 +11,7 @@ interface ModalCardProps {
   bgColorRecommendation?: string;
   theme?: string;
   bgColorTheme?: string;
-  closeModal?: () => void;
+  closeModal?: (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => void;
   onRecommendationClick?: (recommendationTitle: string) => void;
 }
 
