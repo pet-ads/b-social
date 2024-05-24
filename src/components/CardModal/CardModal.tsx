@@ -11,7 +11,7 @@ interface ModalCardProps {
   bgColorRecommendation?: string;
   theme?: string;
   bgColorTheme?: string;
-  closeModal?: () => void;
+  closeModal?: (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => void;
   onRecommendationClick?: (recommendationTitle: string) => void;
 }
 
@@ -34,6 +34,8 @@ export default function CardModal({
     };
   }, []);
 
+  const isGif: boolean = CardImg.includes(".gif");
+
   return (
     <div className="modal-background" onClick={closeModal}>
       <div className="modal-content">
@@ -50,6 +52,8 @@ export default function CardModal({
           theme={theme}
           bgColorTheme={bgColorTheme}
           onRecommendationClick={onRecommendationClick}
+          isModal={true}
+          isGif={isGif}
         />
       </div>
     </div>

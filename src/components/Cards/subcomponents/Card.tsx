@@ -12,6 +12,8 @@ interface CardContent {
   bgColorTheme?: string;
   onClick?: () => void;
   onRecommendationClick?: (title: string) => void;
+  isModal?: boolean,
+  isGif?: boolean | undefined
 }
 export default function Card({
   CardImg,
@@ -24,12 +26,14 @@ export default function Card({
   bgColorTheme,
   onClick,
   onRecommendationClick,
+  isModal,
+  isGif
 }: CardContent) {
   const isOpen = !!(recommendation && theme);
   return (
     <div className={`card ${isOpen ? "open" : ""}`}>
-      <a className="anchor" style={{ backgroundColor: `${bgColor}`, cursor: "pointer" }} onClick={onClick}>
-        <div className="img-area">
+      <a className={`${!isOpen ? "anchor" : "anchor open-anchor"}`} style={{ backgroundColor: `${bgColor}`, cursor: "pointer" }} onClick={onClick}>
+        <div className={`${!isOpen ? "img-area" : `${isGif ? "img-area open-gif-area" : "img-area open-img-area"}`}`}>
           <div className="img-conteiner">
             <img className="card-img" decoding="async" src={CardImg} />
           </div>
@@ -38,14 +42,14 @@ export default function Card({
       <div className="text-area">
         <div className="card-title">
         {isOpen ? (
-            <h1 className="h1">{CardTitle}</h1>
+            <h1 className="h1-card">{CardTitle}</h1>
           ) : (
-            <h3 className="h3">{CardTitle}</h3>
+            <h3 className="h3-card">{CardTitle}</h3>
           )
         }
         </div>
         <div className="card-text">
-          <p className="info">{CardText}</p>
+          <p className={isModal? "info-modal" : "info"}>{CardText}</p>
         </div>
         {recommendation && theme && (
           <div className="recommendation-theme-container">

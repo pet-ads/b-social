@@ -30,15 +30,17 @@ export default function CardArea({ data, isModalOpen, setIsModalOpen, selectedCa
   };
 
   const openModalByTitle = (title: string) => {
-    setIsModalOpen(false);
     const card = data.find((card) => card.CardTitle === title);
     if (card) {
-      setTimeout(() => {
         setSelectedCard(card);
-        setIsModalOpen(true);
-      }, 2);
     }
   };
+
+  function closeModal(event: React.MouseEvent<HTMLDivElement, MouseEvent>) {
+    console.log("clicou no modal");
+    if ((event.target as HTMLDivElement).className === "modal-background" || (event.target as HTMLDivElement).className === "close-modal") 
+        setIsModalOpen(false);
+  }
 
   return (
     <div className="card-area">
@@ -64,7 +66,7 @@ export default function CardArea({ data, isModalOpen, setIsModalOpen, selectedCa
           bgColorRecommendation={selectedCard.bgColorRecommendation}
           theme={selectedCard.theme}
           bgColorTheme={selectedCard.bgColorTheme}
-          closeModal={() => setIsModalOpen(false)}
+          closeModal={closeModal}
           onRecommendationClick={openModalByTitle}
         />
       )}
