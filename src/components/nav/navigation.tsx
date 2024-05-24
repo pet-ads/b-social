@@ -1,6 +1,7 @@
 import "./nav.css";
 import React, { useState } from "react";
 import DropDown from "../DropDown/DropDown";
+import BeabaLogo from "../../../public/Images/Beaba.png";
 import useWindowWidth from "../../hooks/useWindowWidth";
 import MobileNav from "./subcomponents/Mobile/mobileNav";
 import MobileLinks from "./subcomponents/Mobile/mobileLinks";
@@ -23,7 +24,9 @@ export default function Navigation({ setSelectedPath }: SelectPath) {
             : { justifyContent: "flex-start", alignContent: "center" }
         }
       >
-        <div className="text-conteiner">Beaba</div>
+        <div className="text-conteiner">
+          <img className="beaba-logo" src={BeabaLogo} alt="Logo do Beaba" />
+        </div>
         {windowWidth <= 809 ? (
           <div className="navigation-buttons">
             <DropDown selectedPath={setSelectedPath} />
