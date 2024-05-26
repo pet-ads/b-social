@@ -83,7 +83,7 @@
     flex-direction: column;
     flex-wrap: nowrap;
     gap: 20px;
-    height: auto;
+    height: min-content;
     justify-content: center;
     padding: 30px;
     position: relative;
@@ -113,7 +113,7 @@
 
 .h1-card {
     font-family: "Inter", "Inter Placeholder", sans-serif;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 700;
     letter-spacing: -2.1px;
     color: var(--token-b9c3c957-2c66-49c4-9732-fa196fddac20, rgb(17, 17, 17));
@@ -166,7 +166,8 @@
 
 .recommendation,
 .theme {
-   color: rgba(0, 0, 0, 0.597); 
+   color: rgb(102, 102, 102); 
+   background-color: rgb(243, 243, 243);
     border-radius: 15px;
     font-size: 16px;
     margin: 20px 0px;
@@ -192,7 +193,14 @@
     .card.open .anchor {
         border-radius: 0;
     }
-   
+    .anchor{
+        display: flex;
+        height: max-content;
+    }
+    .text-area {
+        height: min-content;
+        padding: 50px;
+    }
 
     /* .card {
         width: 100vw;
@@ -220,11 +228,6 @@
         width: 100%;
         border-top-left-radius: 0px;
         border-top-right-radius: 0px;
-    }
-    
-    .text-area {
-        height: 407.6px;
-        padding: 50px;
     }
 
     .h3 {
