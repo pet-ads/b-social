@@ -195,7 +195,7 @@
     }
     .anchor{
         display: flex;
-        height: max-content;
+        height: 50vh;
     }
     .text-area {
         height: min-content;
@@ -233,4 +233,21 @@
     .h3 {
         font-size: 30px;
     } */
+}
+@media (max-height: 900px) {
+    .anchor{
+        height: 50vh;
+    }
+}
+
+@media (max-height: 800px) {
+    .anchor{
+        height: 40vh;
+    }
+}
+
+@media (max-height: 650px) {
+    .anchor{
+        height: 180px;
+    }
 }
