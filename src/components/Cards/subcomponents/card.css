@@ -27,6 +27,7 @@
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     flex: none;
+    align-items: center;
     height: 265px;
     overflow: hidden;
     position: relative;
@@ -35,6 +36,16 @@
     will-change: transform;
 }
 .open-anchor{
+    aspect-ratio: 1.3333333333333333 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 265px;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    width: 100%;
+    will-change: transform;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px; 
 }
@@ -66,12 +77,16 @@
 
 .open-img-area{
     height: 237px;
+    display: flex;
+    justify-content: center;
 }
 .open-gif-area{
     height: 100%;
+    display: flex;
+    justify-content: center;
 }
 .img-conteiner {
-    position: absolute;
+    height: 100%;
     border-radius: inherit;
     inset: 0px;
 }
@@ -193,13 +208,26 @@
     .card.open .anchor {
         border-radius: 0;
     }
-    .anchor{
-        display: flex;
-        height: 50vh;
-    }
     .text-area {
         height: min-content;
         padding: 50px;
+    }
+    .open-anchor{
+        display: flex;
+        border-radius: 0px;
+        min-height: 280px;
+        flex-grow: 1;
+        justify-content: center;
+        align-items: center;
+    }
+    .open-gif-area, .open-img-area {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 248px;
+    }
+    .h1-card {
+        font-size: 32px;
     }
 
     /* .card {
@@ -233,21 +261,4 @@
     .h3 {
         font-size: 30px;
     } */
-}
-@media (max-height: 900px) {
-    .anchor{
-        height: 50vh;
-    }
-}
-
-@media (max-height: 800px) {
-    .anchor{
-        height: 40vh;
-    }
-}
-
-@media (max-height: 650px) {
-    .anchor{
-        height: 180px;
-    }
 }
