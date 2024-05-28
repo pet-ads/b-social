@@ -33,7 +33,7 @@ export default function Card({
   return (
     <div className={`card ${isOpen ? "open" : ""}`}>
       <a className={`${!isOpen ? "anchor" : "open-anchor"}`} style={{ backgroundColor: `${bgColor}`, cursor: "pointer" }} onClick={onClick}>
-        <div className={`${!isOpen ? `${isGif ? "gif-area" : "img-area"}` : `${isGif ? "open-gif-area" : "open-img-area"}`}`}>
+        <div className={`${isOpen ? (isGif ? "open-gif-area" : "open-img-area") : (isGif ? "gif-area" : "img-area")}`}>
           <div className="img-conteiner">
             <img className="card-img" decoding="async" src={CardImg} />
           </div>
