@@ -32,8 +32,8 @@ export default function Card({
   const isOpen = !!(recommendation && theme);
   return (
     <div className={`card ${isOpen ? "open" : ""}`}>
-      <a className={`${!isOpen ? "anchor" : "anchor open-anchor"}`} style={{ backgroundColor: `${bgColor}`, cursor: "pointer" }} onClick={onClick}>
-        <div className={`${!isOpen ? "img-area" : `${isGif ? "img-area open-gif-area" : "img-area open-img-area"}`}`}>
+      <a className={`${!isOpen ? "anchor" : "open-anchor"}`} style={{ backgroundColor: `${bgColor}`, cursor: "pointer" }} onClick={onClick}>
+        <div className={`${!isOpen ? "img-area" : `${isGif ? "open-gif-area" : "open-img-area"}`}`}>
           <div className="img-conteiner">
             <img className="card-img" decoding="async" src={CardImg} />
           </div>
