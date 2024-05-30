@@ -1,6 +1,15 @@
 import "./footer.css";
-
-export default function Footer() {
+interface links {
+  Logo?: string;
+  Guia?: string;
+  aboutUs?: string;
+  Contact?: string;
+  Help?: string;
+  Btn?: string;
+  Instagram?: string;
+  mail?: string;
+}
+export default function Footer({ Instagram, mail }: links) {
   return (
     <div className="footer">
       <div className="general-conteiner">
@@ -20,10 +29,18 @@ export default function Footer() {
 
         <div className="social-media-conteiner">
           <div className="insta-conteiner">
-            <p className="social-text"> Instagram</p>
+            <p className="social-text">
+              {" "}
+              <a target="_blank" href={Instagram}>
+                Instagram
+              </a>
+            </p>
           </div>
           <div className="mail-conteiner">
-            <p className="social-text"> Email</p>
+            <p className="social-text">
+              {" "}
+              <a href={`mailto:${mail}`}>Email</a>
+            </p>
           </div>
         </div>
       </div>

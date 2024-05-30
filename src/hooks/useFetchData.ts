@@ -8,8 +8,24 @@ interface CardContent {
   bgColor: string;
 }
 
-export default function useFetchData(pathToData: string): CardContent[] {
-  const [data, setData] = useState<CardContent[]>([]);
+interface LinkContent {
+  Logo?: string;
+  Guia?: string;
+  aboutUs?: string;
+  Contact?: string;
+  Help?: string;
+  Btn?: string;
+  Instagram?: string;
+  mail?: string;
+}
+
+interface FetchData {
+  Card: CardContent[];
+  Links: LinkContent;
+}
+
+export default function useFetchData(pathToData: string): FetchData | null {
+  const [data, setData] = useState<FetchData | null>(null);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -21,7 +37,7 @@ export default function useFetchData(pathToData: string): CardContent[] {
         const jsonData = await response.json();
         setData(jsonData);
       } catch (error) {
-        console.error("Não foi possível encotrar os dados");
+        console.error("Não foi possível encontrar os dados");
       }
     };
     fetchData();

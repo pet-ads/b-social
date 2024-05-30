@@ -13,12 +13,16 @@ export default function MobileNav({ clicked, setClicked }: mobileNav) {
       {!clicked ? (
         <BiMenu
           className="not-clicked"
-          onClick={() => { setClicked(true);}}
+          onClick={() => {
+            setClicked(true);
+          }}
         />
       ) : (
         <BiMenuAltRight
           className="clicked"
-          onClick={() => {setClicked(false); }}
+          onClick={() => {
+            setClicked(false);
+          }}
         />
       )}
     </div>

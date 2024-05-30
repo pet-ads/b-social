@@ -12,6 +12,8 @@ import Navigation from "./components/nav/navigation";
 function App() {
   const [pathToData, setPathToData] = useState("/data/dataPTBR.json");
   const data = useFetchData(pathToData);
+  const cards = data?.Card || [];
+  const links = data?.Links;
 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedCard, setSelectedCard] = useState<CardProps | null>(null);
@@ -19,18 +21,18 @@ function App() {
   return (
     <div className="main">
       <div className="contentConteiner">
-        <Navigation setSelectedPath={setPathToData} />
+        <Navigation setSelectedPath={setPathToData} links={links} />
         <Header />
-        <Search setIsCardModalOpen={setIsModalOpen} setSelectedCard={setSelectedCard} data={data} />
+        <Search setIsCardModalOpen={setIsModalOpen} setSelectedCard={setSelectedCard} data={cards} />
         <CardArea
           isModalOpen={isModalOpen}
           setIsModalOpen={setIsModalOpen}
           selectedCard={selectedCard}
           setSelectedCard={setSelectedCard}
-          data={data}
+          data={cards}
         />
-        <HelpArea />
-        <Footer />
+        <HelpArea Btn={links?.Btn} />
+        <Footer Instagram={links?.Instagram} mail={links?.mail} />
       </div>
     </div>
   );
