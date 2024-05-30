@@ -17,6 +17,10 @@
     transform-origin: 50% 50% 0px;
 }
 
+.mobile-link a {
+    color: black;
+}
+
 .mobile-link p {
     font-family: Inter Tight, Inter Tight Placeholder, sans-serif;
     font-size: 32px;

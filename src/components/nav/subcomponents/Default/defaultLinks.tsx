@@ -1,18 +1,6 @@
 import "./defaultLinks.css";
-interface links {
-  Logo?: string;
-  Guia?: string;
-  aboutUs?: string;
-  Contact?: string;
-  Help?: string;
-  Btn?: string;
-  Instagram?: string;
-  mail?: string;
-}
-interface DefaultLinks {
-  links?: links;
-}
-export default function DefaultLinks({ links }: DefaultLinks) {
+import { Links } from "../../../../Interfaces/links";
+export default function DefaultLinks({ links }: Links) {
   return (
     <>
       <div className="link">

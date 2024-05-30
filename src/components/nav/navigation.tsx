@@ -1,21 +1,12 @@
 import "./nav.css";
 import React, { useState } from "react";
 import DropDown from "../DropDown/DropDown";
+import { links } from "../../Interfaces/links";
 import BeabaLogo from "../../../public/Images/Beaba.png";
 import useWindowWidth from "../../hooks/useWindowWidth";
 import MobileNav from "./subcomponents/Mobile/mobileNav";
 import MobileLinks from "./subcomponents/Mobile/mobileLinks";
 import DefaultLinks from "./subcomponents/Default/defaultLinks";
-interface links {
-  Logo?: string;
-  Guia?: string;
-  aboutUs?: string;
-  Contact?: string;
-  Help?: string;
-  Btn?: string;
-  Instagram?: string;
-  mail?: string;
-}
 interface SelectPath {
   setSelectedPath: React.Dispatch<React.SetStateAction<string>>;
   links?: links;
@@ -55,7 +46,7 @@ export default function Navigation({ setSelectedPath, links }: SelectPath) {
 
         <div className="divider"></div>
       </nav>
-      {windowWidth <= 809 && clicked ? <MobileLinks /> : " "}
+      {windowWidth <= 809 && clicked ? <MobileLinks links={links} /> : " "}
     </div>
   );
 }

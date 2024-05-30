@@ -18,10 +18,17 @@ function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedCard, setSelectedCard] = useState<CardProps | null>(null);
 
+  const navlinks = {
+    Logo: links?.Logo,
+    Guia: links?.Guia,
+    aboutUs: links?.aboutUs,
+    Contact: links?.Contact,
+    Help: links?.Help,
+  };
   return (
     <div className="main">
       <div className="contentConteiner">
-        <Navigation setSelectedPath={setPathToData} links={links} />
+        <Navigation setSelectedPath={setPathToData} links={navlinks} />
         <Header />
         <Search setIsCardModalOpen={setIsModalOpen} setSelectedCard={setSelectedCard} data={cards} />
         <CardArea

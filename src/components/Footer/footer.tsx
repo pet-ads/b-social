@@ -1,14 +1,5 @@
 import "./footer.css";
-interface links {
-  Logo?: string;
-  Guia?: string;
-  aboutUs?: string;
-  Contact?: string;
-  Help?: string;
-  Btn?: string;
-  Instagram?: string;
-  mail?: string;
-}
+import { links } from "../../Interfaces/links";
 export default function Footer({ Instagram, mail }: links) {
   return (
     <div className="footer">
