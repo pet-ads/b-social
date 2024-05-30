@@ -34,8 +34,6 @@ export default function CardModal({
     };
   }, []);
 
-  const isGif: boolean = CardImg.includes(".gif");
-
   return (
     <div className="modal-background" onClick={closeModal}>
       <div className="modal-content">
@@ -53,7 +51,6 @@ export default function CardModal({
           bgColorTheme={bgColorTheme}
           onRecommendationClick={onRecommendationClick}
           isModal={true}
-          isGif={isGif}
         />
       </div>
     </div>

@@ -13,7 +13,6 @@ interface CardContent {
   onClick?: () => void;
   onRecommendationClick?: (title: string) => void;
   isModal?: boolean,
-  isGif?: boolean | undefined
 }
 export default function Card({
   CardImg,
@@ -27,9 +26,11 @@ export default function Card({
   onClick,
   onRecommendationClick,
   isModal,
-  isGif
 }: CardContent) {
+  
   const isOpen = !!(recommendation && theme);
+  const isGif: boolean = CardImg.includes(".gif");
+
   return (
     <div className={`card ${isOpen ? "open" : ""}`}>
       <a className={`${!isOpen ? "anchor" : "open-anchor"}`} style={{ backgroundColor: `${bgColor}`, cursor: "pointer" }} onClick={onClick}>
