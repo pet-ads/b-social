@@ -1,111 +1,122 @@
-[
-    {
-        "id": "1",
-        "CardImg": "/Images/walkingBear.gif",
-        "CardTitle": "Love",
-        "CardText": "Learn about hosting built for scale and reliability.",
-        "bgColor": "#a1f6ff",
-        "CardExpandedText": "Learn about hosting built for scale and reliability. Learn about hosting built for scale and reliability. Learn about hosting built for scale and reliability.",
-        "theme": "Love",
-        "bgColorTheme:":"rgb(102,102,102)",
-        "recommendation": "Fever",
-        "bgColorRecommendatio": "rgb(102,102,102)"
-    },
-    {
-        "id": "2",
-        "CardImg": "/Images/feverBear.svg",
-        "CardTitle": "Fever",
-        "CardText": "Learn about hosting built for scale and reliability.",
-        "bgColor": "#3ac0c4",
-        "CardExpandedText": "Learn about hosting built for scale and reliability. Learn about hosting built for scale and reliability. Learn about hosting built for scale and reliability.",
-        "theme": "Fever",
-        "bgColorTheme:":"rgb(102,102,102)",
-        "recommendation": "Love",
-        "bgColorRecommendatio": "rgb(102,102,102)"
-    },
-    {
-        "id": "3",
-        "CardImg": "/Images/televisionBear.svg",
-        "CardTitle": "Screen time",
-        "CardText": "Learn about hosting built for scale and reliability.",
-        "bgColor": "#f3aebb",
-        "CardExpandedText": "Learn about hosting built for scale and reliability. Learn about hosting built for scale and reliability. Learn about hosting built for scale and reliability.",
-        "theme": "Screen time",
-        "bgColorTheme:":"rgb(102,102,102)",
-        "recommendation": "Fever",
-        "bgColorRecommendatio": "rgb(102,102,102)"
-    },
-    {
-        "id": "4",
-        "CardImg": "/Images/walkingBear.gif",
-        "CardTitle": "Love",
-        "CardText": "Learn about hosting built for scale and reliability.",
-        "bgColor": "#ffcc01",
-        "CardExpandedText": "Learn about hosting built for scale and reliability. Learn about hosting built for scale and reliability. Learn about hosting built for scale and reliability.",
-        "theme": "Love",
-        "bgColorTheme:":"rgb(102,102,102)",
-        "recommendation": "Fever",
-        "bgColorRecommendatio": "rgb(102,102,102)"
-    },
-    {
-        "id": "5",
-        "CardImg": "/Images/feverBear.svg",
-        "CardTitle": "Fever",
-        "CardText": "Learn about hosting built for scale and reliability.",
-        "bgColor": "#a1f6ff",
-        "CardExpandedText": "Learn about hosting built for scale and reliability. Learn about hosting built for scale and reliability. Learn about hosting built for scale and reliability.",
-        "theme": "Fever",
-        "bgColorTheme:":"rgb(102,102,102)",
-        "recommendation": "Love",
-        "bgColorRecommendatio": "rgb(102,102,102)"
-    },
-    {
-        "id": "6",
-        "CardImg": "/Images/feverBear.svg",
-        "CardTitle": "Anemia",
-        "CardText": "Learn about hosting built for scale and reliability.",
-        "bgColor": "#e94447",
-        "CardExpandedText": "Learn about hosting built for scale and reliability. Learn about hosting built for scale and reliability. Learn about hosting built for scale and reliability.",
-        "theme": "Anemia",
-        "bgColorTheme:":"rgb(102,102,102)",
-        "recommendation": "Fever",
-        "bgColorRecommendatio": "rgb(102,102,102)"
-    },
-    {
-        "id": "7",
-        "CardImg": "/Images/walkingBear.gif",
-        "CardTitle": "Love",
-        "CardText": "Learn about hosting built for scale and reliability.",
-        "bgColor": "#a1f6ff",
-        "CardExpandedText": "Learn about hosting built for scale and reliability. Learn about hosting built for scale and reliability. Learn about hosting built for scale and reliability.",
-        "theme": "Love",
-        "bgColorTheme:":"rgb(102,102,102)",
-        "recommendation": "Screen time",
-        "bgColorRecommendatio": "rgb(102,102,102)"
-    },
-    {
-        "id": "8",
-        "CardImg": "/Images/feverBear.svg",
-        "CardTitle": "Fever",
-        "CardText": "Learn about hosting built for scale and reliability.",
-        "bgColor": "#3ac0c4",
-        "CardExpandedText": "Learn about hosting built for scale and reliability. Learn about hosting built for scale and reliability. Learn about hosting built for scale and reliability.",
-        "theme": "Fever",
-        "bgColorTheme:":"rgb(102,102,102)",
-        "recommendation": "Love",
-        "bgColorRecommendatio": "rgb(102,102,102)"
-    },
-    {
-        "id": "9",
-        "CardImg": "/Images/televisionBear.svg",
-        "CardTitle": "Screen time",
-        "CardText": "Learn about hosting built for scale and reliability.",
-        "bgColor": "#f3aebb",
-        "CardExpandedText": "Learn about hosting built for scale and reliability. Learn about hosting built for scale and reliability. Learn about hosting built for scale and reliability.",
-        "theme": "Screen time",
-        "bgColorTheme:":"rgb(102,102,102)",
-        "recommendation": "Love",
-        "bgColorRecommendatio": "rgb(102,102,102)"
-
+{
+    "Card": [
+        {
+            "id": "1",
+            "CardImg": "/Images/walkingBear.gif",
+            "CardTitle": "Love",
+            "CardText": "Learn about hosting built for scale and reliability.",
+            "bgColor": "#a1f6ff",
+            "CardExpandedText": "Learn about hosting built for scale and reliability. Learn about hosting built for scale and reliability. Learn about hosting built for scale and reliability.",
+            "theme": "Love",
+            "bgColorTheme:": "rgb(102,102,102)",
+            "recommendation": "Fever",
+            "bgColorRecommendatio": "rgb(102,102,102)"
+        },
+        {
+            "id": "2",
+            "CardImg": "/Images/feverBear.svg",
+            "CardTitle": "Fever",
+            "CardText": "Learn about hosting built for scale and reliability.",
+            "bgColor": "#3ac0c4",
+            "CardExpandedText": "Learn about hosting built for scale and reliability. Learn about hosting built for scale and reliability. Learn about hosting built for scale and reliability.",
+            "theme": "Fever",
+            "bgColorTheme:": "rgb(102,102,102)",
+            "recommendation": "Love",
+            "bgColorRecommendatio": "rgb(102,102,102)"
+        },
+        {
+            "id": "3",
+            "CardImg": "/Images/televisionBear.svg",
+            "CardTitle": "Screen time",
+            "CardText": "Learn about hosting built for scale and reliability.",
+            "bgColor": "#f3aebb",
+            "CardExpandedText": "Learn about hosting built for scale and reliability. Learn about hosting built for scale and reliability. Learn about hosting built for scale and reliability.",
+            "theme": "Screen time",
+            "bgColorTheme:": "rgb(102,102,102)",
+            "recommendation": "Fever",
+            "bgColorRecommendatio": "rgb(102,102,102)"
+        },
+        {
+            "id": "4",
+            "CardImg": "/Images/walkingBear.gif",
+            "CardTitle": "Love",
+            "CardText": "Learn about hosting built for scale and reliability.",
+            "bgColor": "#ffcc01",
+            "CardExpandedText": "Learn about hosting built for scale and reliability. Learn about hosting built for scale and reliability. Learn about hosting built for scale and reliability.",
+            "theme": "Love",
+            "bgColorTheme:": "rgb(102,102,102)",
+            "recommendation": "Fever",
+            "bgColorRecommendatio": "rgb(102,102,102)"
+        },
+        {
+            "id": "5",
+            "CardImg": "/Images/feverBear.svg",
+            "CardTitle": "Fever",
+            "CardText": "Learn about hosting built for scale and reliability.",
+            "bgColor": "#a1f6ff",
+            "CardExpandedText": "Learn about hosting built for scale and reliability. Learn about hosting built for scale and reliability. Learn about hosting built for scale and reliability.",
+            "theme": "Fever",
+            "bgColorTheme:": "rgb(102,102,102)",
+            "recommendation": "Love",
+            "bgColorRecommendatio": "rgb(102,102,102)"
+        },
+        {
+            "id": "6",
+            "CardImg": "/Images/feverBear.svg",
+            "CardTitle": "Anemia",
+            "CardText": "Learn about hosting built for scale and reliability.",
+            "bgColor": "#e94447",
+            "CardExpandedText": "Learn about hosting built for scale and reliability. Learn about hosting built for scale and reliability. Learn about hosting built for scale and reliability.",
+            "theme": "Anemia",
+            "bgColorTheme:": "rgb(102,102,102)",
+            "recommendation": "Fever",
+            "bgColorRecommendatio": "rgb(102,102,102)"
+        },
+        {
+            "id": "7",
+            "CardImg": "/Images/walkingBear.gif",
+            "CardTitle": "Love",
+            "CardText": "Learn about hosting built for scale and reliability.",
+            "bgColor": "#a1f6ff",
+            "CardExpandedText": "Learn about hosting built for scale and reliability. Learn about hosting built for scale and reliability. Learn about hosting built for scale and reliability.",
+            "theme": "Love",
+            "bgColorTheme:": "rgb(102,102,102)",
+            "recommendation": "Screen time",
+            "bgColorRecommendatio": "rgb(102,102,102)"
+        },
+        {
+            "id": "8",
+            "CardImg": "/Images/feverBear.svg",
+            "CardTitle": "Fever",
+            "CardText": "Learn about hosting built for scale and reliability.",
+            "bgColor": "#3ac0c4",
+            "CardExpandedText": "Learn about hosting built for scale and reliability. Learn about hosting built for scale and reliability. Learn about hosting built for scale and reliability.",
+            "theme": "Fever",
+            "bgColorTheme:": "rgb(102,102,102)",
+            "recommendation": "Love",
+            "bgColorRecommendatio": "rgb(102,102,102)"
+        },
+        {
+            "id": "9",
+            "CardImg": "/Images/televisionBear.svg",
+            "CardTitle": "Screen time",
+            "CardText": "Learn about hosting built for scale and reliability.",
+            "bgColor": "#f3aebb",
+            "CardExpandedText": "Learn about hosting built for scale and reliability. Learn about hosting built for scale and reliability. Learn about hosting built for scale and reliability.",
+            "theme": "Screen time",
+            "bgColorTheme:": "rgb(102,102,102)",
+            "recommendation": "Love",
+            "bgColorRecommendatio": "rgb(102,102,102)"
+        }
+    ],
+    "Links": {
+        "Logo": "https://beaba.org/en/",
+        "Guia": "https://beaba.org/en/guia/",
+        "aboutUs": "https://beaba.org/en/quem-somos/",
+        "Contact": " hello@beaba.org",
+        "Help": "https://beaba.org/en/doacao/",
+        "Btn": " https://beaba.org/en/doacao/",
+        "Instagram": "https://www.instagram.com/beabaorg/",
+        "mail": "hello@beaba.org"
     }
-]
+}
