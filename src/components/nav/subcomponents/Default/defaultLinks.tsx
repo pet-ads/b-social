@@ -26,7 +26,7 @@ export default function DefaultLinks({ links }: DefaultLinks) {
         </a>
       </div>
       <div className="link">
-        <a href={links?.Contact} target="_blank">
+        <a href={`mailto:${links?.Contact}`}>
           <p>Contato</p>
         </a>
       </div>
