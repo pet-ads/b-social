@@ -21,14 +21,14 @@
     flex: none;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 100px;
     height: min-content;
     justify-content: center;
     max-width: 100%;
     overflow: visible;
     padding: 0;
     position: relative;
-    width: 1000px;
+    width: 1400px;
 }
 
 @media (max-width: 809px) {
