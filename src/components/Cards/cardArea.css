@@ -31,6 +31,12 @@
     width: 1400px;
 }
 
+@media (min-width: 810px) and (max-width: 1250px) {
+    .card-row {
+        gap: 60px;
+    }
+}
+
 @media (max-width: 809px) {
     .card-area {
         padding: 60px 20px;
