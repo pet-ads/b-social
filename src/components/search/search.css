@@ -18,12 +18,11 @@
     background-color: #fff;
     border-radius: 35px;
     display: flex;
-    flex: none;
     flex-direction: row;
     flex-wrap: nowrap;
     gap: 0px;
     height: 50px;
-    justify-content: flex-start;
+    justify-content: center;
     left: calc(49.91721854304638% - 83.5% / 2);
     overflow: visible;
     padding: 0;
@@ -37,7 +36,7 @@
     flex: 1 0 0px;
     height: 40px;
     position: relative;
-    width: 1px;
+    width: 300px;
 }
 
 .button-conteiner {
@@ -143,7 +142,7 @@
     position: relative;
 }
 
-@media (max-width: 809px) {
+@media (max-width: 509px) {
     #modal-background {
         position: fixed;
         display: flex;

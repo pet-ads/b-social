@@ -28,7 +28,7 @@
     overflow: hidden;
     padding: 40px;
     position: relative;
-    width: 1600px;
+    width: 83%;
 }
 
 .bear-conteiner {
@@ -99,7 +99,7 @@
 .subtitle {
     font-family: Inter, Inter Placeholder, sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: 0;
     text-transform: none;
     text-decoration: none;
@@ -110,6 +110,30 @@
     line-height: 1.5em;
     text-align: left;
     color: rgb(255, 255, 255);
+}
+
+@media (min-width:2000px) {
+    .header {
+        width: 100%;
+    }
+    .title {
+        width: auto;
+    }
+    .h1 {
+        font-size: 3vw;
+    }
+    .header-text-conteiner {
+        width: 75%;
+    }
+    .bear-conteiner {
+        left: calc(75.6666666666667% - 45.291666666666664% / 2);
+    }
+    .subtitle-conteiner {
+        width: 40%;
+    }
+    .subtitle {
+        font-size: 1.3vw;
+    }
 }
 
 @media (min-width: 1200px) and (max-width: 1600px) {
@@ -124,14 +148,23 @@
     }
 
     .header-text-conteiner {
-        padding: 50px;
-        width: 70%;
+        padding: 0px;
+        width: 100%;
+        align-content: flex-start;
+        align-items: flex-start;
     }
 
     .subtitle-conteiner {
         order: 1;
         width: 345px;
 
+    }
+
+    .bear-conteiner {
+        height: 77%;
+        left: calc(70.83839611178617% - 52.0048602673147% / 2);
+        top: calc(75.34482758620692% - 77.41379310344828% / 2);
+        width: 52%;
     }
 }
 
@@ -140,7 +173,7 @@
         gap: 23px;
         height: 382px;
         padding: 15px;
-        width: 100;
+        width: 1170px;
     }
 
     .bear-conteiner {
@@ -159,11 +192,12 @@
         gap: 7px;
         padding: 30px;
         width: 100%;
-
+        max-width: none;
     }
 
     .title {
-        width: auto;
+        width: 311.433px;
+        max-width: none;
     }
 
     .h1 {
@@ -171,11 +205,13 @@
         font-weight: 700;
         letter-spacing: -2.6px;
         text-align: left;
+        max-width: none;
     }
 
     .subtitle-conteiner {
         order: 1;
-        width: 32%;
+        width: 348.8px;        
+        max-width: none;
     }
 
     .subtitle {
