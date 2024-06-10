@@ -32,8 +32,8 @@ export default function Card({
   const isGif: boolean = CardImg.includes(".gif");
 
   return (
-    <div className={`card ${isOpen ? "open" : ""}`}>
-      <a className={`${!isOpen ? "anchor" : "open-anchor"}`} style={{ backgroundColor: `${bgColor}`, cursor: "pointer" }} onClick={onClick}>
+    <div className={`card ${isOpen ? "open" : ""}`} onClick={onClick}>
+      <a className={`${!isOpen ? "anchor" : "open-anchor"}`} style={{ backgroundColor: `${bgColor}`, cursor: "pointer" }} >
         <div className={`${isOpen ? (isGif ? "open-gif-area" : "open-img-area") : (isGif ? "gif-area" : "img-area")}`}>
           <div className="img-conteiner">
             <img className="card-img" decoding="async" src={CardImg} />
