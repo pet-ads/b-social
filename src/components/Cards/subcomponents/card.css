@@ -18,9 +18,22 @@
     width: 320px;
     will-change: var(--framer-will-change-override, transform);
 }
+
+@keyframes slideIn {
+    from {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
 .open {
     width: 430px;
     border-radius: 12px;
+    animation: slideIn 0.5s forwards;
 }
 .anchor {
     aspect-ratio: 1.3333333333333333 / 1;
