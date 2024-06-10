@@ -16,6 +16,18 @@
     flex-direction: row;
     gap: 7px;
 }
+
+@keyframes slideIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
 .close-modal {
     width: 40px; 
     height: 40px;
@@ -27,6 +39,7 @@
     font-weight: bold;
     font-size: xx-large;
     cursor: pointer;
+    animation: slideIn 3s forwards;
 }
 
 @media (max-width: 809px){
