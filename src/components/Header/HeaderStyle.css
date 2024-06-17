@@ -28,7 +28,7 @@
     overflow: hidden;
     padding: 40px;
     position: relative;
-    width: 83%;
+    width: 100%;
 }
 
 .bear-conteiner {
@@ -136,16 +136,7 @@
     }
 }
 
-@media (min-width: 1200px) and (max-width: 1600px) {
-    .header {
-        width: 1200px;
-    }
-}
-
 @media (min-width: 810px) and (max-width: 1200px) {
-    .header {
-        width: 823px;
-    }
 
     .header-text-conteiner {
         padding: 0px;

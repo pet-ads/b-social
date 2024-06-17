@@ -23,6 +23,7 @@
 }
 
 .pet-signature {
+    cursor: pointer;
     font-family: Inter, Inter Placeholder, sans-serif;
     font-size: 14px;
     font-weight: 500;
@@ -86,4 +87,12 @@ a {
     line-height: 1.5em;
     text-align: left;
     color: rgb(255, 255, 255);
+}
+
+@media screen  and (max-width: 809px) {
+
+    .general-conteiner {
+        width: 90vw;
+    }
+    
 }

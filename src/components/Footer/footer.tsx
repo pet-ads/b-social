@@ -1,6 +1,10 @@
 import "./footer.css";
 import { links } from "../../Interfaces/links";
+import useWindowWidth from "../../hooks/useWindowWidth";
+
 export default function Footer({ Instagram, mail }: links) {
+const windowWidth = useWindowWidth();
+
   return (
     <div className="footer">
       <div className="general-conteiner">
@@ -8,15 +12,30 @@ export default function Footer({ Instagram, mail }: links) {
           <p className="copy-text">© Beaba org. 2023 </p>
         </div>
 
+
+        {windowWidth <= 809 ? (
+            
         <div>
-          <p className="pet-signature">
-            Desenvolvido com ♥ por
-            <a href="http://petads.paginas.scl.ifsp.edu.br/"> PET/ADS</a> @
-            <a href="https://scl.ifsp.edu.br" rel="noreferrer" target="_blank">
-              IFSP São Carlos.
-            </a>
-          </p>
-        </div>
+        <p className="pet-signature">
+          Desenvolvido com ♥ por
+          <a href="http://petads.paginas.scl.ifsp.edu.br/"> PET/ADS</a> 
+          <a href="https://scl.ifsp.edu.br" rel="noreferrer" target="_blank">
+            /IFSP/SC.
+          </a>
+        </p>
+      </div>
+            ) : (
+           
+        <div>
+        <p className="pet-signature">
+          Desenvolvido com ♥ por
+          <a href="http://petads.paginas.scl.ifsp.edu.br/"> PET/ADS</a> @
+          <a href="https://scl.ifsp.edu.br" rel="noreferrer" target="_blank">
+            IFSP São Carlos.
+          </a>
+        </p>
+      </div>
+            )}
 
         <div className="social-media-conteiner">
           <div className="insta-conteiner">

@@ -142,6 +142,14 @@
     position: relative;
 }
 
+@media screen and (max-width: 1024px){
+
+    .search-area{
+        width: 115%;
+    }
+
+}
+
 @media (max-width: 509px) {
     #modal-background {
         position: fixed;
@@ -174,7 +182,7 @@
         padding: 12px 20px;
         gap: 12px;
         touch-action: none;
-        width: 100%;
+        width: 50%;
         border-radius: 0px;
     }
 }
