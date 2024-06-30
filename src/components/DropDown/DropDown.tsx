@@ -1,5 +1,5 @@
 import "./dropdown.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import languagesJson from "../../../public/data/languages.json";
 
 interface Language {
@@ -16,11 +16,20 @@ export default function Dropdown({ selectedPath }: DropDown) {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedLanguage, setSelectedLanguage] = useState<Language | null>(languages[0] || null);
 
-  const handleLanguageClick = (lang: Language) => {
+  useEffect(() => {
+    const savedLanguage = localStorage.getItem("selectedLanguage");
+    if (savedLanguage) {
+      setSelectedLanguage(JSON.parse(savedLanguage));
+    }
+  }, []);
+
+  //functions 
+  function  handleLanguageClick  (lang: Language)  {
     setSelectedLanguage(lang);
     setIsOpen(false);
     selectedPath(lang.pathToData);
-  };
+    localStorage.setItem("selectedLanguage", JSON.stringify(lang));
+  }
 
   return (
     <div className="dropdown-conteiner">
