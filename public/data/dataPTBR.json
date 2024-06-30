@@ -1,122 +1,147 @@
 {
-    "Card": [
-        {
-            "id": "1",
-            "CardImg": "/Images/walkingBear.gif",
-            "CardTitle": "Amor",
-            "CardText": "Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade.",
-            "bgColor": "#a1f6ff",
-            "CardExpandedText": "Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade. Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade. Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade.",
-            "theme": "Amor",
-            "bgColorTheme:": "rgb(102,102,102)",
-            "recommendation": "Febre",
-            "bgColorRecommendatio": "rgb(102,102,102)"
-        },
-        {
-            "id": "2",
-            "CardImg": "/Images/feverBear.svg",
-            "CardTitle": "Febre",
-            "CardText": "Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade.",
-            "bgColor": "#3ac0c4",
-            "CardExpandedText": "Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade. Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade. Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade.",
-            "theme": "Febre",
-            "bgColorTheme:": "rgb(102,102,102)",
-            "recommendation": "Amor",
-            "bgColorRecommendatio": "rgb(102,102,102)"
-        },
-        {
-            "id": "3",
-            "CardImg": "/Images/televisionBear.svg",
-            "CardTitle": "Tempo de tela",
-            "CardText": "Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade.",
-            "bgColor": "#f3aebb",
-            "CardExpandedText": "Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade. Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade. Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade.",
-            "theme": "Tempo de Tela",
-            "bgColorTheme:": "rgb(102,102,102)",
-            "recommendation": "Amor",
-            "bgColorRecommendatio": "rgb(102,102,102)"
-        },
-        {
-            "id": "4",
-            "CardImg": "/Images/walkingBear.gif",
-            "CardTitle": "Amor",
-            "CardText": "Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade.",
-            "bgColor": "#ffcc01",
-            "CardExpandedText": "Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade. Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade. Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade.",
-            "theme": "Amor",
-            "bgColorTheme:": "rgb(102,102,102)",
-            "recommendation": "Febre",
-            "bgColorRecommendatio": "rgb(102,102,102)"
-        },
-        {
-            "id": "5",
-            "CardImg": "/Images/feverBear.svg",
-            "CardTitle": "Febre",
-            "CardText": "Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade.",
-            "bgColor": "#a1f6ff",
-            "CardExpandedText": "Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade. Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade. Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade.",
-            "theme": "Febre",
-            "bgColorTheme:": "rgb(102,102,102)",
-            "recommendation": "Amor",
-            "bgColorRecommendatio": "rgb(102,102,102)"
-        },
-        {
-            "id": "6",
-            "CardImg": "/Images/feverBear.svg",
-            "CardTitle": "Anemia",
-            "CardText": "Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade.",
-            "bgColor": "#e94447",
-            "CardExpandedText": "Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade. Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade. Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade.",
-            "theme": "Anemia",
-            "bgColorTheme:": "rgb(102,102,102)",
-            "recommendation": "Febre",
-            "bgColorRecommendatio": "rgb(102,102,102)"
-        },
-        {
-            "id": "7",
-            "CardImg": "/Images/walkingBear.gif",
-            "CardTitle": "Amor",
-            "CardText": "Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade.",
-            "bgColor": "#a1f6ff",
-            "CardExpandedText": "Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade. Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade. Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade.",
-            "theme": "Amor",
-            "bgColorTheme:": "rgb(102,102,102)",
-            "recommendation": "Tempo de tela",
-            "bgColorRecommendatio": "rgb(102,102,102)"
-        },
-        {
-            "id": "8",
-            "CardImg": "/Images/feverBear.svg",
-            "CardTitle": "Febre",
-            "CardText": "Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade.",
-            "bgColor": "#3ac0c4",
-            "CardExpandedText": "Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade. Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade. Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade.",
-            "theme": "Febre",
-            "bgColorTheme:": "rgb(102,102,102)",
-            "recommendation": "Amor",
-            "bgColorRecommendatio": "rgb(102,102,102)"
-        },
-        {
-            "id": "9",
-            "CardImg": "/Images/televisionBear.svg",
-            "CardTitle": "Tempo de tela",
-            "CardText": "Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade.",
-            "bgColor": "#f3aebb",
-            "CardExpandedText": "Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade. Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade. Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade.",
-            "theme": "Tempo de Tela",
-            "bgColorTheme:": "rgb(102,102,102)",
-            "recommendation": "Amor",
-            "bgColorRecommendatio": "rgb(102,102,102)"
-        }
-    ],
-    "Links": {
-        "Logo": "https://beaba.org",
-        "Guia": "https://beaba.org/guia/",
-        "aboutUs": "https://beaba.org/quem-somos/",
-        "Contact": " hello@beaba.org",
-        "Help": "https://beaba.org/doacao/",
-        "Btn": " https://beaba.org/doacao/",
-        "Instagram": "https://www.instagram.com/beabaorg/",
-        "mail": "hello@beaba.org"
+  "Card": [
+    {
+      "id": "1",
+      "CardImg": "/Images/walkingBear.gif",
+      "CardTitle": "Amor",
+      "CardText": "Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade.",
+      "bgColor": "#a1f6ff",
+      "CardExpandedText": "Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade. Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade. Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade.",
+      "theme": "Amor",
+      "bgColorTheme:": "rgb(102,102,102)",
+      "recommendation": "Febre",
+      "bgColorRecommendatio": "rgb(102,102,102)"
+    },
+    {
+      "id": "2",
+      "CardImg": "/Images/feverBear.svg",
+      "CardTitle": "Febre",
+      "CardText": "Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade.",
+      "bgColor": "#3ac0c4",
+      "CardExpandedText": "Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade. Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade. Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade.",
+      "theme": "Febre",
+      "bgColorTheme:": "rgb(102,102,102)",
+      "recommendation": "Amor",
+      "bgColorRecommendatio": "rgb(102,102,102)"
+    },
+    {
+      "id": "3",
+      "CardImg": "/Images/televisionBear.svg",
+      "CardTitle": "Tempo de tela",
+      "CardText": "Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade.",
+      "bgColor": "#f3aebb",
+      "CardExpandedText": "Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade. Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade. Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade.",
+      "theme": "Tempo de Tela",
+      "bgColorTheme:": "rgb(102,102,102)",
+      "recommendation": "Amor",
+      "bgColorRecommendatio": "rgb(102,102,102)"
+    },
+    {
+      "id": "4",
+      "CardImg": "/Images/walkingBear.gif",
+      "CardTitle": "Amor",
+      "CardText": "Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade.",
+      "bgColor": "#ffcc01",
+      "CardExpandedText": "Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade. Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade. Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade.",
+      "theme": "Amor",
+      "bgColorTheme:": "rgb(102,102,102)",
+      "recommendation": "Febre",
+      "bgColorRecommendatio": "rgb(102,102,102)"
+    },
+    {
+      "id": "5",
+      "CardImg": "/Images/feverBear.svg",
+      "CardTitle": "Febre",
+      "CardText": "Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade.",
+      "bgColor": "#a1f6ff",
+      "CardExpandedText": "Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade. Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade. Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade.",
+      "theme": "Febre",
+      "bgColorTheme:": "rgb(102,102,102)",
+      "recommendation": "Amor",
+      "bgColorRecommendatio": "rgb(102,102,102)"
+    },
+    {
+      "id": "6",
+      "CardImg": "/Images/feverBear.svg",
+      "CardTitle": "Anemia",
+      "CardText": "Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade.",
+      "bgColor": "#e94447",
+      "CardExpandedText": "Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade. Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade. Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade.",
+      "theme": "Anemia",
+      "bgColorTheme:": "rgb(102,102,102)",
+      "recommendation": "Febre",
+      "bgColorRecommendatio": "rgb(102,102,102)"
+    },
+    {
+      "id": "7",
+      "CardImg": "/Images/walkingBear.gif",
+      "CardTitle": "Amor",
+      "CardText": "Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade.",
+      "bgColor": "#a1f6ff",
+      "CardExpandedText": "Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade. Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade. Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade.",
+      "theme": "Amor",
+      "bgColorTheme:": "rgb(102,102,102)",
+      "recommendation": "Tempo de tela",
+      "bgColorRecommendatio": "rgb(102,102,102)"
+    },
+    {
+      "id": "8",
+      "CardImg": "/Images/feverBear.svg",
+      "CardTitle": "Febre",
+      "CardText": "Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade.",
+      "bgColor": "#3ac0c4",
+      "CardExpandedText": "Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade. Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade. Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade.",
+      "theme": "Febre",
+      "bgColorTheme:": "rgb(102,102,102)",
+      "recommendation": "Amor",
+      "bgColorRecommendatio": "rgb(102,102,102)"
+    },
+    {
+      "id": "9",
+      "CardImg": "/Images/televisionBear.svg",
+      "CardTitle": "Tempo de tela",
+      "CardText": "Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade.",
+      "bgColor": "#f3aebb",
+      "CardExpandedText": "Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade. Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade. Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade.",
+      "theme": "Tempo de Tela",
+      "bgColorTheme:": "rgb(102,102,102)",
+      "recommendation": "Amor",
+      "bgColorRecommendatio": "rgb(102,102,102)"
     }
+  ],
+  "Links": {
+    "Logo": "https://beaba.org",
+    "Guia": "https://beaba.org/guia/",
+    "aboutUs": "https://beaba.org/quem-somos/",
+    "Contact": " hello@beaba.org",
+    "Help": "https://beaba.org/doacao/",
+    "Btn": " https://beaba.org/doacao/",
+    "Instagram": "https://www.instagram.com/beabaorg/",
+    "mail": "hello@beaba.org"
+  },
+
+  "Texts": {
+    "Navigation": {
+      "Guide": "Guia",
+      "Contact": "Contato",
+      "Help": "Como Ajudar",
+      "AboutUs": "Quem Somos"
+    },
+    "Header": { 
+        "complete": "Tudo o que você precisa saber sobre câncer. Para pequenos pacientes e seus acompanhantes",
+        "Part1": " Tudo o que você precisa saber sobre câncer",
+        "Part2": "Para pequenos pacientes e seus acompanhantes"
+
+    }, 
+    "HelpArea": { 
+        "title": "Quero Ajudar!",
+        "button": "Comece aqui"
+},
+"Footer":{ 
+    "Developed": "Desenvolvido com ♥ por" , 
+    "PET":"PET/ADS",
+    "MobileIFSP": "/IFSP/SC.", 
+    "IFSP":"IFSP São Carlos."
+  }
+}
 }
