@@ -21,7 +21,7 @@
     flex: none;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 100px;
+    gap: 5rem;
     height: min-content;
     justify-content: center;
     max-width: 100%;
@@ -31,14 +31,22 @@
     width: 1400px;
 }
 
-@media (min-width: 810px) and (max-width: 1250px) {
-    .card-row {
-        gap: 60px;
-    }
-}
+
 
 @media (max-width: 809px) {
     .card-area {
         padding: 60px 20px;
     }
 }
+
+@media screen and (min-width: 769px) and (max-width: 780px) {
+    .card-row{ 
+        gap: 5rem;
+    }
+}
+@media screen and ( max-width: 768px){ 
+    .card-row{ 
+        gap: 3rem;
+    }
+}
+

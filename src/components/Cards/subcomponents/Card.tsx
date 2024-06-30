@@ -31,6 +31,8 @@ export default function Card({
   const isOpen = !!(recommendation && theme);
   const isGif: boolean = CardImg.includes(".gif");
 
+
+
   return (
     <div className={`card ${isOpen ? "open" : ""}`} onClick={onClick} style={{cursor: "pointer"}}>
       <a className={`${!isOpen ? "anchor" : "open-anchor"}`} style={{ backgroundColor: `${bgColor}`}} >
