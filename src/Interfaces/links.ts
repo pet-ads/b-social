@@ -7,6 +7,7 @@ export interface links {
   Btn?: string;
   Instagram?: string;
   mail?: string;
+  
 }
 export interface Links {
   links?: links;

@@ -10,10 +10,23 @@ import HelpArea from "./components/HelpArea/HelpArea";
 import Navigation from "./components/nav/navigation";
 
 function App() {
+
   const [pathToData, setPathToData] = useState("/data/dataPTBR.json");
-  const data = useFetchData(pathToData);
-  const cards = data?.Card || [];
-  const links = data?.Links;
+
+
+const data = useFetchData(pathToData);
+
+const cards = data?.Card || [];
+const links = data?.Links;
+const FooterContent = data?.Texts.Footer;
+const HeaderContent = data?.Texts.Header;
+const CollaborateContent = data?.Texts.HelpArea;
+const NavigationsContent = data?.Texts.Navigation;
+  
+
+
+
+
 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedCard, setSelectedCard] = useState<CardProps | null>(null);
@@ -29,8 +42,11 @@ function App() {
     <div className="main">
       <div className="contentConteiner">
         <Navigation setSelectedPath={setPathToData} links={navlinks} />
-        <Header />
+        
+        <Header texts={HeaderContent} />
+        
         <Search setIsCardModalOpen={setIsModalOpen} setSelectedCard={setSelectedCard} data={cards} />
+        
         <CardArea
           isModalOpen={isModalOpen}
           setIsModalOpen={setIsModalOpen}
@@ -38,7 +54,9 @@ function App() {
           setSelectedCard={setSelectedCard}
           data={cards}
         />
-        <HelpArea Btn={links?.Btn} />
+        
+        <HelpArea texts={CollaborateContent} Btn={links?.Btn} />
+        
         <Footer Instagram={links?.Instagram} mail={links?.mail} />
       </div>
     </div>

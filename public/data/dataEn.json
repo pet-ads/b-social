@@ -128,8 +128,9 @@
             "Help": "Collaborate"
         },
         "Header": { 
-            "complete": "Everything you need to know about cancer. For little patients and their companions",
-            "Part1": "Everything you need to know about cancer.",
+            "h1": "Beaba do Cancer",
+            "complete": "All you need to know about cancer. For little patients and their companions",
+            "Part1": "All you need to know about cancer.",
             "Part2": "For little patients and their companions"
         },
         "HelpArea": { 

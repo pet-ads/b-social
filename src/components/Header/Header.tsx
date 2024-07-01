@@ -2,7 +2,17 @@ import "./HeaderStyle.css";
 import headerImage from "/Images/HeaderBear.webp";
 import useWindowWidth from "../../hooks/useWindowWidth";
 
-export default function Header() {
+interface Content{ 
+  h1?: string, 
+  complete?: string, 
+  Part1?: string, 
+  Part2?: string
+}
+
+interface Props{ 
+  texts?: Content
+}
+export default function Header({texts}: Props) {
   const windowWidth = useWindowWidth();
 
   return (
@@ -14,17 +24,17 @@ export default function Header() {
       </div>
       <div className="header-text-conteiner">
         <div className="title">
-          <h1 className="h1">Beaba do câncer</h1>
+          <h1 className="h1">{texts?.h1}</h1>
         </div>
         <div className="subtitle-conteiner">
           <h2 className="subtitle">
             {windowWidth <= 809 ? (
-              "Tudo o que você precisa saber sobre câncer. Para pequenos pacientes e seus acompanhantes"
+             texts?.complete
             ) : (
               <>
-                Tudo o que você precisa saber sobre câncer.
+                {texts?.Part1}
                 <br className="br" />
-                Para pequenos pacientes e seus acompanhantes
+               {texts?.Part2}
               </>
             )}
           </h2>

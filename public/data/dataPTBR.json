@@ -128,8 +128,9 @@
       "AboutUs": "Quem Somos"
     },
     "Header": { 
+        "h1": "Beaba do Cancer",
         "complete": "Tudo o que você precisa saber sobre câncer. Para pequenos pacientes e seus acompanhantes",
-        "Part1": " Tudo o que você precisa saber sobre câncer",
+        "Part1": "Tudo o que você precisa saber sobre câncer",
         "Part2": "Para pequenos pacientes e seus acompanhantes"
 
     }, 
