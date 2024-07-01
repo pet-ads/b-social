@@ -2,7 +2,6 @@ import "./nav.css";
 import React, { useState } from "react";
 import DropDown from "../DropDown/DropDown";
 import { links } from "../../Interfaces/links";
-import BeabaLogo from "../../../public/Images/Beaba.png";
 import useWindowWidth from "../../hooks/useWindowWidth";
 import MobileNav from "./subcomponents/Mobile/mobileNav";
 import MobileLinks from "./subcomponents/Mobile/mobileLinks";
@@ -27,7 +26,7 @@ export default function Navigation({ setSelectedPath, links }: SelectPath) {
       >
         <div className="text-conteiner">
           <a href={links?.Logo} target="_blank">
-            <img className="beaba-logo" src={BeabaLogo} alt="Logo do Beaba" />
+            <img className="beaba-logo" src={"/Images/Beaba.png"} alt="Logo do Beaba" />
           </a>
         </div>
         {windowWidth <= 809 ? (
