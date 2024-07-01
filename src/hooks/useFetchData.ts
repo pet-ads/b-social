@@ -19,9 +19,43 @@ interface LinkContent {
   mail?: string;
 }
 
+interface NavigationText {
+  Guide: string;
+  AboutUs: string;
+  Contact: string;
+  Help: string;
+}
+
+interface HeaderText {
+  h1: string,
+  complete: string;
+  Part1: string;
+  Part2: string;
+}
+
+interface HelpAreaText {
+  title: string;
+  button: string;
+}
+
+interface FooterText {
+  Developed: string;
+  PET: string;
+  MobileIFSP: string;
+  IFSP: string;
+}
+
+interface TextContent {
+  Navigation: NavigationText;
+  Header: HeaderText;
+  HelpArea: HelpAreaText;
+  Footer: FooterText;
+}
+
 interface FetchData {
   Card: CardContent[];
   Links: LinkContent;
+  Texts: TextContent;
 }
 
 export default function useFetchData(pathToData: string): FetchData | null {

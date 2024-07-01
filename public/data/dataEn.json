@@ -118,5 +118,31 @@
         "Btn": " https://beaba.org/en/doacao/",
         "Instagram": "https://www.instagram.com/beabaorg/",
         "mail": "hello@beaba.org"
+    },
+
+    "Texts": { 
+        "Navigation":{ 
+            "Guide": "Guide",
+            "AboutUs": "About Us",
+            "Contact": "Contact",
+            "Help": "Collaborate"
+        },
+        "Header": { 
+            "h1": "Beaba of Cancer",
+            "complete": "All you need to know about cancer. For little patients and their caregivers",
+            "Part1": "All you need to know about cancer.",
+            "Part2": "For little patients and their caregivers"
+        },
+        "HelpArea": { 
+            "title": "I Want to Collaborate!",
+            "button": "Start Here"
+        },
+        "Footer": {
+            "Developed": "Developed with ♥ by",
+            "PET": "PET/ADS",
+            "MobileIFSP": "/IFSP/SC.",
+            "IFSP": "IFSP São Carlos."
+          }
+            
     }
 }

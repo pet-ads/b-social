@@ -10,27 +10,37 @@ import HelpArea from "./components/HelpArea/HelpArea";
 import Navigation from "./components/nav/navigation";
 
 function App() {
-  const [pathToData, setPathToData] = useState("/data/dataPTBR.json");
-  const data = useFetchData(pathToData);
-  const cards = data?.Card || [];
-  const links = data?.Links;
 
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedCard, setSelectedCard] = useState<CardProps | null>(null);
+const [isModalOpen, setIsModalOpen] = useState(false);
+const [pathToData, setPathToData] = useState("/data/dataPTBR.json");
+const [selectedCard, setSelectedCard] = useState<CardProps | null>(null);
 
-  const navlinks = {
-    Logo: links?.Logo,
-    Guia: links?.Guia,
-    aboutUs: links?.aboutUs,
-    Contact: links?.Contact,
-    Help: links?.Help,
-  };
+
+const data = useFetchData(pathToData);
+
+const links = data?.Links;
+const cards = data?.Card || [];
+const FooterContent = data?.Texts.Footer;
+const HeaderContent = data?.Texts.Header;
+const CollaborateContent = data?.Texts.HelpArea;
+const NavigationsContent = data?.Texts.Navigation;
+  
+const navlinks = {
+  Logo: links?.Logo,
+  Guia: links?.Guia,
+  Help: links?.Help,
+  aboutUs: links?.aboutUs,
+  Contact: links?.Contact,
+};
+
   return (
     <div className="main">
       <div className="contentConteiner">
-        <Navigation setSelectedPath={setPathToData} links={navlinks} />
-        <Header />
+      <Navigation setSelectedPath={setPathToData} links={navlinks} texts={NavigationsContent} />        
+        <Header texts={HeaderContent} />
+        
         <Search setIsCardModalOpen={setIsModalOpen} setSelectedCard={setSelectedCard} data={cards} />
+        
         <CardArea
           isModalOpen={isModalOpen}
           setIsModalOpen={setIsModalOpen}
@@ -38,8 +48,10 @@ function App() {
           setSelectedCard={setSelectedCard}
           data={cards}
         />
-        <HelpArea Btn={links?.Btn} />
-        <Footer Instagram={links?.Instagram} mail={links?.mail} />
+        
+        <HelpArea texts={CollaborateContent} Btn={links?.Btn} />
+        
+        <Footer Instagram={links?.Instagram} mail={links?.mail} texts={FooterContent} />
       </div>
     </div>
   );
