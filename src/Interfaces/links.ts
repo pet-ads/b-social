@@ -10,5 +10,5 @@ export interface links {
   
 }
 export interface Links {
-  links?: links;
+  links?: links
 }

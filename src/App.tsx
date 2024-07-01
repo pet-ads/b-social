@@ -36,8 +36,7 @@ const navlinks = {
   return (
     <div className="main">
       <div className="contentConteiner">
-        <Navigation setSelectedPath={setPathToData} links={navlinks} />
-        
+      <Navigation setSelectedPath={setPathToData} links={navlinks} texts={NavigationsContent} />        
         <Header texts={HeaderContent} />
         
         <Search setIsCardModalOpen={setIsModalOpen} setSelectedCard={setSelectedCard} data={cards} />
