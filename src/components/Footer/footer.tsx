@@ -2,8 +2,19 @@ import "./footer.css";
 import { links } from "../../Interfaces/links";
 import useWindowWidth from "../../hooks/useWindowWidth";
 
-export default function Footer({ Instagram, mail }: links) {
-const windowWidth = useWindowWidth();
+interface FooterTexts {
+  Developed: string;
+  PET: string;
+  MobileIFSP: string;
+  IFSP: string;
+}
+
+interface FooterProps extends links {
+  texts?: FooterTexts;
+}
+
+export default function Footer({ Instagram, mail, texts }: FooterProps) {
+  const windowWidth = useWindowWidth();
 
   return (
     <div className="footer">
@@ -12,30 +23,27 @@ const windowWidth = useWindowWidth();
           <p className="copy-text">© Beaba org. 2023 </p>
         </div>
 
-
         {windowWidth <= 809 ? (
-            
-        <div>
-        <p className="pet-signature">
-          Desenvolvido com ♥ por
-          <a href="http://petads.paginas.scl.ifsp.edu.br/"> PET/ADS</a> 
-          <a href="https://scl.ifsp.edu.br" rel="noreferrer" target="_blank">
-            /IFSP/SC.
-          </a>
-        </p>
-      </div>
-            ) : (
-           
-        <div>
-        <p className="pet-signature">
-          Desenvolvido com ♥ por
-          <a href="http://petads.paginas.scl.ifsp.edu.br/"> PET/ADS</a> @
-          <a href="https://scl.ifsp.edu.br" rel="noreferrer" target="_blank">
-            IFSP São Carlos.
-          </a>
-        </p>
-      </div>
-            )}
+          <div>
+            <p className="pet-signature">
+              {texts?.Developed}
+              <a href="http://petads.paginas.scl.ifsp.edu.br/"> {texts?.PET}</a>
+              <a href="https://scl.ifsp.edu.br" rel="noreferrer" target="_blank">
+                {texts?.MobileIFSP}
+              </a>
+            </p>
+          </div>
+        ) : (
+          <div>
+            <p className="pet-signature">
+              {texts?.Developed}
+              <a href="http://petads.paginas.scl.ifsp.edu.br/"> {texts?.PET}</a> @
+              <a href="https://scl.ifsp.edu.br" rel="noreferrer" target="_blank">
+                {texts?.IFSP}
+              </a>
+            </p>
+          </div>
+        )}
 
         <div className="social-media-conteiner">
           <div className="insta-conteiner">

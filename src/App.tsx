@@ -11,33 +11,28 @@ import Navigation from "./components/nav/navigation";
 
 function App() {
 
-  const [pathToData, setPathToData] = useState("/data/dataPTBR.json");
+const [isModalOpen, setIsModalOpen] = useState(false);
+const [pathToData, setPathToData] = useState("/data/dataPTBR.json");
+const [selectedCard, setSelectedCard] = useState<CardProps | null>(null);
 
 
 const data = useFetchData(pathToData);
 
-const cards = data?.Card || [];
 const links = data?.Links;
+const cards = data?.Card || [];
 const FooterContent = data?.Texts.Footer;
 const HeaderContent = data?.Texts.Header;
 const CollaborateContent = data?.Texts.HelpArea;
 const NavigationsContent = data?.Texts.Navigation;
   
+const navlinks = {
+  Logo: links?.Logo,
+  Guia: links?.Guia,
+  Help: links?.Help,
+  aboutUs: links?.aboutUs,
+  Contact: links?.Contact,
+};
 
-
-
-
-
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedCard, setSelectedCard] = useState<CardProps | null>(null);
-
-  const navlinks = {
-    Logo: links?.Logo,
-    Guia: links?.Guia,
-    aboutUs: links?.aboutUs,
-    Contact: links?.Contact,
-    Help: links?.Help,
-  };
   return (
     <div className="main">
       <div className="contentConteiner">
@@ -57,7 +52,7 @@ const NavigationsContent = data?.Texts.Navigation;
         
         <HelpArea texts={CollaborateContent} Btn={links?.Btn} />
         
-        <Footer Instagram={links?.Instagram} mail={links?.mail} />
+        <Footer Instagram={links?.Instagram} mail={links?.mail} texts={FooterContent} />
       </div>
     </div>
   );
