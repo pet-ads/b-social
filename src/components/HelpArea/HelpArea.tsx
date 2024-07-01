@@ -13,7 +13,6 @@ interface Props extends links {
 
 export default function HelpArea({ Btn, texts }: Props) {
 
-  console.log(texts)
   return (
     <div className="want-to-help">
       <div className="conteiner">
