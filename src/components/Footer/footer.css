@@ -11,6 +11,7 @@
     position: relative;
     width: 100%;
     gap: 15px;
+
 }
 
 .general-conteiner {
@@ -89,10 +90,32 @@ a {
     color: rgb(255, 255, 255);
 }
 
-@media screen  and (max-width: 809px) {
+@media screen  and (max-width: 1024px) {
 
     .general-conteiner {
-        width: 90vw;
+        width: 80vw;
     }
-    
+    .footer{
+        width: 102%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .footer{
+        height: fit-content;
+    }
+    .general-conteiner{ 
+        width: 60vw;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .footer{
+        height: fit-content;
+    }
+    .general-conteiner{ 
+        width: 80vw;
+    }
+
 }
