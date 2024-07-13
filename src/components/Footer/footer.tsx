@@ -2,7 +2,7 @@
 import useWindowWidth from "../../hooks/useWindowWidth"
 
 // Types
-import { links } from "../../Interfaces/links"
+import { links } from "../../interfaces/links"
 
 // Styles
 import "./footer.css"

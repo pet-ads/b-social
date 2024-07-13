@@ -8,7 +8,7 @@ import MobileLinks from "./components/Mobile/mobileLinks"
 import DefaultLinks from "./components/Default/defaultLinks"
 
 // Types
-import { links } from "../../Interfaces/links"
+import { links } from "../../interfaces/links"
 
 // Hooks
 import useWindowWidth from "../../hooks/useWindowWidth"
