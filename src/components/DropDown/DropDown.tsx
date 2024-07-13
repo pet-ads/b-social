@@ -5,7 +5,7 @@ import { useEffect, useState } from "react"
 import languagesJson from "../../../public/data/languages.json"
 
 // Styles
-import "./Dropdown.css"
+import "./dropdown.css"
 
 interface Language {
   pathToLogo: string

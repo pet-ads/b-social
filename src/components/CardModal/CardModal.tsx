@@ -2,10 +2,10 @@
 import { useEffect } from "react"
 
 // Components
-import Card from "../Cards/subcomponents/Card"
+import Card from "../Cards/Subcomponents/card"
 
 // Styles
-import "./CardModal.css"
+import "./cardmodal.css"
 
 interface Props {
   theme?: string

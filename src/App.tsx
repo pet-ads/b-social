@@ -2,13 +2,13 @@
 import { useState } from "react"
 
 // Components
-import CardProps from "./Interfaces/CardProps"
-import Footer from "./components/Footer/Footer"
-import Header from "./components/Header/Header"
-import Search from "./components/search/Search"
-import CardArea from "./components/Cards/CardArea"
-import Navigation from "./components/nav/navigation"
-import HelpArea from "./components/HelpArea/HelpArea"
+import CardProps from "./Interfaces/cardProps"
+import Footer from "./components/Footer/footer"
+import Header from "./components/Header/header"
+import Search from "./components/Search/search"
+import CardArea from "./components/Cards/cardarea"
+import Navigation from "./components/Nav/navigation"
+import HelpArea from "./components/HelpArea/helpArea"
 
 // Hooks
 import useFetchData from "./hooks/useFetchData"

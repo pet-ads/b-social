@@ -5,7 +5,7 @@ import useWindowWidth from "../../hooks/useWindowWidth"
 import { links } from "../../Interfaces/links"
 
 // Styles
-import "./Footer.css"
+import "./footer.css"
 
 
 interface FooterTexts {

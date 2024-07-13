@@ -2,10 +2,10 @@
 import React, { useState } from "react"
 
 // Components
-import DropDown from "../DropDown/DropDown"
-import MobileNav from "./subcomponents/Mobile/mobileNav"
-import MobileLinks from "./subcomponents/Mobile/mobileLinks"
-import DefaultLinks from "./subcomponents/Default/defaultLinks"
+import DropDown from "../DropDown/dropdown"
+import MobileNav from "./Subcomponents/Mobile/mobileNav"
+import MobileLinks from "./Subcomponents/Mobile/mobileLinks"
+import DefaultLinks from "./Subcomponents/Default/defaultLinks"
 
 // Types
 import { links } from "../../Interfaces/links"

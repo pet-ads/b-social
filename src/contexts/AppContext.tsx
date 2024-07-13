@@ -2,7 +2,7 @@
 import { ReactNode, createContext, useState } from "react"
 
 // Types
-import CardProps from "../Interfaces/CardProps"
+import CardProps from "../Interfaces/cardProps"
 
 interface AppContextType {
     isModalOpen: boolean

@@ -1,9 +1,9 @@
 // Components
-import Card from "./subcomponents/Card"
-import CardModal from "../CardModal/CardModal"
+import Card from "./Subcomponents/card"
+import CardModal from "../CardModal/cardmodal"
 
 // Styles 
-import "./CardArea.css"
+import "./cardarea.css"
 
 interface Props {
   id: string

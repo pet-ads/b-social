@@ -1,32 +1,37 @@
 .link {
+    width: auto;
+    height: auto;
+
     outline: none;
     display: flex;
+    
+    flex: none;
+    flex-shrink: 0;
+    transform: none;
     flex-direction: column;
     justify-content: flex-start;
-    flex-shrink: 0;
-    color: rgb(102, 102, 102);
-    transform: none;
-    transform-origin: 50% 50% 0px;
-    opacity: 1;
 
-    flex: none;
-    height: auto;
     position: relative;
-    user-select: none;
+
+    opacity: 1;
     white-space: pre;
-    width: auto;
+    user-select: none;
+    color: rgb(102, 102, 102);
+    transform-origin: 50% 50% 0px;
+
 }
 
 .link p {
-    font-family: Inter, Inter Placeholder, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    color: #000;
     font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.2em;
+    text-align: nt, start;
     letter-spacing: ng, 0;
     text-transform: rm, none;
     text-decoration: ion, none;
-    line-height: 1.2em;
-    text-align: nt, start;
+    font-family: Inter, Inter Placeholder, sans-serif;
+
+    color: #000;
     cursor: pointer;
 }

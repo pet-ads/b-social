@@ -3,13 +3,13 @@ import { IoSearch } from "react-icons/io5"
 import React, { useEffect, useRef, useState } from "react"
 
 // Components
-import SearchResult from "./SearchResult"
+import SearchResult from "./searchResult"
 
 // Hooks
 import useFilterSearch from "../../hooks/useFilterSearch"
 
 // Types
-import CardProps from "../../Interfaces/CardProps"
+import CardProps from "../../Interfaces/cardProps"
 
 // Styles
 import "./search.css"

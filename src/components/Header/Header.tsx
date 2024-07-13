@@ -5,7 +5,7 @@ import useWindowWidth from "../../hooks/useWindowWidth"
 import headerImage from "/Images/HeaderBear.webp"
 
 // Styles
-import "./HeaderStyle.css"
+import "./headerStyle.css"
 
 interface Content{ 
   h1?: string 

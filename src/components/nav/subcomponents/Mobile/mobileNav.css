@@ -1,8 +1,9 @@
 .menu-icon {
-    flex: 0 0 auto;
-    height: 42px;
-    position: relative;
     width: 42px;
+    height: 42px;
+
+    flex: 0 0 auto;
+    position: relative;
 }
 
 .not-clicked,
