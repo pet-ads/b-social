@@ -1,73 +1,77 @@
-import "./cardArea.css";
-import CardModal from "../CardModal/CardModal";
+// Components
 import Card from "./subcomponents/Card";
+import CardModal from "../CardModal/CardModal";
+
+// Styles 
+import "./cardArea.css";
+
 
 interface CardProps {
   id: string;
-  CardImg: string;
-  CardTitle: string;
-  CardText: string;
-  bgColor: string;
-  CardExpandedText?: string;
-  recommendation?: string;
-  bgColorRecommendation?: string;
   theme?: string;
+  CardImg: string;
+  bgColor: string;
+  CardText: string;
+  CardTitle: string;
   bgColorTheme?: string;
+  recommendation?: string;
+  CardExpandedText?: string;
+  bgColorRecommendation?: string;
 }
 
 interface Data {
   data: CardProps[];
   isModalOpen: boolean;
-  setIsModalOpen: React.Dispatch<React.SetStateAction<boolean>>;
   selectedCard: CardProps | null;
+  setIsModalOpen: React.Dispatch<React.SetStateAction<boolean>>;
   setSelectedCard: React.Dispatch<React.SetStateAction<CardProps | null>>
 }
 
-export default function CardArea({ data, isModalOpen, setIsModalOpen, selectedCard, setSelectedCard }: Data) {
-  const openModal = (card: CardProps) => {
+export default function CardArea({ data, isModalOpen, selectedCard, setIsModalOpen,  setSelectedCard }: Data) {
+  function  openModal (card: CardProps){
     setSelectedCard(card);
     setIsModalOpen(true);
-  };
+  }
 
-  const openModalByTitle = (title: string) => {
+ function  openModalByTitle  (title: string)  {
     const card = data.find((card) => card.CardTitle === title);
     if (card) {
         setSelectedCard(card);
     }
-  };
+  }
 
   function closeModal(event: React.MouseEvent<HTMLDivElement, MouseEvent>) {
-    console.log("clicou no modal");
     if ((event.target as HTMLDivElement).className === "modal-background" || (event.target as HTMLDivElement).className === "close-modal") 
-        setIsModalOpen(false);
+      setIsModalOpen(false);
   }
 
   return (
     <div className="card-area">
       <div className="card-row">
-        {data.map((item) => (
+        {data.sort((a,b)=> a.CardTitle.localeCompare(b.CardTitle)).map((item) =>(
           <Card
             key={item.id}
-            CardImg={item.CardImg}
-            CardTitle={item.CardTitle}
-            CardText={item.CardText}
             bgColor={item.bgColor}
+            CardImg={item.CardImg}
+            CardText={item.CardText}
+            CardTitle={item.CardTitle}
             onClick={() => openModal(item)}
           />
         ))}
       </div>
+      
       {isModalOpen && selectedCard && (
         <CardModal
-          CardImg={selectedCard.CardImg}
-          CardTitle={selectedCard.CardTitle}
-          CardText={selectedCard.CardExpandedText}
-          bgColor={selectedCard.bgColor}
-          recommendation={selectedCard.recommendation}
-          bgColorRecommendation={selectedCard.bgColorRecommendation}
-          theme={selectedCard.theme}
-          bgColorTheme={selectedCard.bgColorTheme}
-          closeModal={closeModal}
-          onRecommendationClick={openModalByTitle}
+        theme={selectedCard.theme}
+        bgColor={selectedCard.bgColor}
+        CardImg={selectedCard.CardImg}
+        CardTitle={selectedCard.CardTitle}
+        bgColorTheme={selectedCard.bgColorTheme}
+        CardText={selectedCard.CardExpandedText}
+        recommendation={selectedCard.recommendation}
+        bgColorRecommendation={selectedCard.bgColorRecommendation}
+        closeModal={closeModal}
+        onRecommendationClick={openModalByTitle}
         />
       )}
     </div>
