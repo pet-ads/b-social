@@ -144,9 +144,9 @@
 
   "footer":{ 
     "developed": "Desenvolvido com ♥ por" , 
-    "pet":"PET/ADS",
+    "pet":" PET/ADS",
     "mobileIFSP": "/IFSP", 
-    "ifsp":"IFSP São Carlos."
+    "ifsp":" IFSP São Carlos."
   }
 }
 }

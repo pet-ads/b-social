@@ -35,7 +35,7 @@ export default function Footer({ instagram, mail, texts }: Props) {
             <p className="pet-signature">
               {texts?.developed}
               
-              <a href="http://petads.paginas.scl.ifsp.edu.br/">{texts?.pet}</a>
+              <a href="http://petads.paginas.scl.ifsp.edu.br/" rel="noreferrer" target="_blank">{texts?.pet}</a>
               
               <a href="https://scl.ifsp.edu.br" rel="noreferrer" target="_blank">
                 {texts?.mobileIFSP}
@@ -48,7 +48,7 @@ export default function Footer({ instagram, mail, texts }: Props) {
               
               {texts?.developed}
               
-              <a href="http://petads.paginas.scl.ifsp.edu.br/">{texts?.pet}</a> @
+              <a href="http://petads.paginas.scl.ifsp.edu.br/" rel="noreferrer" target="_blank">{texts?.pet}</a> @
               
               <a href="https://scl.ifsp.edu.br" rel="noreferrer" target="_blank">
                 {texts?.ifsp}
