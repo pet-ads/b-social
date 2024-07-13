@@ -3,17 +3,18 @@ import { IoSearch } from "react-icons/io5"
 import React, { useEffect, useRef, useState } from "react"
 
 // Components
-import SearchResult from "./searchresult"
+import SearchResult from "./searchResult"
+
 
 // Hooks
 import useFilterSearch from "../../hooks/useFilterSearch"
 
 // Types
+import CardProps from "../../interfaces/cardprops"
 
 
 // Styles
 import "./search.css"
-import CardProps from "../../interfaces/CardProps"
 
 interface CardContent{
   id: string

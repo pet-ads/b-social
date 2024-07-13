@@ -3,7 +3,7 @@ import Card from "./components/card"
 import CardModal from "../CardModal/cardmodal"
 
 // Types
-import CardProps from "../../interfaces/CardProps"
+import CardProps from "../../interfaces/cardprops"
 
 // Styles 
 import "./cardarea.css"

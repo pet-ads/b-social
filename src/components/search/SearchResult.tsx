@@ -2,7 +2,7 @@
 import { Dispatch, SetStateAction } from "react";
 
 // Types
-import CardProps from "../../interfaces/CardProps";
+import CardProps from "../../interfaces/cardprops";
 
 
 // Styles

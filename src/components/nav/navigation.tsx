@@ -2,10 +2,12 @@
 import React, { useState } from "react"
 
 // Components
-import DropDown from "../DropDown/dropdown"
+import Dropdown from "../DropDown/dropdown"
 import MobileNav from "./components/Mobile/mobileNav"
 import MobileLinks from "./components/Mobile/mobileLinks"
 import DefaultLinks from "./components/Default/defaultLinks"
+
+
 
 // Types
 import { links } from "../../interfaces/links"
@@ -15,6 +17,7 @@ import useWindowWidth from "../../hooks/useWindowWidth"
 
 // Styles
 import "./nav.css"
+
 
 interface NavigationTexts {
   help: string
@@ -54,7 +57,7 @@ export default function Navigation({links, texts, setSelectedPath }: Props) {
         
         {windowWidth <= 809 ? (
           <div className="navigation-buttons">
-            <DropDown selectedPath={setSelectedPath} />
+            <Dropdown selectedPath={setSelectedPath} />
             <MobileNav clicked={clicked} setClicked={setClicked} />
           </div>
         ) : (
@@ -62,7 +65,7 @@ export default function Navigation({links, texts, setSelectedPath }: Props) {
             <div className="navigation-buttons">
               <DefaultLinks links={links} texts={texts} />
             </div>
-            <DropDown selectedPath={setSelectedPath} />
+            <Dropdown selectedPath={setSelectedPath} />
           </>
         )}
         

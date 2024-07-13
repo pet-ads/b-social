@@ -6,6 +6,7 @@ import languagesJson from "../../../public/data/languages.json"
 
 // Styles
 import "./dropdown.css"
+import React from "react"
 
 interface Language {
   pathToLogo: string
