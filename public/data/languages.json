@@ -1,11 +1,11 @@
 {
     "languages": [
         {
-            "pathToLogo": "/images/Brlogo.png",
+            "pathToLogo": "/Images/Brlogo.png",
             "pathToData": "/data/dataPT-Br.json"
         },
         {
-            "pathToLogo": "/images/EuaLogo.png",
+            "pathToLogo": "/Images/EUALogo.png",
             "pathToData": "/data/dataEn.json"
         }
     ]

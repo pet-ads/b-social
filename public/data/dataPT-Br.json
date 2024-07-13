@@ -2,7 +2,7 @@
   "card": [
     {
       "id": "1",
-      "cardImg": "/images/WalkingBear.gif",
+      "cardImg": "/Images/walkingBear.gif",
       "cardTitle": "Amor",
       "cardText": "Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade.",
       "bgColor": "#a1f6ff",
@@ -14,7 +14,7 @@
     },
     {
       "id": "2",
-      "cardImg": "/images/FeverBear.svg",
+      "cardImg": "/Images/feverBear.svg",
       "cardTitle": "Febre",
       "cardText": "Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade.",
       "bgColor": "#3ac0c4",
@@ -26,7 +26,7 @@
     },
     {
       "id": "3",
-      "cardImg": "/images/TelevisionBear.svg",
+      "cardImg": "/Images/televisionBear.svg",
       "cardTitle": "Tempo de tela",
       "cardText": "Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade.",
       "bgColor": "#f3aebb",
@@ -38,7 +38,7 @@
     },
     {
       "id": "4",
-      "cardImg": "/images/WalkingBear.gif",
+      "cardImg": "/Images/walkingBear.gif",
       "cardTitle": "Amor",
       "cardText": "Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade.",
       "bgColor": "#ffcc01",
@@ -50,7 +50,7 @@
     },
     {
       "id": "5",
-      "cardImg": "/images/FeverBear.svg",
+      "cardImg": "/Images/feverBear.svg",
       "cardTitle": "Febre",
       "cardText": "Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade.",
       "bgColor": "#a1f6ff",
@@ -62,7 +62,7 @@
     },
     {
       "id": "6",
-      "cardImg": "/images/FeverBear.svg",
+      "cardImg": "/Images/feverBear.svg",
       "cardTitle": "Anemia",
       "cardText": "Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade.",
       "bgColor": "#e94447",
@@ -74,7 +74,7 @@
     },
     {
       "id": "7",
-      "cardImg": "/images/WalkingBear.gif",
+      "cardImg": "/Images/walkingBear.gif",
       "cardTitle": "Amor",
       "cardText": "Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade.",
       "bgColor": "#a1f6ff",
@@ -86,7 +86,7 @@
     },
     {
       "id": "8",
-      "cardImg": "/images/FeverBear.svg",
+      "cardImg": "/Images/feverBear.svg",
       "cardTitle": "Febre",
       "cardText": "Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade.",
       "bgColor": "#3ac0c4",
@@ -98,7 +98,7 @@
     },
     {
       "id": "9",
-      "cardImg": "/images/TelevisionBear.svg",
+      "cardImg": "/Images/televisionBear.svg",
       "cardTitle": "Tempo de tela",
       "cardText": "Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade.",
       "bgColor": "#f3aebb",

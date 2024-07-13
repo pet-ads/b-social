@@ -51,7 +51,7 @@ export default function Navigation({links, texts, setSelectedPath }: Props) {
       >
         <div className="text-conteiner">
           <a href={links?.logo} target="_blank">
-            <img className="beaba-logo" src={"/images/Beaba.png"} alt="Logo do Beaba" />
+            <img className="beaba-logo" src={"/Images/Beaba.png"} alt="Logo do Beaba" />
           </a>
         </div>
         

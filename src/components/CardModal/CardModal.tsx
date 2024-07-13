@@ -5,7 +5,7 @@ import { useEffect } from "react"
 import Card from "../Card/components/card"
 
 // Styles
-import "./cardmodal.css"
+import "./CardModal.css"
 
 interface Props {
   theme?: string

@@ -2,7 +2,7 @@
     "card": [
         {
             "id": "1",
-            "cardImg": "/images/WalkingBear.gif",
+            "cardImg": "/Images/walkingBear.gif",
             "cardTitle": "Love",
             "cardText": "Learn about hosting built for scale and reliability.",
             "bgColor": "#a1f6ff",
@@ -14,7 +14,7 @@
         },
         {
             "id": "2",
-            "cardImg": "/images/FeverBear.svg",
+            "cardImg": "/Images/feverBear.svg",
             "cardTitle": "Fever",
             "cardText": "Learn about hosting built for scale and reliability.",
             "bgColor": "#3ac0c4",
@@ -26,7 +26,7 @@
         },
         {
             "id": "3",
-            "cardImg": "/images/TelevisionBear.svg",
+            "cardImg": "/Images/televisionBear.svg",
             "cardTitle": "Screen time",
             "cardText": "Learn about hosting built for scale and reliability.",
             "bgColor": "#f3aebb",
@@ -38,7 +38,7 @@
         },
         {
             "id": "4",
-            "cardImg": "/images/WalkingBear.gif",
+            "cardImg": "/Images/walkingBear.gif",
             "cardTitle": "Love",
             "cardText": "Learn about hosting built for scale and reliability.",
             "bgColor": "#ffcc01",
@@ -50,7 +50,7 @@
         },
         {
             "id": "5",
-            "cardImg": "/images/FeverBear.svg",
+            "cardImg": "/Images/feverBear.svg",
             "cardTitle": "Fever",
             "cardText": "Learn about hosting built for scale and reliability.",
             "bgColor": "#a1f6ff",
@@ -62,7 +62,7 @@
         },
         {
             "id": "6",
-            "cardImg": "/images/FeverBear.svg",
+            "cardImg": "/Images/feverBear.svg",
             "cardTitle": "Anemia",
             "cardText": "Learn about hosting built for scale and reliability.",
             "bgColor": "#e94447",
@@ -74,7 +74,7 @@
         },
         {
             "id": "7",
-            "cardImg": "/images/WalkingBear.gif",
+            "cardImg": "/Images/walkingBear.gif",
             "cardTitle": "Love",
             "cardText": "Learn about hosting built for scale and reliability.",
             "bgColor": "#a1f6ff",
@@ -86,7 +86,7 @@
         },
         {
             "id": "8",
-            "cardImg": "/images/FeverBear.svg",
+            "cardImg": "/Images/feverBear.svg",
             "cardTitle": "Fever",
             "cardText": "Learn about hosting built for scale and reliability.",
             "bgColor": "#3ac0c4",
@@ -98,7 +98,7 @@
         },
         {
             "id": "9",
-            "cardImg": "/images/TelevisionBear.svg",
+            "cardImg": "/Images/televisionBear.svg",
             "cardTitle": "Screen time",
             "cardText": "Learn about hosting built for scale and reliability.",
             "bgColor": "#f3aebb",
@@ -143,9 +143,9 @@
 
     "footer": {
         "developed": "Developed with ♥ by",
-        "pet": "PET/ADS",
+        "pet": " PET/ADS",
         "mobileIFSP": "/IFSP",
-        "ifsp": "IFSP São Carlos."
+        "ifsp": " IFSP São Carlos."
     }
             
     }

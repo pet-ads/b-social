@@ -2,10 +2,10 @@
 import useWindowWidth from "../../hooks/useWindowWidth"
 
 // Services
-import headerImage from "/images/HeaderBear.webp"
+import headerImage from "/Images/HeaderBear.webp"
 
 // Styles
-import "./headerStyle.css"
+import "./HeaderStyle.css"
 
 interface Content{ 
   h1?: string 
