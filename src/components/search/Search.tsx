@@ -1,12 +1,12 @@
+// External Libraries
+import { IoSearch } from "react-icons/io5"
+import React, { useEffect, useRef, useState } from "react"
+
 // Components
 import SearchResult from "./SearchResult"
 
 // Hooks
 import useFilterSearch from "../../hooks/useFilterSearch"
-
-// External Libraries
-import { IoSearch } from "react-icons/io5"
-import React, { useEffect, useRef, useState } from "react"
 
 // Types
 import CardProps from "../../Interfaces/CardProps"
@@ -39,7 +39,7 @@ export default function Search({ data, setIsCardModalOpen, setSelectedCard }: Da
   // Hooks
    const searchResult = useFilterSearch({ data, inputValue })
  
-    // Effects
+  // Effects
   useEffect(() => {
     if (isModalOpen) {
       inputRef.current?.focus()
@@ -82,12 +82,12 @@ export default function Search({ data, setIsCardModalOpen, setSelectedCard }: Da
                 
                 <input
                   type="text"
+                  ref={inputRef}
                   id="searchInput"
                   className="input"
-                  placeholder="Search..."
                   value={inputValue}
+                  placeholder="Search..."
                   onChange={handleInputChange}
-                  ref={inputRef}
                 />
               </div>
               {inputValue ? <SearchResult data={searchResult} setModalOpen={setModalOpen} setIsCardModalOpen={setIsCardModalOpen} setSelectedCard={setSelectedCard}/> : <></>}

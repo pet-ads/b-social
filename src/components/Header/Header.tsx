@@ -19,7 +19,7 @@ interface Props{
 }
 
 export default function Header({texts}: Props) {
-// Hooks
+  // Hooks
   const windowWidth = useWindowWidth()
 
   return (

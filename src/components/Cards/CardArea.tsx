@@ -27,6 +27,7 @@ interface Data {
 }
 
 export default function CardArea({ data, isModalOpen, selectedCard, setIsModalOpen,  setSelectedCard }: Data) {
+  // Functions
   function  openModal (card: Props){
     setSelectedCard(card)
     setIsModalOpen(true)

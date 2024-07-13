@@ -29,7 +29,7 @@ export default function Card({
   onClick,
   onRecommendationClick,
 }: Props) {
-  
+  // Constants
   const isOpen = !!(recommendation && theme);
   const isGif: boolean = CardImg.includes(".gif");
 

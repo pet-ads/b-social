@@ -29,7 +29,9 @@ export default function Dropdown({ selectedPath }: Props) {
     if (savedLanguage) {
       const savedLangObj = JSON.parse(savedLanguage)
       const matchedLang = languages.find(lang => lang.pathToData === savedLangObj.pathToData)
+      
       setSelectedLanguage(savedLangObj)
+      
       if(matchedLang) {
         selectedPath(matchedLang.pathToData)  
       }
