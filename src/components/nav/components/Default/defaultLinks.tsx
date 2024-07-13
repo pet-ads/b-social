@@ -4,14 +4,14 @@ import {links } from "../../../../Interfaces/links"
 // Styles
 import "./defaultLinks.css"
 
-interface LinkTexts {
+interface Props {
   help: string
   guide: string
   aboutUs: string
   contact: string
 }
 
-export default function DefaultLinks({ links, texts }: { links?: links, texts?: LinkTexts }) {
+export default function DefaultLinks({ links, texts }: { links?: links, texts?: Props }) {
   return (
     <>
       <div className="link">

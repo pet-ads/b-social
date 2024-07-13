@@ -15,11 +15,11 @@ interface FooterTexts {
   mobileIFSP: string
 }
 
-interface FooterProps extends links {
+interface Props extends links {
   texts?: FooterTexts
 }
 
-export default function Footer({ instagram, mail, texts }: FooterProps) {
+export default function Footer({ instagram, mail, texts }: Props) {
   // Hooks
   const windowWidth = useWindowWidth()
 

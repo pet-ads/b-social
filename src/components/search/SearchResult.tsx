@@ -1,23 +1,14 @@
 // External Libraries
 import { Dispatch, SetStateAction } from "react";
 
+// Types
+import CardProps from "../../Interfaces/cardProps";
+
+
 // Styles
 import "./search.css";
 
-interface CardProps {
-  id: string;
-  theme?: string;
-  bgColor: string;
-  cardImg: string;
-  cardText: string;
-  cardTitle: string;
-  bgColorTheme?: string;
-  recommendation?: string;
-  cardExpandedText?: string;
-  bgColorRecommendation?: string;
-}
-
-interface SearchComponentProps {
+interface Props {
   data: CardProps[];
   setModalOpen: Dispatch<SetStateAction<boolean>>;
   setIsCardModalOpen: React.Dispatch<React.SetStateAction<boolean>>;
@@ -29,7 +20,7 @@ export default function SearchResult({
   setModalOpen,
   setIsCardModalOpen,
   setSelectedCard,
-}: SearchComponentProps) {
+}: Props) {
   // Functions
   function onSearchResultClick(card: CardProps) {
     setSelectedCard(card);

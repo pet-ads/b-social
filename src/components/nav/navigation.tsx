@@ -23,13 +23,13 @@ interface NavigationTexts {
   contact: string
 }
 
-interface SelectPath {
+interface Props {
   links?: links
   texts?: NavigationTexts
   setSelectedPath: React.Dispatch<React.SetStateAction<string>>
 }
 
-export default function Navigation({links, texts, setSelectedPath }: SelectPath) {
+export default function Navigation({links, texts, setSelectedPath }: Props) {
   // Hooks
   const windowWidth = useWindowWidth()
   

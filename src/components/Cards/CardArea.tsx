@@ -2,33 +2,23 @@
 import Card from "./components/card"
 import CardModal from "../CardModal/cardmodal"
 
+// Types
+import CardProps from "../../Interfaces/cardProps"
+
 // Styles 
 import "./cardarea.css"
 
-interface Props {
-  id: string
-  theme?: string
-  cardImg: string
-  bgColor: string
-  cardText: string
-  cardTitle: string
-  bgColorTheme?: string
-  recommendation?: string
-  cardExpandedText?: string
-  bgColorRecommendation?: string
-}
-
 interface Data {
-  data: Props[]
+  data: CardProps[]
   isModalOpen: boolean
-  selectedCard: Props | null
+  selectedCard: CardProps | null
   setIsModalOpen: React.Dispatch<React.SetStateAction<boolean>>
-  setSelectedCard: React.Dispatch<React.SetStateAction<Props | null>>
+  setSelectedCard: React.Dispatch<React.SetStateAction<CardProps | null>>
 }
 
 export default function CardArea({ data, isModalOpen, selectedCard, setIsModalOpen,  setSelectedCard }: Data) {
   // Functions
-  function  openModal (card: Props){
+  function  openModal (card: CardProps){
     setSelectedCard(card)
     setIsModalOpen(true)
   }

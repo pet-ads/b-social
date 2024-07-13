@@ -22,13 +22,13 @@ interface CardContent{
   cardTitle: string
 }
 
-interface Data {
+interface Props {
   data: CardContent[]
   setIsCardModalOpen: React.Dispatch<React.SetStateAction<boolean>>
   setSelectedCard: React.Dispatch<React.SetStateAction<CardProps | null>>
 }
 
-export default function Search({ data, setIsCardModalOpen, setSelectedCard }: Data) {
+export default function Search({ data, setIsCardModalOpen, setSelectedCard }: Props) {
   // Refs
   const inputRef = useRef<HTMLInputElement>(null)
 

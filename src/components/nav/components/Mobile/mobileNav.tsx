@@ -5,12 +5,12 @@ import { BiMenuAltRight } from "react-icons/bi"
 // Styles
 import "./mobileNav.css"
 
-interface mobileNav {
+interface Props {
   clicked: boolean
   setClicked: React.Dispatch<React.SetStateAction<boolean>>
 }
 
-export default function MobileNav({ clicked, setClicked }: mobileNav) {
+export default function MobileNav({ clicked, setClicked }: Props) {
   // Functions 
   function onMenuIconClick(){ 
     setClicked(!clicked)
