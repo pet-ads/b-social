@@ -1,9 +1,9 @@
 // Components
 import Card from "./components/card"
-import CardModal from "../CardModal/cardmodal"
+import CardModal from "../CardModal/CardModal"
 
 // Types
-import CardProps from "../../interfaces/cardprops"
+import CardProps from "../../Interfaces/CardProps"
 
 // Styles 
 import "./cardarea.css"

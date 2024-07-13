@@ -1,5 +1,5 @@
 // Services
-import { links } from "../../interfaces/links"
+import { links } from "../../Interfaces/links"
 
 // Styles
 import "./help.css"

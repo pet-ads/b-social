@@ -2,7 +2,7 @@
 import React, { useState } from "react"
 
 // Components
-import Dropdown from "../DropDown/dropdown"
+import Dropdown from "../DropDown/DropDown"
 import MobileNav from "./components/Mobile/mobileNav"
 import MobileLinks from "./components/Mobile/mobileLinks"
 import DefaultLinks from "./components/Default/defaultLinks"
@@ -10,7 +10,7 @@ import DefaultLinks from "./components/Default/defaultLinks"
 
 
 // Types
-import { links } from "../../interfaces/links"
+import { links } from "../../Interfaces/links"
 
 // Hooks
 import useWindowWidth from "../../hooks/useWindowWidth"

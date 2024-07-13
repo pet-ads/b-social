@@ -1,5 +1,5 @@
 // Types
-import { links } from "../../../../interfaces/links"
+import { links } from "../../../../Interfaces/links"
 
 // Styles
 import "./mobileLinks.css"
