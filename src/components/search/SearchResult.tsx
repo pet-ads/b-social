@@ -1,36 +1,40 @@
 // External Libraries
-import { Dispatch, SetStateAction } from "react"
+import { Dispatch, SetStateAction } from "react";
 
 // Styles
-import "./search.css"
+import "./search.css";
 
 interface CardProps {
-  id: string
-  theme?: string
-  bgColor: string
-  CardImg: string
-  CardText: string
-  CardTitle: string
-  bgColorTheme?: string
-  recommendation?: string
-  CardExpandedText?: string
-  bgColorRecommendation?: string
+  id: string;
+  theme?: string;
+  bgColor: string;
+  cardImg: string;
+  cardText: string;
+  cardTitle: string;
+  bgColorTheme?: string;
+  recommendation?: string;
+  cardExpandedText?: string;
+  bgColorRecommendation?: string;
 }
 
-interface SearchComponent {
+interface SearchComponentProps {
   data: CardProps[];
   setModalOpen: Dispatch<SetStateAction<boolean>>;
   setIsCardModalOpen: React.Dispatch<React.SetStateAction<boolean>>;
-  setSelectedCard: React.Dispatch<React.SetStateAction<CardProps | null>>
+  setSelectedCard: React.Dispatch<React.SetStateAction<CardProps | null>>;
 }
 
-export default function SearchResult({ data, setModalOpen, setIsCardModalOpen, setSelectedCard }: SearchComponent) {
+export default function SearchResult({
+  data,
+  setModalOpen,
+  setIsCardModalOpen,
+  setSelectedCard,
+}: SearchComponentProps) {
   // Functions
   function onSearchResultClick(card: CardProps) {
     setSelectedCard(card);
     setModalOpen(false);
     setIsCardModalOpen(true);
-
   }
 
   return (
@@ -38,10 +42,10 @@ export default function SearchResult({ data, setModalOpen, setIsCardModalOpen, s
       <ul>
         {data.map((card) => (
           <li key={card.id} className="result" onClick={() => onSearchResultClick(card)}>
-            <p>{card.CardTitle}</p>
-          </li> 
+            <p>{card.cardTitle}</p>
+          </li>
         ))}
       </ul>
     </div>
-    );
+  );
 }

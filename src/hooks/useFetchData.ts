@@ -3,34 +3,34 @@ import { useState, useEffect } from "react"
 
 interface CardContent {
   id: string
-  CardImg: string
+  cardImg: string
   bgColor: string
-  CardText: string
-  CardTitle: string
+  cardText: string
+  cardTitle: string
 }
 
 interface LinkContent {
-  Logo?: string
-  Guia?: string
-  Btn?: string
+  logo?: string
+  guia?: string
+  btn?: string
   mail?: string
-  Help?: string
+  help?: string
   aboutUs?: string
-  Contact?: string
-  Instagram?: string
+  contact?: string
+  instagram?: string
 }
 
 interface NavigationText {
-  Help: string
-  Guide: string
-  AboutUs: string
-  Contact: string
+  help: string
+  guide: string
+  aboutUs: string
+  contact: string
 }
 
 interface HeaderText {
   h1: string,
-  Part1: string
-  Part2: string
+  part1: string
+  part2: string
   complete: string
 }
 
@@ -40,23 +40,23 @@ interface HelpAreaText {
 }
 
 interface FooterText {
-  PET: string
-  IFSP: string
-  Developed: string
-  MobileIFSP: string
+  pet: string
+  ifsp: string
+  developed: string
+  mobileIFSP: string
 }
 
 interface TextContent {
-  Header: HeaderText
-  Footer: FooterText
-  HelpArea: HelpAreaText
-  Navigation: NavigationText
+  header: HeaderText
+  footer: FooterText
+  helpArea: HelpAreaText
+  navigation: NavigationText
 }
 
 interface FetchData {
-  Links: LinkContent
-  Texts: TextContent
-  Card: CardContent[]
+  links: LinkContent
+  texts: TextContent
+  card: CardContent[]
 }
 
 export default function useFetchData(pathToData: string): FetchData | null {

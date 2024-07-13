@@ -19,25 +19,26 @@ import "./App.css"
 export default function App() {
 // States
 const [isModalOpen, setIsModalOpen] = useState(false)
-const [pathToData, setPathToData] = useState("/data/dataPTBR.json")
+const [pathToData, setPathToData] = useState("/data/dataPT-Br.json")
 const [selectedCard, setSelectedCard] = useState<CardProps | null>(null)
 
 // Hooks
 const data = useFetchData(pathToData)
 
 // Constants
-const links = data?.Links
-const cards = data?.Card || []
-const FooterContent = data?.Texts.Footer
-const HeaderContent = data?.Texts.Header
-const CollaborateContent = data?.Texts.HelpArea
-const NavigationsContent = data?.Texts.Navigation 
+const links = data?.links
+const cards = data?.card || []
+const FooterContent = data?.texts.footer
+const HeaderContent = data?.texts.header
+const CollaborateContent = data?.texts.helpArea
+const NavigationsContent = data?.texts.navigation 
+
 const navlinks = {
-  Logo: links?.Logo,
-  Guia: links?.Guia,
-  Help: links?.Help,
+  logo: links?.logo,
+  guia: links?.guia,
+  help: links?.help,
   aboutUs: links?.aboutUs,
-  Contact: links?.Contact,
+  contact: links?.contact,
 }
 
   return (
@@ -57,9 +58,9 @@ const navlinks = {
           data={cards}
         />
         
-        <HelpArea texts={CollaborateContent} Btn={links?.Btn} />
+        <HelpArea texts={CollaborateContent} btn={links?.btn} />
         
-        <Footer Instagram={links?.Instagram} mail={links?.mail} texts={FooterContent} />
+        <Footer instagram={links?.instagram} mail={links?.mail} texts={FooterContent} />
       </div>
     </div>
   )

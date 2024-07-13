@@ -1,5 +1,5 @@
 // Components
-import Card from "./Subcomponents/card"
+import Card from "./components/card"
 import CardModal from "../CardModal/cardmodal"
 
 // Styles 
@@ -8,13 +8,13 @@ import "./cardarea.css"
 interface Props {
   id: string
   theme?: string
-  CardImg: string
+  cardImg: string
   bgColor: string
-  CardText: string
-  CardTitle: string
+  cardText: string
+  cardTitle: string
   bgColorTheme?: string
   recommendation?: string
-  CardExpandedText?: string
+  cardExpandedText?: string
   bgColorRecommendation?: string
 }
 
@@ -34,7 +34,7 @@ export default function CardArea({ data, isModalOpen, selectedCard, setIsModalOp
   }
 
   function  openModalByTitle  (title: string)  {
-    const card = data.find((card) => card.CardTitle === title)
+    const card = data.find((card) => card.cardTitle === title)
     if (card) {
         setSelectedCard(card)
     }
@@ -48,13 +48,13 @@ export default function CardArea({ data, isModalOpen, selectedCard, setIsModalOp
   return (
     <div className="card-area">
       <div className="card-row">
-        {data.sort((a,b)=> a.CardTitle.localeCompare(b.CardTitle)).map((item) =>(
+        {data.sort((a,b)=> a.cardTitle.localeCompare(b.cardTitle)).map((item) =>(
           <Card
             key={item.id}
             bgColor={item.bgColor}
-            CardImg={item.CardImg}
-            CardText={item.CardText}
-            CardTitle={item.CardTitle}
+            CardImg={item.cardImg}
+            CardText={item.cardText}
+            CardTitle={item.cardTitle}
             onClick={() => openModal(item)}
           />
         ))}
@@ -64,10 +64,10 @@ export default function CardArea({ data, isModalOpen, selectedCard, setIsModalOp
         <CardModal
         theme={selectedCard.theme}
         bgColor={selectedCard.bgColor}
-        CardImg={selectedCard.CardImg}
-        CardTitle={selectedCard.CardTitle}
+        CardImg={selectedCard.cardImg}
+        CardTitle={selectedCard.cardTitle}
         bgColorTheme={selectedCard.bgColorTheme}
-        CardText={selectedCard.CardExpandedText}
+        CardText={selectedCard.cardExpandedText}
         recommendation={selectedCard.recommendation}
         bgColorRecommendation={selectedCard.bgColorRecommendation}
         closeModal={closeModal}

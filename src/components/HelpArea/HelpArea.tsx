@@ -12,7 +12,7 @@ interface Props extends links {
   texts?: Content
 }
 
-export default function HelpArea({ Btn, texts }: Props) {
+export default function HelpArea({ btn, texts }: Props) {
   return (
     <div className="want-to-help">
       <div className="conteiner">
@@ -21,7 +21,7 @@ export default function HelpArea({ Btn, texts }: Props) {
         </div>
   
         <div className="btn-help-conteiner">
-          <a href={Btn} target="_blank">
+          <a href={btn} target="_blank">
             <button className="btn">
               <div className="btn-text-conteiner">
                 <p className="btn-text">{texts?.button}</p>

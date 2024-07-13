@@ -2,15 +2,15 @@
 import useWindowWidth from "../../hooks/useWindowWidth"
 
 // Services
-import headerImage from "/Images/HeaderBear.webp"
+import headerImage from "/images/HeaderBear.webp"
 
 // Styles
 import "./headerStyle.css"
 
 interface Content{ 
   h1?: string 
-  Part1?: string
-  Part2?: string
+  part1?: string
+  part2?: string
   complete?: string
 }
 
@@ -41,9 +41,9 @@ export default function Header({texts}: Props) {
              texts?.complete
             ) : (
               <>
-                {texts?.Part1}
+                {texts?.part1}
                 <br className="br" />
-               {texts?.Part2}
+               {texts?.part2}
               </>
             )}
           </h2>

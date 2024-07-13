@@ -5,36 +5,36 @@ import {links } from "../../../../Interfaces/links"
 import "./defaultLinks.css"
 
 interface LinkTexts {
-  Help: string
-  Guide: string
-  AboutUs: string
-  Contact: string
+  help: string
+  guide: string
+  aboutUs: string
+  contact: string
 }
 
 export default function DefaultLinks({ links, texts }: { links?: links, texts?: LinkTexts }) {
   return (
     <>
       <div className="link">
-        <a href={links?.Guia} target="_blank">
-          <p>{texts?.Guide}</p>
+        <a href={links?.guia} target="_blank">
+          <p>{texts?.guide}</p>
         </a>
       </div>
       
       <div className="link">
         <a href={links?.aboutUs} target="_blank">
-          <p>{texts?.AboutUs}</p>
+          <p>{texts?.aboutUs}</p>
         </a>
       </div>
       
       <div className="link">
-        <a href={`mailto:${links?.Contact}`}>
-          <p>{texts?.Contact}</p>
+        <a href={`mailto:${links?.contact}`}>
+          <p>{texts?.contact}</p>
         </a>
       </div>
       
       <div className="link">
-        <a href={links?.Help} target="_blank">
-          <p>{texts?.Help}</p>
+        <a href={links?.help} target="_blank">
+          <p>{texts?.help}</p>
         </a>
       </div>
     </>

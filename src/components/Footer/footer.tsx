@@ -9,17 +9,17 @@ import "./footer.css"
 
 
 interface FooterTexts {
-  PET: string
-  IFSP: string
-  Developed: string
-  MobileIFSP: string
+  pet: string
+  ifsp: string
+  developed: string
+  mobileIFSP: string
 }
 
 interface FooterProps extends links {
   texts?: FooterTexts
 }
 
-export default function Footer({ Instagram, mail, texts }: FooterProps) {
+export default function Footer({ instagram, mail, texts }: FooterProps) {
   // Hooks
   const windowWidth = useWindowWidth()
 
@@ -33,12 +33,12 @@ export default function Footer({ Instagram, mail, texts }: FooterProps) {
         {windowWidth <= 809 ? (
           <div>
             <p className="pet-signature">
-              {texts?.Developed}
+              {texts?.developed}
               
-              <a href="http://petads.paginas.scl.ifsp.edu.br/">{texts?.PET}</a>
+              <a href="http://petads.paginas.scl.ifsp.edu.br/">{texts?.pet}</a>
               
               <a href="https://scl.ifsp.edu.br" rel="noreferrer" target="_blank">
-                {texts?.MobileIFSP}
+                {texts?.mobileIFSP}
               </a>
             </p>
           </div>
@@ -46,12 +46,12 @@ export default function Footer({ Instagram, mail, texts }: FooterProps) {
           <div>
             <p className="pet-signature">
               
-              {texts?.Developed}
+              {texts?.developed}
               
-              <a href="http://petads.paginas.scl.ifsp.edu.br/">{texts?.PET}</a> @
+              <a href="http://petads.paginas.scl.ifsp.edu.br/">{texts?.pet}</a> @
               
               <a href="https://scl.ifsp.edu.br" rel="noreferrer" target="_blank">
-                {texts?.IFSP}
+                {texts?.ifsp}
               </a>
             </p>
           </div>
@@ -60,7 +60,7 @@ export default function Footer({ Instagram, mail, texts }: FooterProps) {
         <div className="social-media-conteiner">
           <div className="insta-conteiner">
             <p className="social-text">
-              <a target="_blank" href={Instagram}>
+              <a target="_blank" href={instagram}>
                 Instagram
               </a>
             </p>

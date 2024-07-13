@@ -16,10 +16,10 @@ import "./search.css"
 
 interface CardContent{
   id: string
-  CardImg: string
+  cardImg: string
   bgColor: string
-  CardText: string
-  CardTitle: string
+  cardText: string
+  cardTitle: string
 }
 
 interface Data {

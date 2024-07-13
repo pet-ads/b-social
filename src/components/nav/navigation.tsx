@@ -3,9 +3,9 @@ import React, { useState } from "react"
 
 // Components
 import DropDown from "../DropDown/dropdown"
-import MobileNav from "./Subcomponents/Mobile/mobileNav"
-import MobileLinks from "./Subcomponents/Mobile/mobileLinks"
-import DefaultLinks from "./Subcomponents/Default/defaultLinks"
+import MobileNav from "./components/Mobile/mobileNav"
+import MobileLinks from "./components/Mobile/mobileLinks"
+import DefaultLinks from "./components/Default/defaultLinks"
 
 // Types
 import { links } from "../../Interfaces/links"
@@ -17,10 +17,10 @@ import useWindowWidth from "../../hooks/useWindowWidth"
 import "./nav.css"
 
 interface NavigationTexts {
-  Help: string
-  Guide: string
-  AboutUs: string
-  Contact: string
+  help: string
+  guide: string
+  aboutUs: string
+  contact: string
 }
 
 interface SelectPath {
@@ -47,8 +47,8 @@ export default function Navigation({links, texts, setSelectedPath }: SelectPath)
         }
       >
         <div className="text-conteiner">
-          <a href={links?.Logo} target="_blank">
-            <img className="beaba-logo" src={"/Images/Beaba.png"} alt="Logo do Beaba" />
+          <a href={links?.logo} target="_blank">
+            <img className="beaba-logo" src={"/images/Beaba.png"} alt="Logo do Beaba" />
           </a>
         </div>
         

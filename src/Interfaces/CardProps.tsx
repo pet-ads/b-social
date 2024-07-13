@@ -2,11 +2,11 @@ export default interface CardProps {
   id: string
   theme?: string
   bgColor: string
-  CardImg: string
-  CardText: string
-  CardTitle: string
+  cardImg: string
+  cardText: string
+  cardTitle: string
   bgColorTheme?: string
   recommendation?: string
-  CardExpandedText?: string
+  cardExpandedText?: string
   bgColorRecommendation?: string
 }

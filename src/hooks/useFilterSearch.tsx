@@ -1,9 +1,9 @@
 interface CardContent {
     id: string
-    CardImg: string
+    cardImg: string
     bgColor: string
-    CardText: string
-    CardTitle: string
+    cardText: string
+    cardTitle: string
   }
 
   interface filterSearchInterface {
@@ -13,7 +13,7 @@ interface CardContent {
 
 
 export default function useFilterSearch({data, inputValue}: filterSearchInterface): CardContent[] {
-    const filterResult = data.filter(card => card.CardTitle.toLocaleLowerCase().includes(inputValue.toLocaleLowerCase()))
+    const filterResult = data.filter(card => card.cardTitle.toLocaleLowerCase().includes(inputValue.toLocaleLowerCase()))
     
     return filterResult
 }
