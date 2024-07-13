@@ -1,18 +1,22 @@
 .mobile-links {
-    place-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 0px;
-    padding: 20px;
     width: 100%;
+
+    gap: 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    place-content: flex-start;
+
+    padding: 20px;
 }
 
 .mobile-link {
     outline: none;
     display: flex;
+
+    flex-shrink: 0;
     flex-direction: column;
     justify-content: flex-start;
-    flex-shrink: 0;
+    
     transform: none;
     transform-origin: 50% 50% 0px;
 }
@@ -22,9 +26,9 @@
 }
 
 .mobile-link p {
-    font-family: Inter Tight, Inter Tight Placeholder, sans-serif;
     font-size: 32px;
     font-weight: 600;
-    line-height: 1.5em;
     text-align: left;
+    line-height: 1.5em;
+    font-family: Inter Tight, Inter Tight Placeholder, sans-serif;
 }

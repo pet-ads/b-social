@@ -1,28 +1,40 @@
-import "./nav.css";
-import React, { useState } from "react";
-import DropDown from "../DropDown/DropDown";
-import { links } from "../../Interfaces/links";
-import useWindowWidth from "../../hooks/useWindowWidth";
-import MobileNav from "./subcomponents/Mobile/mobileNav";
-import MobileLinks from "./subcomponents/Mobile/mobileLinks";
-import DefaultLinks from "./subcomponents/Default/defaultLinks";
+// External Libraries
+import React, { useState } from "react"
+
+// Components
+import DropDown from "../DropDown/dropdown"
+import MobileNav from "./components/Mobile/mobileNav"
+import MobileLinks from "./components/Mobile/mobileLinks"
+import DefaultLinks from "./components/Default/defaultLinks"
+
+// Types
+import { links } from "../../Interfaces/links"
+
+// Hooks
+import useWindowWidth from "../../hooks/useWindowWidth"
+
+// Styles
+import "./nav.css"
 
 interface NavigationTexts {
-  Guide: string;
-  AboutUs: string;
-  Contact: string;
-  Help: string;
+  help: string
+  guide: string
+  aboutUs: string
+  contact: string
 }
 
-interface SelectPath {
-  setSelectedPath: React.Dispatch<React.SetStateAction<string>>;
-  links?: links;
-  texts?: NavigationTexts;
+interface Props {
+  links?: links
+  texts?: NavigationTexts
+  setSelectedPath: React.Dispatch<React.SetStateAction<string>>
 }
 
-export default function Navigation({ setSelectedPath, links, texts }: SelectPath) {
-  const windowWidth = useWindowWidth();
-  const [clicked, setClicked] = useState(false);
+export default function Navigation({links, texts, setSelectedPath }: Props) {
+  // Hooks
+  const windowWidth = useWindowWidth()
+  
+  // States
+  const [clicked, setClicked] = useState(false)
 
   return (
     <div className="nav-conteiner">
@@ -35,10 +47,11 @@ export default function Navigation({ setSelectedPath, links, texts }: SelectPath
         }
       >
         <div className="text-conteiner">
-          <a href={links?.Logo} target="_blank">
-            <img className="beaba-logo" src={"/Images/Beaba.png"} alt="Logo do Beaba" />
+          <a href={links?.logo} target="_blank">
+            <img className="beaba-logo" src={"/images/Beaba.png"} alt="Logo do Beaba" />
           </a>
         </div>
+        
         {windowWidth <= 809 ? (
           <div className="navigation-buttons">
             <DropDown selectedPath={setSelectedPath} />
@@ -52,9 +65,11 @@ export default function Navigation({ setSelectedPath, links, texts }: SelectPath
             <DropDown selectedPath={setSelectedPath} />
           </>
         )}
+        
         <div className="divider"></div>
       </nav>
+      
       {windowWidth <= 809 && clicked ? <MobileLinks links={links} texts={texts} /> : " "}
     </div>
-  );
+  )
 }

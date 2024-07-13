@@ -1,52 +1,68 @@
-import "./search.css";
-import SearchResult from "./SearchResult";
-import { IoSearch } from "react-icons/io5";
-import useFilterSearch from "../../hooks/useFilterSearch";
-import React, { useEffect, useRef, useState } from "react";
-import CardProps from "../../Interfaces/CardProps";
+// External Libraries
+import { IoSearch } from "react-icons/io5"
+import React, { useEffect, useRef, useState } from "react"
+
+// Components
+import SearchResult from "./searchResult"
+
+// Hooks
+import useFilterSearch from "../../hooks/useFilterSearch"
+
+// Types
+import CardProps from "../../Interfaces/cardProps"
+
+// Styles
+import "./search.css"
 
 interface CardContent{
-  id: string;
-  CardImg: string;
-  CardTitle: string;
-  CardText: string;
-  bgColor: string;
+  id: string
+  cardImg: string
+  bgColor: string
+  cardText: string
+  cardTitle: string
 }
 
-interface Data {
-  data: CardContent[];
-  setIsCardModalOpen: React.Dispatch<React.SetStateAction<boolean>>;
+interface Props {
+  data: CardContent[]
+  setIsCardModalOpen: React.Dispatch<React.SetStateAction<boolean>>
   setSelectedCard: React.Dispatch<React.SetStateAction<CardProps | null>>
 }
 
-export default function Search({ data, setIsCardModalOpen, setSelectedCard  }: Data) {
-  const [isModalOpen, setModalOpen] = useState(false);
-  const [inputValue, setInputValue] = useState("");
-  const inputRef = useRef<HTMLInputElement>(null);
-  const searchResult = useFilterSearch({ data, inputValue });
+export default function Search({ data, setIsCardModalOpen, setSelectedCard }: Props) {
+  // Refs
+  const inputRef = useRef<HTMLInputElement>(null)
 
+  // States
+  const [inputValue, setInputValue] = useState("")
+  const [isModalOpen, setModalOpen] = useState(false)
+
+  // Hooks
+   const searchResult = useFilterSearch({ data, inputValue })
+ 
+  // Effects
   useEffect(() => {
     if (isModalOpen) {
-      inputRef.current?.focus();
+      inputRef.current?.focus()
     }
-  });
+  })
 
-  function OpenModal() {
-    setModalOpen(true);
+  // Functions
+  function onSearchIconClick() {
+    setModalOpen(true)
   }
 
   function closeModal(event: React.MouseEvent<HTMLDivElement, MouseEvent>) {
-    if ((event.target as HTMLDivElement).id === "modal-background") setModalOpen(false);
+    if ((event.target as HTMLDivElement).id === "modal-background") setModalOpen(false)
   }
 
   function handleInputChange(event: React.ChangeEvent<HTMLInputElement>) {
-    setInputValue(event.target.value);
+    setInputValue(event.target.value)
   }
 
   return (
     <>
       <div className="search-area">
-        <div className="search-conteiner" onClick={OpenModal}>
+        <div className="search-conteiner" onClick={onSearchIconClick}>
           <div className="conteiner">
             <div className="button-conteiner">
               <button className="search-btn" aria-label="Search Icon">
@@ -63,14 +79,15 @@ export default function Search({ data, setIsCardModalOpen, setSelectedCard  }: D
             <div className="modal">
               <div className="search-bar">
                 <IoSearch className="search-icon-modal" />
+                
                 <input
                   type="text"
+                  ref={inputRef}
                   id="searchInput"
                   className="input"
-                  placeholder="Search..."
                   value={inputValue}
+                  placeholder="Search..."
                   onChange={handleInputChange}
-                  ref={inputRef}
                 />
               </div>
               {inputValue ? <SearchResult data={searchResult} setModalOpen={setModalOpen} setIsCardModalOpen={setIsCardModalOpen} setSelectedCard={setSelectedCard}/> : <></>}
@@ -80,5 +97,5 @@ export default function Search({ data, setIsCardModalOpen, setSelectedCard  }: D
         </>
       )}
     </>
-  );
+  )
 }

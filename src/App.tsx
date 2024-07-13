@@ -1,42 +1,51 @@
-import "./App.css";
-import { useState } from "react";
-import CardProps from "./Interfaces/CardProps";
-import useFetchData from "./hooks/useFetchData";
-import Footer from "./components/Footer/footer";
-import Header from "./components/Header/Header";
-import Search from "./components/search/Search";
-import CardArea from "./components/Cards/CardArea";
-import HelpArea from "./components/HelpArea/HelpArea";
-import Navigation from "./components/nav/navigation";
+// External Libraries
+import { useState } from "react"
 
-function App() {
+// Components
+import CardProps from "./Interfaces/cardProps"
+import Footer from "./components/Footer/footer"
+import Header from "./components/Header/header"
+import Search from "./components/Search/search"
+import CardArea from "./components/Card/cardarea"
+import Navigation from "./components/Nav/navigation"
+import HelpArea from "./components/HelpArea/helpArea"
 
-const [isModalOpen, setIsModalOpen] = useState(false);
-const [pathToData, setPathToData] = useState("/data/dataPTBR.json");
-const [selectedCard, setSelectedCard] = useState<CardProps | null>(null);
+// Hooks
+import useFetchData from "./hooks/useFetchData"
 
+// Styles
+import "./App.css"
 
-const data = useFetchData(pathToData);
+export default function App() {
+// States
+const [isModalOpen, setIsModalOpen] = useState(false)
+const [pathToData, setPathToData] = useState("/data/dataPT-Br.json")
+const [selectedCard, setSelectedCard] = useState<CardProps | null>(null)
 
-const links = data?.Links;
-const cards = data?.Card || [];
-const FooterContent = data?.Texts.Footer;
-const HeaderContent = data?.Texts.Header;
-const CollaborateContent = data?.Texts.HelpArea;
-const NavigationsContent = data?.Texts.Navigation;
-  
+// Hooks
+const data = useFetchData(pathToData)
+
+// Constants
+const links = data?.links
+const cards = data?.card || []
+const FooterContent = data?.texts.footer
+const HeaderContent = data?.texts.header
+const CollaborateContent = data?.texts.helpArea
+const NavigationsContent = data?.texts.navigation 
+
 const navlinks = {
-  Logo: links?.Logo,
-  Guia: links?.Guia,
-  Help: links?.Help,
+  logo: links?.logo,
+  guia: links?.guia,
+  help: links?.help,
   aboutUs: links?.aboutUs,
-  Contact: links?.Contact,
-};
+  contact: links?.contact,
+}
 
   return (
     <div className="main">
       <div className="contentConteiner">
-      <Navigation setSelectedPath={setPathToData} links={navlinks} texts={NavigationsContent} />        
+        <Navigation setSelectedPath={setPathToData} links={navlinks} texts={NavigationsContent} />        
+      
         <Header texts={HeaderContent} />
         
         <Search setIsCardModalOpen={setIsModalOpen} setSelectedCard={setSelectedCard} data={cards} />
@@ -49,12 +58,12 @@ const navlinks = {
           data={cards}
         />
         
-        <HelpArea texts={CollaborateContent} Btn={links?.Btn} />
+        <HelpArea texts={CollaborateContent} btn={links?.btn} />
         
-        <Footer Instagram={links?.Instagram} mail={links?.mail} texts={FooterContent} />
+        <Footer instagram={links?.instagram} mail={links?.mail} texts={FooterContent} />
       </div>
     </div>
-  );
+  )
 }
 
-export default App;
+

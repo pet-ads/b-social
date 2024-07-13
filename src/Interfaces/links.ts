@@ -1,11 +1,11 @@
 export interface links {
-  Logo?: string;
-  Guia?: string;
+  logo?: string;
+  guia?: string;
   aboutUs?: string;
-  Contact?: string;
-  Help?: string;
-  Btn?: string;
-  Instagram?: string;
+  contact?: string;
+  help?: string;
+  btn?: string;
+  instagram?: string;
   mail?: string;
   
 }

@@ -1,67 +1,82 @@
 .search-area {
-    background-color: #fff;
-    flex: none;
     height: 92px;
-    position: relative;
     width: 1402px;
+
+    flex: none;
+
+    position: relative;
+
+    background-color: #fff;
 }
 
 .search-conteiner {
-    border-bottom-width: 1px;
-    border-color: rgba(34, 34, 34, .3);
-    border-left-width: 1px;
-    border-right-width: 1px;
+    width: 84%;
+    height: 50px;
+
     border-style: dotted;
     border-top-width: 1px;
-    align-content: center;
-    align-items: center;
-    background-color: #fff;
-    border-radius: 35px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-color: rgba(34, 34, 34, .3);
+
     gap: 0px;
-    height: 50px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
     justify-content: center;
-    left: calc(49.91721854304638% - 83.5% / 2);
-    overflow: visible;
+
+    border-radius: 35px;
+    background-color: #fff;
+
     padding: 0;
+    overflow: visible;
     position: absolute;
+    left: calc(49.91721854304638% - 83.5% / 2);
     top: calc(48.611111111111136% - 50px / 2);
-    width: 84%;
 }
 
 .conteiner {
-    cursor: pointer;
-    flex: 1 0 0px;
-    height: 40px;
-    position: relative;
     width: 300px;
+    height: 40px;
+
+    flex: 1 0 0px;
+
+    cursor: pointer;
+    position: relative;
 }
 
 .button-conteiner {
-    height: 100%;
-    display: flex;
-    border-radius: 10px;
-    cursor: inherit;
-    overflow: hidden;
     width: 100%;
+    height: 100%;
+
+    display: flex;
+
+    cursor: inherit;
+    border-radius: 10px;
     pointer-events: auto;
+
     opacity: 1;
+    overflow: hidden;
 }
 
 .search-btn {
     width: 100%;
     height: 100%;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    background: none;
+
     cursor: inherit;
-    color: inherit;
-    border: none;
-    outline: inherit;
+    background: none;
+
     padding: 0;
+    border: none;
+    color: inherit;
+    outline: inherit;
 }
 
 .search-icon,
@@ -75,56 +90,68 @@
 }
 
 #modal-background {
-    position: fixed;
+    width: 100vw;
+    height: 100vh;
+
+
     display: flex;
     align-items: start;
     justify-content: center;
+
     z-index: 1;
+    position: fixed;
     background-color: rgba(0, 0, 0, 0.593);
-    width: 100vw;
-    height: 100vh;
 }
 
 .modal {
-    will-change: transform;
-    background-color: rgb(255, 255, 255);
-    color: rgb(51, 51, 51);
-    border-radius: 16px;
     width: 500px;
+    max-height: min(496px, -30px + 100vh);
+
+    border-radius: 16px;
+    will-change: transform;
+    color: rgb(51, 51, 51);
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 40px 0px;
+
     display: flex;
     flex-direction: column;
-    overflow: hidden;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 40px 0px;
-    max-height: min(496px, -30px + 100vh);
+
     padding: 0px;
+    overflow: hidden;
     margin-top: 150px;
 }
 
 .search-bar {
+    width: 100%;
+
+    gap: 12px;
+    flex-shrink: 0;
     display: inline-flex;
     align-items: center;
-    flex-shrink: 0;
-    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
     padding: 12px 20px;
-    gap: 12px;
     touch-action: none;
-    width: 100%;
-    background-color: #fff;
     border-radius: 20px;
+
+    background-color: #fff;
+    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 .input {
-    outline: none;
-    border: medium;
-    background: transparent;
-    font-weight: 500;
+    width: 100%;
+
     height: 2em;
     padding: 0px;
-    width: 100%;
+
+    outline: none;
+    border: medium;
     color: rgb(51, 51, 51);
-    line-height: 2em;
-    vertical-align: baseline;
+
     font-size: 16px;
+    font-weight: 500;
+    line-height: 2em;
+    background: transparent;
+    vertical-align: baseline;
     font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     --framer-search-placeholder-color: rgba(0, 0, 0, 0.4);
 }
@@ -136,53 +163,63 @@
 
 .result {
     padding: 16px 20px;
-    list-style: none;
-    font-weight: 500;
-    color: rgb(51, 51, 51);
     position: relative;
+
+    font-weight: 500;
+    list-style: none;
+
+    color: rgb(51, 51, 51);
 }
 
 @media screen and (max-width: 1200px){
-
     .search-area{
         width: 115%;
     }
-
 }
 
 @media (max-width: 509px) {
     #modal-background {
-        position: fixed;
+        width: 100vw;
+        height: 100vh;
+
         display: flex;
         align-items: flex-start;
         justify-content: center;
+
+        position: fixed;
+
         z-index: 1;
         background-color: rgba(0, 0, 0, 0.8);
-        width: 100vw;
-        height: 100vh;
     }
 
     .modal {
-        will-change: transform;
-        background-color: rgb(255, 255, 255);
-        color: rgb(51, 51, 51);
-        border-radius: 0px;
         width: 100%;
+
         display: flex;
         flex-direction: column;
-        box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 40px 0px;
+
         margin-top: 0px;
+
+        border-radius: 0px;
+        color: rgb(51, 51, 51);
+        will-change: transform;
+        background-color: rgb(255, 255, 255);
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 40px 0px;
     }
 
     .search-bar {
-        display: inline-flex;
-        align-items: center;
-        flex-shrink: 0;
-        font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-        padding: 12px 20px;
-        gap: 12px;
-        touch-action: none;
         width: 50%;
+
+        gap: 12px;
+        flex-shrink: 0;
+        align-items: center;
+        display: inline-flex;
+
+        padding: 12px 20px;
+        touch-action: none;
+
         border-radius: 0px;
+
+        font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     }
 }

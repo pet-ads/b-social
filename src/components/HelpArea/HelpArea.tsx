@@ -1,26 +1,27 @@
-import "./help.css";
-import { links } from "../../Interfaces/links";
+// Services
+import { links } from "../../Interfaces/links"
+
+// Styles
+import "./help.css"
 
 interface Content {
-  button: string;
-  title: string;
+  title: string
+  button: string
 }
-
 interface Props extends links {
-  texts?: Content;
+  texts?: Content
 }
 
-
-export default function HelpArea({ Btn, texts }: Props) {
-
+export default function HelpArea({ btn, texts }: Props) {
   return (
     <div className="want-to-help">
       <div className="conteiner">
         <div className="help-text">
           <h2 className="help-h2">{texts?.title}</h2>
         </div>
+  
         <div className="btn-help-conteiner">
-          <a href={Btn} target="_blank">
+          <a href={btn} target="_blank">
             <button className="btn">
               <div className="btn-text-conteiner">
                 <p className="btn-text">{texts?.button}</p>
@@ -30,5 +31,5 @@ export default function HelpArea({ Btn, texts }: Props) {
         </div>
       </div>
     </div>
-  );
+  )
 }

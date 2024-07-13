@@ -1,37 +1,37 @@
-import "./card.css";
-interface CardContent {
-  id?: string;
-  CardImg: string;
-  CardTitle: string;
-  CardText?: string;
-  bgColor: string;
-  CardExpandedText?: string;
-  recommendation?: string;
-  bgColorRecommendation?: string;
-  theme?: string;
-  bgColorTheme?: string;
-  onClick?: () => void;
-  onRecommendationClick?: (title: string) => void;
-  isModal?: boolean,
+// Styles
+import "./card.css"
+
+interface Props {
+  id?: string
+  theme?: string
+  CardImg: string
+  bgColor: string
+  isModal?: boolean
+  CardTitle: string
+  CardText?: string
+  bgColorTheme?: string
+  recommendation?: string
+  CardExpandedText?: string
+  bgColorRecommendation?: string
+  onClick?: () => void
+  onRecommendationClick?: (title: string) => void
 }
 export default function Card({
+  theme,
+  isModal,
   CardImg,
-  CardTitle,
-  CardText,
   bgColor,
+  CardText,
+  CardTitle,
+  bgColorTheme,
   recommendation,
   bgColorRecommendation,
-  theme,
-  bgColorTheme,
   onClick,
   onRecommendationClick,
-  isModal,
-}: CardContent) {
-  
+}: Props) {
+  // Constants
   const isOpen = !!(recommendation && theme);
   const isGif: boolean = CardImg.includes(".gif");
-
-
 
   return (
     <div className={`card ${isOpen ? "open" : ""}`} onClick={onClick} style={{cursor: "pointer"}}>
@@ -42,6 +42,7 @@ export default function Card({
           </div>
         </div>
       </a>
+      
       <div className="text-area">
         <div className="card-title">
         {isOpen ? (
@@ -51,14 +52,17 @@ export default function Card({
           )
         }
         </div>
+        
         <div className="card-text">
           <p className={isModal? "info-modal" : "info"}>{CardText}</p>
         </div>
+        
         {recommendation && theme && (
           <div className="recommendation-theme-container">
             <button className="theme" style={{ backgroundColor: bgColorTheme }}>
               {theme}
             </button>
+          
             <button
               className="recommendation"
               style={{ backgroundColor: bgColorRecommendation, cursor: "pointer" }}

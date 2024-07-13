@@ -1,22 +1,28 @@
 .card {
-    align-content: center;
-    align-items: center;
-    background-color: #fff;
-    border-radius: 20px;
-    box-shadow: 0 .7961918735236395px 2.3885756205709185px -.625px #0000000d, 0 2.414506143104518px 7.2435184293135535px -1.25px #0000000d, 0 6.382653521484461px 19.147960564453385px -1.875px #0000000d, 0 20px 60px -2.5px #0000000d;
-    display: flex;
-    flex: none;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    gap: 0px;
-    height: min-content;
-    justify-content: center;
-    min-width: 100px;
-    overflow: hidden;
-    padding: 0;
-    position: relative;
     width: 320px;
+    min-width: 100px;
+    height: min-content;
+
+    padding: 0;
+    align-items: center;
+    align-content: center;
+
+    border-radius: 20px;
+
+    gap: 0px;
+    flex: none;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+
+    overflow: hidden;
+    position: relative;
+
+    background-color: #fff;
     will-change: var(--framer-will-change-override, transform);
+    box-shadow: 0 .7961918735236395px 2.3885756205709185px -.625px #0000000d, 0 2.414506143104518px 7.2435184293135535px -1.25px #0000000d, 0 6.382653521484461px 19.147960564453385px -1.875px #0000000d, 0 20px 60px -2.5px #0000000d;
+
 }
 
 @keyframes slideIn {
@@ -32,177 +38,212 @@
 
 .open {
     width: 430px;
+
     border-radius: 12px;
     animation: slideIn 0.5s forwards;
 }
+
 .anchor {
-    aspect-ratio: 1.3333333333333333 / 1;
+    width: 100%;
+    height: 240px;
+
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    aspect-ratio: 1.3333333333333333 / 1;
+
     flex: none;
     align-items: center;
-    height: 240px;
+
     overflow: hidden;
     position: relative;
     text-decoration: none;
-    width: 100%;
     will-change: transform;
 }
+
 .open-anchor{
-    aspect-ratio: 1.3333333333333333 / 1;
+    width: 100%;
+    height: 265px;
+    
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 265px;
+
     overflow: hidden;
     position: relative;
+
     text-decoration: none;
-    width: 100%;
     will-change: transform;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px; 
+    aspect-ratio: 1.3333333333333333 / 1;
 }
+
 .card-img {
-    display: block;
     width: 100%;
     height: 100%;
-    border-radius: inherit;
-    object-position: center center;
+
+    display: block;
+
     object-fit: contain;
     image-rendering: auto;
+    border-radius: inherit;
+    object-position: center center;
 }
 
 .img-area, .gif-area {
-    aspect-ratio: 1.3333333333333333 / 1;
+    width: 80%;
+    height: 192px;
+
+    flex: none;
+
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    flex: none;
-    height: 192px;
+
+    top: 50%;
     left: 50%;
     overflow: hidden;
     position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
+
+
     will-change: transform;
     transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    aspect-ratio: 1.3333333333333333 / 1;
 }
 
 .open-img-area{
     height: 237px;
+
     display: flex;
     justify-content: center;
 }
+
 .open-gif-area{
     height: 100%;
+
     display: flex;
     justify-content: center;
 }
+
 .img-conteiner {
     height: 100%;
+
     border-radius: inherit;
     inset: 0px;
 }
 
 .text-area {
-    align-items: flex-start;
-    display: flex;
-    flex: none;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    gap: 20px;
+    width: 100%;
     height: min-content;
+
+    gap: 20px;
+    flex: none;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: center;
+
     padding: 30px;
     position: relative;
-    width: 100%;
 }
 
 .card-title {
-    flex: none;
+    width: 100%;
     height: auto;
+
+    flex: none;
+
     overflow: visible;
     position: relative;
     white-space: pre-wrap;
-    width: 100%;
-    word-break: break-word;
+
     word-wrap: break-word;
+    word-break: break-word;
 }
 
 .h3-card {
-    font-family: "Inter", "Inter Placeholder", sans-serif;
     font-size: 20px;
     font-weight: 600;
-    letter-spacing: -0.5px;
-    line-height: 1.4em;
     text-align: left;
+    line-height: 1.4em;
+    letter-spacing: -0.5px;
+    font-family: "Inter", "Inter Placeholder", sans-serif;
+
     color: rgb(96, 58, 23);
 }
 
 .h1-card {
-    font-family: "Inter", "Inter Placeholder", sans-serif;
     font-size: 50px;
     font-weight: 700;
-    letter-spacing: -2.1px;
-    color: var(--token-b9c3c957-2c66-49c4-9732-fa196fddac20, rgb(17, 17, 17));
-    line-height: 1.2em;
     text-align: left;
+    line-height: 1.2em;
+    letter-spacing: -2.1px;
+    font-family: "Inter", "Inter Placeholder", sans-serif;
+
     color: black;
+    color: var(--token-b9c3c957-2c66-49c4-9732-fa196fddac20, rgb(17, 17, 17));
 }
 
 .card-text {
-    outline: none;
+    width: 100%;
+    height: auto;
+
+    flex: none;
     display: flex;
+    outline: none;
+    flex-shrink: 0;
     flex-direction: column;
     justify-content: flex-start;
-    flex-shrink: 0;
-    transform: none;
-    flex: none;
-    height: auto;
+
     overflow: visible;
     position: relative;
+    
+    transform: none;
     white-space: pre-wrap;
-    width: 100%;
     word-break: break-word;
     word-wrap: break-word;
 }
 
 .info {
-    font-family: Inter, Inter Placeholder, sans-serif;
     font-weight: 500;
-    line-height: 1.6em;
     text-align: left;
-    color: rgb(96, 58, 23);
+    line-height: 1.6em;
+    font-family: Inter, Inter Placeholder, sans-serif;
 
+    color: rgb(96, 58, 23);
 }
 
 
 .info-modal {
-    font-family: Inter, Inter Placeholder, sans-serif;
     font-weight: 500;
-    line-height: 1.6em;
     text-align: left;
-    color: rgb(102, 102, 102);
+    line-height: 1.6em;
+    font-family: Inter, Inter Placeholder, sans-serif;
 
+    color: rgb(102, 102, 102);
 }
 
 .recommendation-theme-container {
-    outline: none;
-    display: flex;
     gap: 15px;
+    display: flex;
+
+    outline: none;
 }
 
 .recommendation,
 .theme {
-   color: rgb(102, 102, 102); 
-   background-color: rgb(243, 243, 243);
-    border-radius: 15px;
-    font-size: 16px;
     margin: 20px 0px;
-    padding-inline: 25px;
     padding-block: 10px;
-    border: none;
+    padding-inline: 25px;
 
+    font-size: 16px;
+    
+    border: none;
+    border-radius: 15px;
+
+    color: rgb(102, 102, 102); 
+    background-color: rgb(243, 243, 243);
 }
 
 
@@ -210,43 +251,57 @@
     .card{
         width: 320px;
         height: 100%;
+
         box-sizing: border-box;
         align-items:  flex-start;
         justify-content: flex-start;
     }
+
     .open{ 
         width: 100%;
+    
         border-radius: 0px;
     }
+    
     .card.open .anchor {
         border-radius: 0;
     }
+    
     .text-area {
         height: min-content;
+    
         padding: 30px;
     }
+    
     .anchor{
         height: 279px;
     }
+
     .open-anchor{
-        display: flex;
-        border-radius: 0px;
-        min-height: 280px;
         flex-grow: 1;
-        justify-content: center;
+        display: flex;
+        
+        min-height: 280px;
+        border-radius: 0px;
+        
         align-items: center;
+        justify-content: center;
     }
+
     .img-area {
         height: 194px;
     }
+
     .gif-area{
         height: 263px;
     }
+
     .open-gif-area, .open-img-area {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         height: 248px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
     .h1-card {

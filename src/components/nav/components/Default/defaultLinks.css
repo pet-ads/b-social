@@ -1,0 +1,37 @@
+.link {
+    width: auto;
+    height: auto;
+
+    outline: none;
+    display: flex;
+    
+    flex: none;
+    flex-shrink: 0;
+    transform: none;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    position: relative;
+
+    opacity: 1;
+    white-space: pre;
+    user-select: none;
+    color: rgb(102, 102, 102);
+    transform-origin: 50% 50% 0px;
+
+}
+
+.link p {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.2em;
+    text-align: nt, start;
+    letter-spacing: ng, 0;
+    text-transform: rm, none;
+    text-decoration: ion, none;
+    font-family: Inter, Inter Placeholder, sans-serif;
+
+    color: #000;
+    cursor: pointer;
+}
