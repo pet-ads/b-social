@@ -2,7 +2,7 @@
 import { useEffect } from "react"
 
 // Components
-import Card from "../Cards/components/card"
+import Card from "../Card/components/card"
 
 // Styles
 import "./cardmodal.css"

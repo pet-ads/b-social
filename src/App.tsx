@@ -6,7 +6,7 @@ import CardProps from "./Interfaces/cardProps"
 import Footer from "./components/Footer/footer"
 import Header from "./components/Header/header"
 import Search from "./components/Search/search"
-import CardArea from "./components/Cards/cardarea"
+import CardArea from "./components/Card/cardarea"
 import Navigation from "./components/Nav/navigation"
 import HelpArea from "./components/HelpArea/helpArea"
 
