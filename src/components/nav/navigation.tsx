@@ -1,28 +1,40 @@
-import "./nav.css";
-import React, { useState } from "react";
-import DropDown from "../DropDown/DropDown";
-import { links } from "../../Interfaces/links";
-import useWindowWidth from "../../hooks/useWindowWidth";
-import MobileNav from "./subcomponents/Mobile/mobileNav";
-import MobileLinks from "./subcomponents/Mobile/mobileLinks";
-import DefaultLinks from "./subcomponents/Default/defaultLinks";
+// External Libraries
+import React, { useState } from "react"
+
+// Components
+import DropDown from "../DropDown/DropDown"
+import MobileNav from "./subcomponents/Mobile/mobileNav"
+import MobileLinks from "./subcomponents/Mobile/mobileLinks"
+import DefaultLinks from "./subcomponents/Default/defaultLinks"
+
+// Types
+import { links } from "../../Interfaces/links"
+
+// Hooks
+import useWindowWidth from "../../hooks/useWindowWidth"
+
+// Styles
+import "./nav.css"
 
 interface NavigationTexts {
-  Guide: string;
-  AboutUs: string;
-  Contact: string;
-  Help: string;
+  Help: string
+  Guide: string
+  AboutUs: string
+  Contact: string
 }
 
 interface SelectPath {
-  setSelectedPath: React.Dispatch<React.SetStateAction<string>>;
-  links?: links;
-  texts?: NavigationTexts;
+  links?: links
+  texts?: NavigationTexts
+  setSelectedPath: React.Dispatch<React.SetStateAction<string>>
 }
 
-export default function Navigation({ setSelectedPath, links, texts }: SelectPath) {
-  const windowWidth = useWindowWidth();
-  const [clicked, setClicked] = useState(false);
+export default function Navigation({links, texts, setSelectedPath }: SelectPath) {
+  // Hooks
+  const windowWidth = useWindowWidth()
+  
+  // States
+  const [clicked, setClicked] = useState(false)
 
   return (
     <div className="nav-conteiner">
@@ -39,6 +51,7 @@ export default function Navigation({ setSelectedPath, links, texts }: SelectPath
             <img className="beaba-logo" src={"/Images/Beaba.png"} alt="Logo do Beaba" />
           </a>
         </div>
+        
         {windowWidth <= 809 ? (
           <div className="navigation-buttons">
             <DropDown selectedPath={setSelectedPath} />
@@ -52,9 +65,11 @@ export default function Navigation({ setSelectedPath, links, texts }: SelectPath
             <DropDown selectedPath={setSelectedPath} />
           </>
         )}
+        
         <div className="divider"></div>
       </nav>
+      
       {windowWidth <= 809 && clicked ? <MobileLinks links={links} texts={texts} /> : " "}
     </div>
-  );
+  )
 }

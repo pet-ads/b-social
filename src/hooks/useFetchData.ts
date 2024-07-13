@@ -1,81 +1,88 @@
-import { useState, useEffect } from "react";
+// External Libraries
+import { useState, useEffect } from "react"
 
 interface CardContent {
-  id: string;
-  CardImg: string;
-  CardTitle: string;
-  CardText: string;
-  bgColor: string;
+  id: string
+  CardImg: string
+  bgColor: string
+  CardText: string
+  CardTitle: string
 }
 
 interface LinkContent {
-  Logo?: string;
-  Guia?: string;
-  aboutUs?: string;
-  Contact?: string;
-  Help?: string;
-  Btn?: string;
-  Instagram?: string;
-  mail?: string;
+  Logo?: string
+  Guia?: string
+  Btn?: string
+  mail?: string
+  Help?: string
+  aboutUs?: string
+  Contact?: string
+  Instagram?: string
 }
 
 interface NavigationText {
-  Guide: string;
-  AboutUs: string;
-  Contact: string;
-  Help: string;
+  Help: string
+  Guide: string
+  AboutUs: string
+  Contact: string
 }
 
 interface HeaderText {
   h1: string,
-  complete: string;
-  Part1: string;
-  Part2: string;
+  Part1: string
+  Part2: string
+  complete: string
 }
 
 interface HelpAreaText {
-  title: string;
-  button: string;
+  title: string
+  button: string
 }
 
 interface FooterText {
-  Developed: string;
-  PET: string;
-  MobileIFSP: string;
-  IFSP: string;
+  PET: string
+  IFSP: string
+  Developed: string
+  MobileIFSP: string
 }
 
 interface TextContent {
-  Navigation: NavigationText;
-  Header: HeaderText;
-  HelpArea: HelpAreaText;
-  Footer: FooterText;
+  Header: HeaderText
+  Footer: FooterText
+  HelpArea: HelpAreaText
+  Navigation: NavigationText
 }
 
 interface FetchData {
-  Card: CardContent[];
-  Links: LinkContent;
-  Texts: TextContent;
+  Links: LinkContent
+  Texts: TextContent
+  Card: CardContent[]
 }
 
 export default function useFetchData(pathToData: string): FetchData | null {
-  const [data, setData] = useState<FetchData | null>(null);
+  // Constants
+  const [data, setData] = useState<FetchData | null>(null)
 
+  // Effects
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(pathToData);
+        const response = await fetch(pathToData)
+        
         if (!response.ok) {
-          throw new Error("Failed to fetch data");
+          throw new Error("Failed to fetch data")
         }
-        const jsonData = await response.json();
-        setData(jsonData);
-      } catch (error) {
-        console.error("Não foi possível encontrar os dados");
+        
+        const jsonData = await response.json()
+        setData(jsonData)
+      } 
+      catch (error) {
+        console.error("Não foi possível encontrar os dados")
       }
-    };
-    fetchData();
-  }, [pathToData]);
+    }
+    
+    fetchData()
+  }, [pathToData])
 
-  return data;
+  return data
 }

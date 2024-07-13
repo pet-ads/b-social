@@ -1,11 +1,14 @@
-import "./mobileLinks.css";
-import { links } from "../../../../Interfaces/links";
+// Types
+import { links } from "../../../../Interfaces/links"
+
+// Styles
+import "./mobileLinks.css"
 
 interface LinkTexts {
-  Guide: string;
-  AboutUs: string;
-  Contact: string;
-  Help: string;
+  Help: string
+  Guide: string
+  AboutUs: string
+  Contact: string
 }
 
 export default function MobileLinks({ links, texts }: { links?: links, texts?: LinkTexts }) {
@@ -16,21 +19,24 @@ export default function MobileLinks({ links, texts }: { links?: links, texts?: L
           <p>{texts?.Guide}</p>
         </a>
       </div>
+      
       <div className="mobile-link">
         <a href={links?.aboutUs} target="_blank">
           <p>{texts?.AboutUs}</p>
         </a>
       </div>
+      
       <div className="mobile-link">
         <a href={`mailto:${links?.Contact}`}>
           <p>{texts?.Contact}</p>
         </a>
       </div>
+      
       <div className="mobile-link">
         <a href={links?.Help} target="_blank">
           <p>{texts?.Help}</p>
         </a>
       </div>
     </div>
-  );
+  )
 }

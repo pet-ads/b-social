@@ -1,12 +1,12 @@
 export default interface CardProps {
-    id: string;
-    CardImg: string;
-    CardTitle: string;
-    CardText: string;
-    bgColor: string;
-    CardExpandedText?: string;
-    recommendation?: string;
-    bgColorRecommendation?: string;
-    theme?: string;
-    bgColorTheme?: string;
-  }
+  id: string
+  theme?: string
+  bgColor: string
+  CardImg: string
+  CardText: string
+  CardTitle: string
+  bgColorTheme?: string
+  recommendation?: string
+  CardExpandedText?: string
+  bgColorRecommendation?: string
+}

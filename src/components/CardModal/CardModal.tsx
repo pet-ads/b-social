@@ -1,32 +1,38 @@
-import "./CardModal.css";
-import Card from "../Cards/subcomponents/Card";
-import { useEffect } from "react";
+// External Libraries
+import { useEffect } from "react"
 
-interface ModalCardProps {
-  CardImg: string;
-  CardTitle: string;
-  CardText?: string;
-  bgColor: string;
-  recommendation?: string;
-  bgColorRecommendation?: string;
-  theme?: string;
-  bgColorTheme?: string;
-  closeModal?: (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => void;
-  onRecommendationClick?: (recommendationTitle: string) => void;
+// Components
+import Card from "../Cards/subcomponents/Card"
+
+// Styles
+import "./CardModal.css"
+
+interface Props {
+  theme?: string
+  CardImg: string
+  bgColor: string
+  CardTitle: string
+  CardText?: string
+  bgColorTheme?: string
+  recommendation?: string
+  bgColorRecommendation?: string
+  onRecommendationClick?: (recommendationTitle: string) => void
+  closeModal?: (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => void
 }
 
 export default function CardModal({
+  theme,
   CardImg,
-  CardTitle,
-  CardText,
   bgColor,
+  CardText,
+  CardTitle,
+  bgColorTheme,
   recommendation,
   bgColorRecommendation,
-  theme,
-  bgColorTheme,
   closeModal,
   onRecommendationClick,
-}: ModalCardProps) {
+}: Props) {
+// Effects
   useEffect(() => {
     document.body.style.overflow = "hidden";
     return () => {
@@ -40,17 +46,18 @@ export default function CardModal({
         <span className="close-modal" onClick={closeModal}>
           &times;
         </span>
+        
         <Card
+          theme={theme}
+          isModal={true}
           CardImg={CardImg}
-          CardTitle={CardTitle}
-          CardText={CardText}
           bgColor={bgColor}
+          CardText={CardText}
+          CardTitle={CardTitle}
+          bgColorTheme={bgColorTheme}
           recommendation={recommendation}
           bgColorRecommendation={bgColorRecommendation}
-          theme={theme}
-          bgColorTheme={bgColorTheme}
           onRecommendationClick={onRecommendationClick}
-          isModal={true}
         />
       </div>
     </div>

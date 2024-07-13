@@ -1,48 +1,47 @@
 // Components
-import Card from "./subcomponents/Card";
-import CardModal from "../CardModal/CardModal";
+import Card from "./subcomponents/Card"
+import CardModal from "../CardModal/CardModal"
 
 // Styles 
-import "./cardArea.css";
+import "./cardArea.css"
 
-
-interface CardProps {
-  id: string;
-  theme?: string;
-  CardImg: string;
-  bgColor: string;
-  CardText: string;
-  CardTitle: string;
-  bgColorTheme?: string;
-  recommendation?: string;
-  CardExpandedText?: string;
-  bgColorRecommendation?: string;
+interface Props {
+  id: string
+  theme?: string
+  CardImg: string
+  bgColor: string
+  CardText: string
+  CardTitle: string
+  bgColorTheme?: string
+  recommendation?: string
+  CardExpandedText?: string
+  bgColorRecommendation?: string
 }
 
 interface Data {
-  data: CardProps[];
-  isModalOpen: boolean;
-  selectedCard: CardProps | null;
-  setIsModalOpen: React.Dispatch<React.SetStateAction<boolean>>;
-  setSelectedCard: React.Dispatch<React.SetStateAction<CardProps | null>>
+  data: Props[]
+  isModalOpen: boolean
+  selectedCard: Props | null
+  setIsModalOpen: React.Dispatch<React.SetStateAction<boolean>>
+  setSelectedCard: React.Dispatch<React.SetStateAction<Props | null>>
 }
 
 export default function CardArea({ data, isModalOpen, selectedCard, setIsModalOpen,  setSelectedCard }: Data) {
-  function  openModal (card: CardProps){
-    setSelectedCard(card);
-    setIsModalOpen(true);
+  function  openModal (card: Props){
+    setSelectedCard(card)
+    setIsModalOpen(true)
   }
 
- function  openModalByTitle  (title: string)  {
-    const card = data.find((card) => card.CardTitle === title);
+  function  openModalByTitle  (title: string)  {
+    const card = data.find((card) => card.CardTitle === title)
     if (card) {
-        setSelectedCard(card);
+        setSelectedCard(card)
     }
   }
 
   function closeModal(event: React.MouseEvent<HTMLDivElement, MouseEvent>) {
     if ((event.target as HTMLDivElement).className === "modal-background" || (event.target as HTMLDivElement).className === "close-modal") 
-      setIsModalOpen(false);
+      setIsModalOpen(false)
   }
 
   return (
@@ -75,5 +74,5 @@ export default function CardArea({ data, isModalOpen, selectedCard, setIsModalOp
         />
       )}
     </div>
-  );
+  )
 }

@@ -1,11 +1,14 @@
-import "./defaultLinks.css";
-import {links } from "../../../../Interfaces/links";
+// Types
+import {links } from "../../../../Interfaces/links"
+
+// Styles
+import "./defaultLinks.css"
 
 interface LinkTexts {
-  Guide: string;
-  AboutUs: string;
-  Contact: string;
-  Help: string;
+  Help: string
+  Guide: string
+  AboutUs: string
+  Contact: string
 }
 
 export default function DefaultLinks({ links, texts }: { links?: links, texts?: LinkTexts }) {
@@ -16,21 +19,24 @@ export default function DefaultLinks({ links, texts }: { links?: links, texts?: 
           <p>{texts?.Guide}</p>
         </a>
       </div>
+      
       <div className="link">
         <a href={links?.aboutUs} target="_blank">
           <p>{texts?.AboutUs}</p>
         </a>
       </div>
+      
       <div className="link">
         <a href={`mailto:${links?.Contact}`}>
           <p>{texts?.Contact}</p>
         </a>
       </div>
+      
       <div className="link">
         <a href={links?.Help} target="_blank">
           <p>{texts?.Help}</p>
         </a>
       </div>
     </>
-  );
+  )
 }
