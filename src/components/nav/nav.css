@@ -1,72 +1,83 @@
 .nav-conteiner {
-    flex: none;
-    height: auto;
-    position: relative;
     width: 100vw;
+    height: auto;
+
+    flex: none;
+    position: relative;
 }
 
 .navigation {
+    width: 100%;
+    height: 64px;
+
+    gap: 38px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
     align-content: center;
     align-items: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    gap: 38px;
-    height: 64px;
+
     padding: 15px;
     position: relative;
-    background-color: rgb(255, 255, 255);
-    width: 100%;
+
+    z-index: 1;
+    opacity: 1;
     transform: none;
     transform-origin: 50% 50% 0px;
-    opacity: 1;
-    z-index: 1;
+    background-color: rgb(255, 255, 255);
 }
 
 .text-conteiner {
-    align-items: center;
-    display: flex;
-    flex: none;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    gap: 0px;
+    width: min-content;
     height: min-content;
+
+    gap: 0px;
+    flex: none;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: row;
     justify-content: center;
+
     overflow: visible;
     padding: 10px 0 10px 10px;
     position: relative;
-    width: min-content;
 }
 
 .navigation-buttons {
-    align-content: center;
-    align-items: center;
-    display: flex;
-    flex: none;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    gap: 20px;
-    height: min-content;
-    justify-content: center;
-    overflow: visible;
-    padding: 10px 0 10px 10px;
-    position: relative;
     width: min-content;
+    height: min-content;
+
+    gap: 20px;
+    flex: none;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    
+    overflow: visible;
+    position: relative;
+    padding: 10px 0 10px 10px;
 }
 
 .divider {
-    bottom: 0;
-    flex: none;
     height: 1px;
+
+    flex: none;
+
     left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
     overflow: visible;
     position: absolute;
-    right: 0;
-    z-index: 0;
-    background-color: rgba(0, 0, 0, 0.08);
+
+    opacity: 1;
     transform: none;
     transform-origin: 50% 50% 0px;
-    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.08);
 }
 
 .beaba-logo {

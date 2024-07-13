@@ -3,7 +3,7 @@ import Card from "./subcomponents/Card"
 import CardModal from "../CardModal/CardModal"
 
 // Styles 
-import "./cardArea.css"
+import "./CardArea.css"
 
 interface Props {
   id: string

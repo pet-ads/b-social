@@ -3,7 +3,7 @@ import { useState } from "react"
 
 // Components
 import CardProps from "./Interfaces/CardProps"
-import Footer from "./components/Footer/footer"
+import Footer from "./components/Footer/Footer"
 import Header from "./components/Header/Header"
 import Search from "./components/search/Search"
 import CardArea from "./components/Cards/CardArea"

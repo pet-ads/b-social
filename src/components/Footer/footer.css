@@ -1,39 +1,42 @@
 .footer {
-    align-items: center;
-    background-color: #603a17;
-    display: flex;
-    flex: none;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    height: min-content;
-    overflow: visible;
-    padding: 52px;
-    position: relative;
     width: 100%;
+    height: min-content;
+    
     gap: 15px;
+    flex: none;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: column;
+        
+    padding: 52px;
+    overflow: visible;
+    position: relative;
 
+    background-color: #603a17;
 }
 
 .general-conteiner {
+    width: 100%;
+
+    gap: 15px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
-    gap: 15px;
-    width: 100%;
-    flex-wrap: wrap;
 }
 
 .pet-signature {
+    width: 100%;
+
     cursor: pointer;
-    font-family: Inter, Inter Placeholder, sans-serif;
+    color: rgb(230, 230, 230);
+
     font-size: 14px;
     font-weight: 500;
-    line-height: 1.5em;
-    text-align: left;
-    color: rgb(230, 230, 230);
-    width: 100%;
     text-align: center;
-
+    line-height: 1.5em;
+    font-family: Inter, Inter Placeholder, sans-serif;
 }
 
 a {
@@ -42,52 +45,61 @@ a {
 }
 
 .copy {
-    flex: none;
-    height: auto;
-    position: relative;
-    white-space: pre;
     width: auto;
+    height: auto;
+
+    flex: none;
+    position: relative;
+
+    white-space: pre;
 }
 
 .copy-text {
-    font-family: "Inter", "Inter Placeholder", sans-serif;
+    color: rgb(230, 230, 230);
+
     font-size: 14px;
+    text-align: left;
     font-weight: 500;
     line-height: 1.5em;
-    text-align: left;
-    color: rgb(230, 230, 230);
+    font-family: "Inter", "Inter Placeholder", sans-serif;
 }
 
 .social-media-conteiner {
-    align-items: flex-start;
-    display: flex;
-    flex: none;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    gap: 15px;
-    height: min-content;
-    justify-content: space-between;
-    overflow: hidden;
-    padding: 0;
-    position: relative;
     width: min-content;
+    height: min-content;
+
+    gap: 15px;
+    flex: none;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    padding: 0;
+    overflow: hidden;
+    position: relative;
 }
 
 .insta-conteiner .mail-conteiner {
-    flex: none;
-    height: auto;
-    position: relative;
-    white-space: pre;
     width: auto;
+    height: auto;
+
+    flex: none;
+    position: relative;
+
+    white-space: pre;
 }
 
 .social-text {
-    font-family: Inter, Inter Placeholder, sans-serif;
+
+    color: rgb(255, 255, 255);
+
     font-size: 14px;
+    text-align: left;
     font-weight: 500;
     line-height: 1.5em;
-    text-align: left;
-    color: rgb(255, 255, 255);
+    font-family: Inter, Inter Placeholder, sans-serif;
 }
 
 @media screen  and (max-width: 1024px) {
@@ -95,6 +107,7 @@ a {
     .general-conteiner {
         width: 80vw;
     }
+
     .footer{
         width: 102%;
     }
@@ -104,18 +117,18 @@ a {
     .footer{
         height: fit-content;
     }
+
     .general-conteiner{ 
         width: 60vw;
     }
-
 }
 
 @media screen and (max-width: 500px) {
     .footer{
         height: fit-content;
     }
+    
     .general-conteiner{ 
         width: 80vw;
     }
-
 }

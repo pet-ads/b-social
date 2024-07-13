@@ -1,5 +1,5 @@
 // Styles
-import "./card.css"
+import "./Card.css"
 
 interface Props {
   id?: string
