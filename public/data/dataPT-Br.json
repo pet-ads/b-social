@@ -1,13 +1,14 @@
-{
+s{
   "card": [
     {
       "id": "1",
       "cardImg": "/Images/walkingBear.gif",
-      "cardTitle": "Amor",
+      "cardTitle": "Acesso",
       "cardText": "Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade.",
       "bgColor": "#a1f6ff",
-      "cardExpandedText": "Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade. Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade. Aprenda sobre hospedagem projetada para escalabilidade e confiabilidade.",
-      "theme": "Amor",
+      "cardExpandedText": "Para um remédio, sangue ou qualquer líquido chegar até a corrente sanguínea, ele precisa achar uma entradinha, ou seja, os enfermeiros precisam fazer um furinho na veia do paciente, criando um acesso venoso central.
+Respire fundo que a picada dura um segundo!",
+      "theme": "Acesso",
       "bgColorTheme:": "rgb(102,102,102)",
       "recommendation": "Febre",
       "bgColorRecommendatio": "rgb(102,102,102)"
