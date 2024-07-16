@@ -35,7 +35,8 @@ interface Props {
 export default function Navigation({links, texts, setSelectedPath }: Props) {
   // Hooks
   const windowWidth = useWindowWidth()
-  
+console.log(texts)
+  console.log(setSelectedPath)
   // States
   const [clicked, setClicked] = useState(false)
 
