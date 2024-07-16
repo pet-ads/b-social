@@ -23,7 +23,7 @@ export default function Dropdown({ selectedPath }: Props) {
   const [isOpen, setIsOpen] = useState(false)
   const languages: Language[] = languagesJson.languages
   const [selectedLanguage, setSelectedLanguage] = useState<Language | null>(languages[0] || null)
-  console.log(selectedLanguage)
+
   // Effects 
   useEffect(() => {  
     const savedLanguage = localStorage.getItem("selectedLanguage")
