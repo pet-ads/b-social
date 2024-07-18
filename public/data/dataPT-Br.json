@@ -5,10 +5,10 @@
       "cardImg": "/Images/acesso.png",
       "cardTitle": "Acesso",
       "cardText": "Para um remédio, sangue ou qualquer líquido chegar até a corrente sanguínea...",
-      "bgColor": "#eec546",
+      "bgColor": "#F6C315",
       "cardExpandedText": "Para um remédio, sangue ou qualquer líquido chegar até a corrente sanguínea, ele precisa achar uma entradinha, ou seja, os enfermeiros precisam fazer um furinho na veia do paciente, criando um acesso venoso central. Respire fundo que a picada dura um segundo!",
       "theme": "Acesso",
-      "bgColorTheme:": "#eec546",
+      "bgColorTheme:": "#F6C315",
       "recommendation": "Febre",
       "bgColorRecommendatio": "rgb(238,197,70)"
     },
