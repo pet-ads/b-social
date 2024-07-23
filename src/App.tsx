@@ -15,6 +15,7 @@ import useFetchData from "./hooks/useFetchData"
 
 // Styles
 import "./App.css"
+import { BASEURL } from "./constants"
 
 export default function App() {
 // States
@@ -23,7 +24,7 @@ const [pathToData, setPathToData] = useState("/data/dataPT-Br.json")
 const [selectedCard, setSelectedCard] = useState<CardProps | null>(null)
 
 // Hooks
-const data = useFetchData(pathToData)
+const data = useFetchData(BASEURL+pathToData)
 
 // Constants
 const links = data?.links

@@ -66,9 +66,10 @@ export default function useFetchData(pathToData: string): FetchData | null {
   // Effects
   useEffect(() => {
     const fetchData = async () => {
+      
       try {
         const response = await fetch(pathToData)
-        
+      
         if (!response.ok) {
           throw new Error("Failed to fetch data")
         }
@@ -76,8 +77,8 @@ export default function useFetchData(pathToData: string): FetchData | null {
         const jsonData = await response.json()
         setData(jsonData)
       } 
-      catch (error) {
-        console.error("Não foi possível encontrar os dados")
+      catch(error) {
+        console.error(error)
       }
     }
     
