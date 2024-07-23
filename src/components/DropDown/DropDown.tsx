@@ -4,6 +4,9 @@ import { useEffect, useState } from "react"
 // Services
 import languagesJson from "../../../public/data/languages.json"
 
+//Constants
+import { BASEURL } from "../../constants"
+
 // Styles
 import "./dropdown.css"
 import React from "react"
@@ -60,7 +63,7 @@ export default function Dropdown({ selectedPath }: Props) {
           onClick={onDropDownClick}
         >
         
-        <img className="marked" src={selectedLanguage ? selectedLanguage.pathToLogo : ""} alt="Selected flag" />
+        <img className="marked" src={selectedLanguage ? BASEURL+selectedLanguage.pathToLogo : ""} alt="Selected flag" />
         
         <div className="dropdown-menu" style={{ display: isOpen ? "block" : "none" }}>
             <div className="flag-container">
@@ -68,7 +71,7 @@ export default function Dropdown({ selectedPath }: Props) {
                 <img
                   className="flag"
                   key={index}
-                  src={lang.pathToLogo}
+                  src={BASEURL+lang.pathToLogo}
                   alt={`Logo ${index}`}
                   onClick={() => handleLanguageClick(lang)}
                 />

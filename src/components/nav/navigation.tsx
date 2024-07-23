@@ -7,6 +7,8 @@ import MobileNav from "./components/Mobile/mobileNav"
 import MobileLinks from "./components/Mobile/mobileLinks"
 import DefaultLinks from "./components/Default/defaultLinks"
 
+//Constants
+import { BASEURL } from "../../constants"
 
 
 // Types
@@ -51,7 +53,7 @@ export default function Navigation({links, texts, setSelectedPath }: Props) {
       >
         <div className="text-conteiner">
           <a href={links?.logo} target="_blank">
-            <img className="beaba-logo" src={"/Images/Beaba.png"} alt="Logo do Beaba" />
+            <img className="beaba-logo" src={BASEURL+"/Images/Beaba.png"} alt="Logo do Beaba" />
           </a>
         </div>
         

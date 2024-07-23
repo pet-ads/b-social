@@ -1,3 +1,6 @@
+//Constants
+import { BASEURL } from "../../../constants"
+
 // Styles
 import "./card.css"
 
@@ -38,7 +41,7 @@ export default function Card({
       <a className={`${!isOpen ? "anchor" : "open-anchor"}`} style={{ backgroundColor: `${bgColor}`}} >
         <div className={`${isOpen ? (isGif ? "open-gif-area" : "open-img-area") : (isGif ? "gif-area" : "img-area")}`}>
           <div className="img-conteiner">
-            <img className="card-img" decoding="async" src={CardImg} />
+            <img className="card-img" decoding="async" src={BASEURL+CardImg} />
           </div>
         </div>
       </a>
